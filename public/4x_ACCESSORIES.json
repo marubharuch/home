@@ -1,0 +1,867 @@
+[
+  {
+    "Code": "FX1101WH",
+    "Name": "GRACE 10A ONE WAY SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 43.88,
+    "MRP": 53.90
+  },
+  {
+    "Code": "FX1103WH",
+    "Name": "GRACE 10A TWO WAY SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 128.00,
+    "MRP": 143.00
+  },
+  {
+    "Code": "FX1104WH",
+    "Name": "GRACE 10A BELL PUSH SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 140.00,
+    "MRP": 157.00
+  },
+  {
+    "Code": "FX2109WH",
+    "Name": "GRACE 10A BELL PUSH SWITCH 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 186.00,
+    "MRP": 209.00
+  },
+  {
+    "Code": "FX2110WH",
+    "Name": "GRACE 10A BELL PUSH SWITCH WITH INDICATOR 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 193.00,
+    "MRP": 218.00
+  },
+  {
+    "Code": "FX1111WH",
+    "Name": "GRACE 20A ONE WAY SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 157.00,
+    "MRP": 166.00
+  },
+  {
+    "Code": "FX1112WH",
+    "Name": "GRACE 20A ONE WAY SWITCH WITH INDICATOR 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 203.00,
+    "MRP": 221.00
+  },
+  {
+    "Code": "FX1113WH",
+    "Name": "GRACE 20A TWO WAY SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 201.00,
+    "MRP": 227.00
+  },
+  {
+    "Code": "FX1114WH",
+    "Name": "GRACE 25A ONE WAY SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 221.00,
+    "MRP": 249.00
+  },
+  {
+    "Code": "FX2115WH",
+    "Name": "GRACE 20A ONE WAY SWITCH 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 192.00,
+    "MRP": 216.00
+  },
+  {
+    "Code": "FX2116WH",
+    "Name": "GRACE 20A ONE WAY SWITCH WITH INDICATOR 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 217.00,
+    "MRP": 246.00
+  },
+  {
+    "Code": "FX2120WH",
+    "Name": "GRACE 32A DP SWITCH WITH INDICATOR 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 355.00,
+    "MRP": 399.00
+  },
+  {
+    "Code": "FX1401WH",
+    "Name": "GLIDE 10A ONE WAY SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 46.12,
+    "MRP": 56.66
+  },
+  {
+    "Code": "FX1403WH",
+    "Name": "GLIDE 10A TWO WAY SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 137.00,
+    "MRP": 153.00
+  },
+  {
+    "Code": "FX1404WH",
+    "Name": "GLIDE 10A BELL PUSH SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 156.00,
+    "MRP": 171.00
+  },
+  {
+    "Code": "FX2409WH",
+    "Name": "GLIDE 10A BELL PUSH SWITCH 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 209.00,
+    "MRP": 232.00
+  },
+  {
+    "Code": "FX2410WH",
+    "Name": "GLIDE 10A BELL PUSH SWITCH WITH INDICATOR 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 219.00,
+    "MRP": 245.00
+  },
+  {
+    "Code": "FX1411WH",
+    "Name": "GLIDE 20A ONE WAY SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 165.00,
+    "MRP": 175.00
+  },
+  {
+    "Code": "FX1412WH",
+    "Name": "GLIDE 20A ONE WAY SWITCH WITH INDICATOR 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 216.00,
+    "MRP": 231.00
+  },
+  {
+    "Code": "FX1413WH",
+    "Name": "GLIDE 20A TWO WAY SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 213.00,
+    "MRP": 240.00
+  },
+  {
+    "Code": "FX1414WH",
+    "Name": "GLIDE 25A ONE WAY SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 233.00,
+    "MRP": 262.00
+  },
+  {
+    "Code": "FX2415WH",
+    "Name": "GLIDE 20A ONE WAY SWITCH 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 217.00,
+    "MRP": 242.00
+  },
+  {
+    "Code": "FX2416WH",
+    "Name": "GLIDE 20A ONE WAY SWITCH WITH INDICATOR 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 247.00,
+    "MRP": 276.00
+  },
+  {
+    "Code": "FX2420WH",
+    "Name": "GLIDE 32A DP SWITCH WITH INDICATOR 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 395.00,
+    "MRP": 440.00
+  },
+  {
+    "Code": "FX1501WH",
+    "Name": "GLAM 10A ONE WAY SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 43.88,
+    "MRP": 53.90
+  },
+  {
+    "Code": "FX1503WH",
+    "Name": "GLAM 10A TWO WAY SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 128.00,
+    "MRP": 143.00
+  },
+  {
+    "Code": "FX1504WH",
+    "Name": "GLAM 10A BELL PUSH SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 140.00,
+    "MRP": 157.00
+  },
+  {
+    "Code": "FX1505WH",
+    "Name": "GLAM 10A BELL PUSH WITH INDICATOR 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 158.00,
+    "MRP": 178.00
+  },
+  {
+    "Code": "FX2509WH",
+    "Name": "GLAM 10A BELL PUSH SWITCH 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 186.00,
+    "MRP": 209.00
+  },
+  {
+    "Code": "FX1511WH",
+    "Name": "GLAM 20A ONE WAY SWITCH 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 157.00,
+    "MRP": 166.00
+  },
+  {
+    "Code": "FX1512WH",
+    "Name": "GLAM 20A ONE WAY SWITCH WITH INDICATOR 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 203.00,
+    "MRP": 221.00
+  },
+  {
+    "Code": "FX2515WH",
+    "Name": "GLAM 20A ONE WAY SWITCH 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 192.00,
+    "MRP": 216.00
+  },
+  {
+    "Code": "FX2516WH",
+    "Name": "GLAM 20A ONE WAY SWITCH WITH INDICATOR 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 217.00,
+    "MRP": 246.00
+  },
+  {
+    "Code": "FX2520WH",
+    "Name": "GLAM 32A DP SWITCH WITH INDICATOR 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 355.00,
+    "MRP": 399.00
+  },
+  {
+    "Code": "FX1121WH",
+    "Name": "6A 2 PIN OUTLET WITH SAFTEY SHUTTER 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 112.00,
+    "MRP": 128.00
+  },
+  {
+    "Code": "FX2122WH",
+    "Name": "6A 2X1 OUTLET WITH SAFTEY SHUTTER 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 137.00,
+    "MRP": 156.00
+  },
+  {
+    "Code": "FX2123WH",
+    "Name": "6A 2X1 OUTLET WITHOUT SAFTEY SHUTTER 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 125.00,
+    "MRP": 145.00
+  },
+  {
+    "Code": "FX2124WH",
+    "Name": "6A 3 PIN SOCKET WITH SAFETY SHUTTER 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 133.00,
+    "MRP": 154.00
+  },
+  {
+    "Code": "FX2125WH",
+    "Name": "6A 3 PIN SOCKET WITHOUT SAFETY SHUTTER 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 125.00,
+    "MRP": 145.00
+  },
+  {
+    "Code": "FX2126WH",
+    "Name": "13A INTERNATIONAL OUTLET WITH SAFTEY SHUTTER 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 227.00,
+    "MRP": 258.00
+  },
+  {
+    "Code": "FX2131WH",
+    "Name": "6&16A UNIVERSAL SOCKET WITH SAFTEY SHUTTER 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 266.00,
+    "MRP": 285.00
+  },
+  {
+    "Code": "FX2132WH",
+    "Name": "6&25A UNIVERSAL OUTLET WITH SAFTEY SHUTTER 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 277.00,
+    "MRP": 313.00
+  },
+  {
+    "Code": "FX1146WH",
+    "Name": "ORO 4 STEP REGULATOR 1M (WH)",
+    "Package": 20,
+    "Master": 600,
+    "DLP": 467.00,
+    "MRP": 506.00
+  },
+  {
+    "Code": "FX1149WH",
+    "Name": "ORION 4 STEP REGULATOR 1M (WH)",
+    "Package": 20,
+    "Master": 600,
+    "DLP": 467.00,
+    "MRP": 506.00
+  },
+  {
+    "Code": "FX2147WH",
+    "Name": "ORO 5 STEP REGULATOR FULL ROTARY 2M (WH)",
+    "Package": 10,
+    "Master": 300,
+    "DLP": 525.00,
+    "MRP": 569.00
+  },
+  {
+    "Code": "FX2148WH",
+    "Name": "OCEAN 5 STEP REGULATOR HALF ROTARY 2M (WH)",
+    "Package": 10,
+    "Master": 300,
+    "DLP": 525.00,
+    "MRP": 569.00
+  },
+  {
+    "Code": "FX2150WH",
+    "Name": "ORION 5 STEP REGULATOR FULL ROTARY 2M (WH)",
+    "Package": 10,
+    "Master": 300,
+    "DLP": 525.00,
+    "MRP": 569.00
+  },
+  {
+    "Code": "FX2153WH",
+    "Name": "25A MOTOR STARTER SWITCH 2M (WH)",
+    "Package": 10,
+    "Master": 300,
+    "DLP": 660.00,
+    "MRP": 753.00
+  },
+  {
+    "Code": "FX1155WH",
+    "Name": "TV SOCKET COAXIAL 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 142.00,
+    "MRP": 162.00
+  },
+  {
+    "Code": "FX1156WH",
+    "Name": "TELEPHONE JACK RJ-11  1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 146.00,
+    "MRP": 166.00
+  },
+  {
+    "Code": "FX1157WH",
+    "Name": "EDP SOCKET OUTLET RJ 45(5E) 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 313.00,
+    "MRP": 364.00
+  },
+  {
+    "Code": "FX1158WH",
+    "Name": "EDP SOCKET OUTLET RJ 45(6E) 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 699.00,
+    "MRP": 750.00
+  },
+  {
+    "Code": "FX1161WH",
+    "Name": "TESLA 6A SP MCB 1M (WH)",
+    "Package": 20,
+    "Master": 600,
+    "DLP": 352.00,
+    "MRP": 402.00
+  },
+  {
+    "Code": "FX1162WH",
+    "Name": "TESLA 10A SP MCB 1M (WH)",
+    "Package": 20,
+    "Master": 600,
+    "DLP": 352.00,
+    "MRP": 402.00
+  },
+  {
+    "Code": "FX1163WH",
+    "Name": "TESLA 16A SP MCB 1M (WH)",
+    "Package": 20,
+    "Master": 600,
+    "DLP": 352.00,
+    "MRP": 402.00
+  },
+  {
+    "Code": "FX1164WH",
+    "Name": "TESLA 20A SP MCB 1M (WH)",
+    "Package": 20,
+    "Master": 600,
+    "DLP": 352.00,
+    "MRP": 402.00
+  },
+  {
+    "Code": "FX1165WH",
+    "Name": "TESLA 25A SP MCB 1M (WH)",
+    "Package": 20,
+    "Master": 600,
+    "DLP": 352.00,
+    "MRP": 402.00
+  },
+  {
+    "Code": "FX1166WH",
+    "Name": "TESLA 32A SP MCB 1M (WH)",
+    "Package": 20,
+    "Master": 600,
+    "DLP": 352.00,
+    "MRP": 402.00
+  },
+  {
+    "Code": "FX2167WH",
+    "Name": "TESLA 6A DP MCB 2M (WH)",
+    "Package": 10,
+    "Master": 300,
+    "DLP": 729.00,
+    "MRP": 837.00
+  },
+  {
+    "Code": "FX2168WH",
+    "Name": "TESLA 10A DP MCB 2M (WH)",
+    "Package": 10,
+    "Master": 300,
+    "DLP": 729.00,
+    "MRP": 837.00
+  },
+  {
+    "Code": "FX2169WH",
+    "Name": "TESLA 16A DP MCB 2M (WH)",
+    "Package": 10,
+    "Master": 300,
+    "DLP": 729.00,
+    "MRP": 837.00
+  },
+  {
+    "Code": "FX2170WH",
+    "Name": "TESLA 20A DP MCB 2M (WH)",
+    "Package": 10,
+    "Master": 300,
+    "DLP": 729.00,
+    "MRP": 837.00
+  },
+  {
+    "Code": "FX2171WH",
+    "Name": "TESLA 25A DP MCB 2M (WH)",
+    "Package": 10,
+    "Master": 300,
+    "DLP": 729.00,
+    "MRP": 837.00
+  },
+  {
+    "Code": "FX2172WH",
+    "Name": "TESLA 32A DP MCB 2M (WH)",
+    "Package": 10,
+    "Master": 300,
+    "DLP": 729.00,
+    "MRP": 837.00
+  },
+  {
+    "Code": "FX1176WH",
+    "Name": "XION INDICATOR 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 107.00,
+    "MRP": 123.00
+  },
+  {
+    "Code": "FX1179WH",
+    "Name": "BLANK PLATE 1M (WH)",
+    "Package": 50,
+    "Master": 2000,
+    "DLP": 24.00,
+    "MRP": 30.00
+  },
+  {
+    "Code": "FX1180WH",
+    "Name": "KITKAT FUSE 1M (WH)",
+    "Package": 20,
+    "Master": 1000,
+    "DLP": 169.00,
+    "MRP": 193.00
+  },
+  {
+    "Code": "FX2183WH(WH)",
+    "Name": "NIGHT LAMP 2M WHITE (WH)",
+    "Package": 10,
+    "Master": 240,
+    "DLP": 673.00,
+    "MRP": 753.00
+  },
+  {
+    "Code": "FX2183WW(WH)",
+    "Name": "NIGHT LAMP 2M WARM WHITE (WH)",
+    "Package": 10,
+    "Master": 240,
+    "DLP": 673.00,
+    "MRP": 753.00
+  },
+  {
+    "Code": "FX2183RED(WH)",
+    "Name": "NIGHT LAMP 2M RED (WH)",
+    "Package": 10,
+    "Master": 240,
+    "DLP": 673.00,
+    "MRP": 753.00
+  },
+  {
+    "Code": "FX2183BL(WH)",
+    "Name": "NIGHT LAMP 2M BLUE (WH)",
+    "Package": 10,
+    "Master": 240,
+    "DLP": 673.00,
+    "MRP": 753.00
+  },
+  {
+    "Code": "FX2184WH(WH)",
+    "Name": "STEP MARKER 2M WHITE (WH)",
+    "Package": 10,
+    "Master": 240,
+    "DLP": 478.00,
+    "MRP": 559.00
+  },
+  {
+    "Code": "FX2184WW(WH)",
+    "Name": "STEP MARKER 2M WARM WHITE (WH)",
+    "Package": 10,
+    "Master": 240,
+    "DLP": 478.00,
+    "MRP": 559.00
+  },
+  {
+    "Code": "FX3185WH(WH)",
+    "Name": "BRIO STEP MARKER  3M WHITE (WH)",
+    "Package": 10,
+    "Master": 200,
+    "DLP": 667.00,
+    "MRP": 767.00
+  },
+  {
+    "Code": "FX3185WW(WH)",
+    "Name": "BRIO STEP MARKER 3M WARM WHITE (WH)",
+    "Package": 10,
+    "Master": 200,
+    "DLP": 667.00,
+    "MRP": 767.00
+  },
+  {
+    "Code": "FX2197WH",
+    "Name": "ELECTRONIC MULTI TUNE BUZZER 2M (WH)",
+    "Package": 10,
+    "Master": 240,
+    "DLP": 446.00,
+    "MRP": 481.00
+  },
+  {
+    "Code": "FX1209WH",
+    "Name": "CALL BELL WITH INDICATOR 1M (WH)",
+    "Package": 20,
+    "Master": 600,
+    "DLP": 395.00,
+    "MRP": 443.00
+  },
+  {
+    "Code": "FX2201WH",
+    "Name": "32AMP. DP MAIN SWITCH WITH KEY TAG 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 551.00,
+    "MRP": 627.00
+  },
+  {
+    "Code": "FX2202WH",
+    "Name": "KEY TAG ONLY (WH)",
+    "Package": 100,
+    "Master": 2000,
+    "DLP": 128.00,
+    "MRP": 146.00
+  },
+  {
+    "Code": "FX2206WH",
+    "Name": "DO NOT DISTURB INSIDE 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 528.00,
+    "MRP": 601.00
+  },
+  {
+    "Code": "FX2207WH",
+    "Name": "DO NOT DISTURB OUTSIDE 2M (WH)",
+    "Package": 10,
+    "Master": 500,
+    "DLP": 561.00,
+    "MRP": 642.00
+  },
+  {
+    "Code": "FX1215WH",
+    "Name": "USB CHARGER 1M (WH)",
+    "Package": 20,
+    "Master": 600,
+    "DLP": 860.00,
+    "MRP": 946.00
+  },
+  {
+    "Code": "FX1221WH",
+    "Name": "HDMI SOCKET 1M (WH)",
+    "Package": 5,
+    "Master": 150,
+    "DLP": 1478.00,
+    "MRP": 1596.00
+  },
+  {
+    "Code": "FX1222WH",
+    "Name": "TRIPLE RCA SOCKET (AUDIO & VIDEO) 1M (WH)",
+    "Package": 5,
+    "Master": 150,
+    "DLP": 1021.00,
+    "MRP": 1091.00
+  },
+  {
+    "Code": "FX4226WH(WH)",
+    "Name": "FOOT LIGHT LED 4M WHITE (WH)",
+    "Package": 5,
+    "Master": 120,
+    "DLP": 938.00,
+    "MRP": 1014.00
+  },
+  {
+    "Code": "FX4226WW(WH)",
+    "Name": "FOOT LIGHT LED 4M WARM WHITE (WH)",
+    "Package": 5,
+    "Master": 120,
+    "DLP": 938.00,
+    "MRP": 1014.00
+  },
+  {
+    "Code": "FX2231WH",
+    "Name": "MOTION SENSOR SWITCH 2M (WH)",
+    "Package": 5,
+    "Master": 60,
+    "DLP": 3459.00,
+    "MRP": 3984.00
+  },
+  {
+    "Code": "FX3186WH(WH)",
+    "Name": "LUMI STEP MARKER 3M WHITE (WH)",
+    "Package": 10,
+    "Master": 200,
+    "DLP": 667.00,
+    "MRP": 767.00
+  },
+  {
+    "Code": "FX3186WW(WH)",
+    "Name": "LUMI STEP MARKER 3M WARM WHITE (WH)",
+    "Package": 10,
+    "Master": 200,
+    "DLP": 667.00,
+    "MRP": 767.00
+  },
+  {
+    "Code": "SB0222WH",
+    "Name": "SURFACE PLASTIC GANG BOX 1M & 2M",
+    "Package": 10,
+    "Master": 240,
+    "DLP": 73.00,
+    "MRP": null
+  },
+  {
+    "Code": "SB0323WH",
+    "Name": "SURFACE PLASTIC GANG BOX 3M",
+    "Package": 10,
+    "Master": 120,
+    "DLP": 117.00,
+    "MRP": null
+  },
+  {
+    "Code": "SB0424WH",
+    "Name": "SURFACE PLASTIC GANG BOX 4M",
+    "Package": 10,
+    "Master": 120,
+    "DLP": 128.00,
+    "MRP": null
+  },
+  {
+    "Code": "SB0625WH",
+    "Name": "SURFACE PLASTIC GANG BOX 6M",
+    "Package": 5,
+    "Master": 80,
+    "DLP": 164.00,
+    "MRP": null
+  },
+  {
+    "Code": "SB0826WH",
+    "Name": "SURFACE PLASTIC GANG BOX 8M",
+    "Package": 5,
+    "Master": 80,
+    "DLP": 214.00,
+    "MRP": null
+  },
+  {
+    "Code": "SB0827WH",
+    "Name": "SURFACE PLASTIC GANG BOX 8M(W/P)",
+    "Package": 5,
+    "Master": 80,
+    "DLP": 214.00,
+    "MRP": null
+  },
+  {
+    "Code": "SB0828WH",
+    "Name": "SURFACE PLASTIC GANG BOX 8M(V)",
+    "Package": 5,
+    "Master": 60,
+    "DLP": 214.00,
+    "MRP": null
+  },
+  {
+    "Code": "SB1229WH",
+    "Name": "SURFACE PLASTIC GANG BOX 12M",
+    "Package": 5,
+    "Master": 60,
+    "DLP": 266.00,
+    "MRP": null
+  },
+  {
+    "Code": "SB1630WH",
+    "Name": "SURFACE PLASTIC GANG BOX 16M",
+    "Package": 5,
+    "Master": 40,
+    "DLP": 311.00,
+    "MRP": null
+  },
+  {
+    "Code": "SB1831WH",
+    "Name": "SURFACE PLASTIC GANG BOX 18M",
+    "Package": 5,
+    "Master": 40,
+    "DLP": 365.00,
+    "MRP": null
+  },
+  {
+    "Code": "V5001",
+    "Name": "FYBROS NUEVO METAL GANG BOX 1 & 2 MODULE",
+    "Package": 20,
+    "Master": 120,
+    "DLP": 73.32,
+    "MRP": null
+  },
+  {
+    "Code": "V5002",
+    "Name": "FYBROS NUEVO METAL GANG BOX 3 MODULE",
+    "Package": 20,
+    "Master": 120,
+    "DLP": 91.18,
+    "MRP": null
+  },
+  {
+    "Code": "V5003",
+    "Name": "FYBROS NUEVO METAL GANG BOX 4 MODULE",
+    "Package": 20,
+    "Master": 120,
+    "DLP": 105.28,
+    "MRP": null
+  },
+  {
+    "Code": "V5004",
+    "Name": "FYBROS NUEVO METAL GANG BOX 6 MODULE",
+    "Package": 10,
+    "Master": 80,
+    "DLP": 156.04,
+    "MRP": null
+  },
+  {
+    "Code": "V5005",
+    "Name": "FYBROS NUEVO METAL GANG BOX 8H MODULE",
+    "Package": 10,
+    "Master": 80,
+    "DLP": 189.88,
+    "MRP": null
+  },
+  {
+    "Code": "V5006",
+    "Name": "FYBROS NUEVO METAL GANG BOX 8V MODULE",
+    "Package": 5,
+    "Master": 60,
+    "DLP": 189.88,
+    "MRP": null
+  },
+  {
+    "Code": "V5007",
+    "Name": "FYBROS NUEVO METAL GANG BOX 12 MODULE",
+    "Package": 5,
+    "Master": 40,
+    "DLP": 239.70,
+    "MRP": null
+  },
+  {
+    "Code": "V5008",
+    "Name": "FYBROS NUEVO METAL GANG BOX 16 MODULE",
+    "Package": 5,
+    "Master": 40,
+    "DLP": 303.62,
+    "MRP": null
+  },
+  {
+    "Code": "V5009",
+    "Name": "FYBROS NUEVO METAL GANG BOX 18 MODULE",
+    "Package": 5,
+    "Master": 40,
+    "DLP": 345.92,
+    "MRP": null
+  }
+]
+

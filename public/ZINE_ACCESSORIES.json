@@ -1,0 +1,1178 @@
+
+
+
+
+{
+  "title": "ZINE ACCESSORIES PRICE LIST - 01.04.2025",
+  "note": "Please note that the products mentioned in this price list will be maintained with us in stock. Any other product from the catalogue apart from this price list will not be available.",
+  "products": [
+    {
+      "sl_no": 1,
+      "code": "8001",
+      "particulars": "6A GLOW 1 WAY SWITCH",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 22.23
+    },
+    {
+      "sl_no": 2,
+      "code": "8002",
+      "particulars": "6A GLOW 2 WAY SWITCH",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 37.0
+    },
+    {
+      "sl_no": 3,
+      "code": "8003",
+      "particulars": "6A GLOW BELL PUSH SWITCH",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 37.0
+    },
+    {
+      "sl_no": 4,
+      "code": "8004",
+      "particulars": "6A GLOW INDICATOR",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 37.0
+    },
+    {
+      "sl_no": 5,
+      "code": "8005",
+      "particulars": "6A BLOOM 1 WAY SWITCH",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 22.23
+    },
+    {
+      "sl_no": 6,
+      "code": "8006",
+      "particulars": "6A BLOOM 2 WAY SWITCH",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 36.0
+    },
+    {
+      "sl_no": 7,
+      "code": "8007",
+      "particulars": "6A BLOOM BELL PUSH SWITCH",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 36.0
+    },
+    {
+      "sl_no": 8,
+      "code": "8008",
+      "particulars": "6A BLOOM INDICATOR",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 36.0
+    },
+    {
+      "sl_no": 9,
+      "code": "8009",
+      "particulars": "6A SHINE 1 WAY SWITCH",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 22.23
+    },
+    {
+      "sl_no": 10,
+      "code": "8010",
+      "particulars": "6A SHINE 2 WAY SWITCH",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 36.0
+    },
+    {
+      "sl_no": 11,
+      "code": "8011",
+      "particulars": "6A SHINE BELL PUSH SWITCH",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 36.0
+    },
+    {
+      "sl_no": 12,
+      "code": "8012",
+      "particulars": "6A SHINE INDICATOR",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 36.0
+    },
+    {
+      "sl_no": 13,
+      "code": "8021",
+      "particulars": "6A 2 PIN OUTLET",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 36.0
+    },
+    {
+      "sl_no": 14,
+      "code": "8022",
+      "particulars": "6A 2 IN 1 OUTLET",
+      "pkg_outer": 10,
+      "master": 600,
+      "rate_dlp": 41.0
+    },
+    {
+      "sl_no": 15,
+      "code": "8023",
+      "particulars": "6A 5 PIN OUTLET",
+      "pkg_outer": null,
+      "master": null,
+      "rate_dlp": 46.0
+    },
+    {
+      "sl_no": 16,
+      "code": "8024",
+      "particulars": "13A INTERNATIONAL OUTLET (PC)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 86.0
+    },
+    {
+      "sl_no": 17,
+      "code": "8025",
+      "particulars": "6A 3 Pin Socket",
+      "pkg_outer": 10,
+      "master": 600,
+      "rate_dlp": 41.0
+    },
+    {
+      "sl_no": 18,
+      "code": "8031",
+      "particulars": "MINI TV SOCKET",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 50.0
+    },
+    {
+      "sl_no": 19,
+      "code": "8032",
+      "particulars": "MINI 2 LINE TELE JACK",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 83.0
+    },
+    {
+      "sl_no": 20,
+      "code": "8033",
+      "particulars": "10A KITKAT FUSE",
+      "pkg_outer": 20,
+      "master": 600,
+      "rate_dlp": 51.0
+    },
+    {
+      "sl_no": 21,
+      "code": "8034",
+      "particulars": "16A KITKAT FUSE",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 65.0
+    },
+    {
+      "sl_no": 22,
+      "code": "8035",
+      "particulars": "USB CHARGER (2 AMP)",
+      "pkg_outer": 10,
+      "master": 450,
+      "rate_dlp": 560.0
+    },
+    {
+      "sl_no": 23,
+      "code": "8041",
+      "particulars": "MINI DIMMER",
+      "pkg_outer": 10,
+      "master": 450,
+      "rate_dlp": 202.0
+    },
+    {
+      "sl_no": 24,
+      "code": "8042",
+      "particulars": "MEDIUM DIMMER",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 209.0
+    },
+    {
+      "sl_no": 25,
+      "code": "8043",
+      "particulars": "4 STEP REGULATOR",
+      "pkg_outer": 10,
+      "master": 450,
+      "rate_dlp": 281.0
+    },
+    {
+      "sl_no": 26,
+      "code": "8044",
+      "particulars": "5 STEP REGULATOR",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 324.0
+    },
+    {
+      "sl_no": 27,
+      "code": "8051",
+      "particulars": "6A S.S.COMBINED WITH INDICATOR OUTLET",
+      "pkg_outer": null,
+      "master": null,
+      "rate_dlp": 97.0
+    },
+    {
+      "sl_no": 28,
+      "code": "8052",
+      "particulars": "6A S.S.COMBINED OUTLET WITH JUNCTION BOX",
+      "pkg_outer": null,
+      "master": null,
+      "rate_dlp": 110.0
+    },
+    {
+      "sl_no": 29,
+      "code": "8051A",
+      "particulars": "6A 3 PIN S.S. COMBIND WITH INDICATOR",
+      "pkg_outer": 5,
+      "master": 200,
+      "rate_dlp": 97.0
+    },
+    {
+      "sl_no": 30,
+      "code": "8052A",
+      "particulars": "6A 3PIN S.S.COMB. WITH IND. & WITH JUNCTION BOX",
+      "pkg_outer": 5,
+      "master": 200,
+      "rate_dlp": 110.0
+    },
+    {
+      "sl_no": 31,
+      "code": "8053",
+      "particulars": "16A 1 WAY SWITCH (ROCKER)",
+      "pkg_outer": 10,
+      "master": 200,
+      "rate_dlp": 117.0
+    },
+    {
+      "sl_no": 32,
+      "code": "8053A",
+      "particulars": "16A 1 WAY SWITCH (DOLLY)",
+      "pkg_outer": 10,
+      "master": 200,
+      "rate_dlp": 117.0
+    },
+    {
+      "sl_no": 33,
+      "code": "8054",
+      "particulars": "16A 2 WAY SWITCH (ROCKER)",
+      "pkg_outer": 10,
+      "master": 200,
+      "rate_dlp": 147.0
+    },
+    {
+      "sl_no": 34,
+      "code": "8054A",
+      "particulars": "16A 2 WAY SWITCH (DOLLY)",
+      "pkg_outer": 10,
+      "master": 200,
+      "rate_dlp": 147.0
+    },
+    {
+      "sl_no": 35,
+      "code": "8055",
+      "particulars": "6A & 16A UNIVERSAL SOCKET WITH SAFETY SHUTTER",
+      "pkg_outer": 10,
+      "master": 200,
+      "rate_dlp": 117.0
+    },
+    {
+      "sl_no": 36,
+      "code": "8055A",
+      "particulars": "6A & 16A UNIVERSAL SOCKET WITHOUT SHUTTER (DOLLY)",
+      "pkg_outer": 10,
+      "master": 200,
+      "rate_dlp": 117.0
+    },
+    {
+      "sl_no": 37,
+      "code": "8056",
+      "particulars": "3 IN1 UNI. S.S COMBINED (WITH SAFETY SHUTTER)",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 203.0
+    },
+    {
+      "sl_no": 38,
+      "code": "8056A",
+      "particulars": "3 IN1 UNI. S.S COMBINED (DOLLY)",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 203.0
+    },
+    {
+      "sl_no": 39,
+      "code": "8057",
+      "particulars": "3 IN1 UNI. S.S COMBINED WITH J. BOX (WITH SAFETY SHUTTER)",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 221.0
+    },
+    {
+      "sl_no": 40,
+      "code": "8057A",
+      "particulars": "3 IN 1 UNIVERSAL S.S.COMB. WITH JUNCTION BOX (DOLLY)",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 221.0
+    },
+    {
+      "sl_no": 41,
+      "code": "8058",
+      "particulars": "5 IN1 UNI. S.S COMBINED (WITH SAFETY SHUTTER)",
+      "pkg_outer": 5,
+      "master": 80,
+      "rate_dlp": 279.0
+    },
+    {
+      "sl_no": 42,
+      "code": "8058A",
+      "particulars": "5 IN1 UNI. S.S COMBINED (DOLLY)",
+      "pkg_outer": 5,
+      "master": 80,
+      "rate_dlp": 279.0
+    },
+    {
+      "sl_no": 43,
+      "code": "8059",
+      "particulars": "5 IN1 UNI. S.S COMBINED WITH J. BOX (WITH SAFETY SHUTTER)",
+      "pkg_outer": 5,
+      "master": 80,
+      "rate_dlp": 317.0
+    },
+    {
+      "sl_no": 44,
+      "code": "8059A",
+      "particulars": "5 IN 1 UNIVERSAL S.S.COMB. WITH JUNCTION BOX (DOLLY)",
+      "pkg_outer": 5,
+      "master": 80,
+      "rate_dlp": 317.0
+    },
+    {
+      "sl_no": 45,
+      "code": "8075",
+      "particulars": "32AMP DP SWITCH WITH INDICATOR",
+      "pkg_outer": null,
+      "master": null,
+      "rate_dlp": 204.0
+    },
+    {
+      "sl_no": 46,
+      "code": "8060",
+      "particulars": "32AMP SURFACE DP SWITCH (SDP) WITH INDICATOR",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 221.0
+    },
+    {
+      "sl_no": 47,
+      "code": "8061",
+      "particulars": "FLUSH DP SWITCH (FDP) WITH INDICATOR",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 221.0
+    },
+    {
+      "sl_no": 48,
+      "code": "8069",
+      "particulars": "1/2 MCB ENCLOSURE BOX",
+      "pkg_outer": 10,
+      "master": 200,
+      "rate_dlp": 70.0
+    },
+    {
+      "sl_no": 49,
+      "code": "8070",
+      "particulars": "3/4 MCB ENCLOSURE BOX",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 101.0
+    },
+    {
+      "sl_no": 50,
+      "code": "8062",
+      "particulars": "ANGLE HOLDER (UREA)",
+      "pkg_outer": 20,
+      "master": 400,
+      "rate_dlp": 33.0
+    },
+    {
+      "sl_no": 51,
+      "code": "8063",
+      "particulars": "BATTEN HOLDER (UREA)",
+      "pkg_outer": 20,
+      "master": 400,
+      "rate_dlp": 33.0
+    },
+    {
+      "sl_no": 52,
+      "code": "8064",
+      "particulars": "PENDENT HOLDER (UREA)",
+      "pkg_outer": 30,
+      "master": 900,
+      "rate_dlp": 31.5
+    },
+    {
+      "sl_no": 53,
+      "code": "8066",
+      "particulars": "ADAPTOR HOLDER (UREA)",
+      "pkg_outer": 30,
+      "master": 1200,
+      "rate_dlp": 32.0
+    },
+    {
+      "sl_no": 54,
+      "code": "8067",
+      "particulars": "HANGING BED SWITCH",
+      "pkg_outer": 20,
+      "master": 1200,
+      "rate_dlp": 41.0
+    },
+    {
+      "sl_no": 55,
+      "code": "8071",
+      "particulars": "PILOT CEILING ROSE (UREA)",
+      "pkg_outer": 30,
+      "master": 600,
+      "rate_dlp": 35.0
+    },
+    {
+      "sl_no": 56,
+      "code": "8072",
+      "particulars": "PILOT CEILING ROSE (3 PARTS)(UREA)",
+      "pkg_outer": 30,
+      "master": 600,
+      "rate_dlp": 36.0
+    },
+    {
+      "sl_no": 57,
+      "code": "8073",
+      "particulars": "JUMBO CEILING ROSE (UREA)",
+      "pkg_outer": 20,
+      "master": 400,
+      "rate_dlp": 37.0
+    },
+    {
+      "sl_no": 58,
+      "code": "8074",
+      "particulars": "JUMBO CEILING ROSE (3 PARTS)(UREA)",
+      "pkg_outer": 20,
+      "master": 400,
+      "rate_dlp": 43.0
+    },
+    {
+      "sl_no": 59,
+      "code": "8081",
+      "particulars": "ELANCE 6A 3 PIN TOP",
+      "pkg_outer": 20,
+      "master": 600,
+      "rate_dlp": 70.0
+    },
+    {
+      "sl_no": 60,
+      "code": "8082",
+      "particulars": "ELANCE 16A 3 PIN TOP",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 96.0
+    },
+    {
+      "sl_no": 61,
+      "code": "8114",
+      "particulars": "KRYSTA 6A 3 PIN TOP WITH INDICATOR",
+      "pkg_outer": 20,
+      "master": 600,
+      "rate_dlp": 91.0
+    },
+    {
+      "sl_no": 62,
+      "code": "8115",
+      "particulars": "KRYSTA 16A 3 PIN TOP WITH INDICATOR",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 113.0
+    },
+    {
+      "sl_no": 63,
+      "code": "8088",
+      "particulars": "16A 3 PIN TOP WITH INDICATOR (HEAVY DUTY)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 127.0
+    },
+    {
+      "sl_no": 64,
+      "code": "V3021",
+      "particulars": "3 PIN TRAVEL UNIVERSAL MULTI PLUG",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 169.0
+    },
+    {
+      "sl_no": 65,
+      "code": "8099",
+      "particulars": "ECO 3PIN TRAVEL UNIVERSAL MULTI PLUG WITH INDICATOR",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 143.0
+    },
+    {
+      "sl_no": 66,
+      "code": "8080",
+      "particulars": "MAXX 3PIN TRAVEL UNIVERSAL ADAPTOR",
+      "pkg_outer": 20,
+      "master": 600,
+      "rate_dlp": 120.0
+    },
+    {
+      "sl_no": 67,
+      "code": "8117",
+      "particulars": "Xylo 16A 3 Pin Multi Plug Adaptor",
+      "pkg_outer": 10,
+      "master": 200,
+      "rate_dlp": 220.0
+    },
+    {
+      "sl_no": 68,
+      "code": "8097",
+      "particulars": "SLIQ 3PIN TRAVEL UNIVERSAL MULTI PLUG WITH INDICATOR",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 158.0
+    },
+    {
+      "sl_no": 69,
+      "code": "8086A",
+      "particulars": "3 PIN MULTI PLUG ADAPTOR (NEW)",
+      "pkg_outer": 20,
+      "master": 600,
+      "rate_dlp": 83.0
+    },
+    {
+      "sl_no": 70,
+      "code": "8083",
+      "particulars": "3 PIN TRAVEL UNIVERSAL ADAPTOR",
+      "pkg_outer": 20,
+      "master": 600,
+      "rate_dlp": 105.0
+    },
+    {
+      "sl_no": 71,
+      "code": "8098",
+      "particulars": "ALTUS 3 PIN UNIVESAL TRAVEL ADAPTER WITH USB",
+      "pkg_outer": 10,
+      "master": 200,
+      "rate_dlp": 589.0
+    },
+    {
+      "sl_no": 72,
+      "code": "8084",
+      "particulars": "2 PIN INLET",
+      "pkg_outer": 50,
+      "master": 1200,
+      "rate_dlp": 25.0
+    },
+    {
+      "sl_no": 73,
+      "code": "8085",
+      "particulars": "2 PIN INLET / OUTLET",
+      "pkg_outer": 50,
+      "master": 1200,
+      "rate_dlp": 39.0
+    },
+    {
+      "sl_no": 74,
+      "code": "8089",
+      "particulars": "2 PIN PLUG (ADORA)",
+      "pkg_outer": 50,
+      "master": 1200,
+      "rate_dlp": 25.0
+    },
+    {
+      "sl_no": 75,
+      "code": "8090",
+      "particulars": "2 PIN INLET / OUTLET (ADORA)",
+      "pkg_outer": 50,
+      "master": 1200,
+      "rate_dlp": 39.0
+    },
+    {
+      "sl_no": 76,
+      "code": "8111",
+      "particulars": "2 PIN INLET (MELON)",
+      "pkg_outer": 50,
+      "master": 1200,
+      "rate_dlp": 21.0
+    },
+    {
+      "sl_no": 77,
+      "code": "8112",
+      "particulars": "2 PIN INLET / OUTLET (MELON)",
+      "pkg_outer": 50,
+      "master": 1200,
+      "rate_dlp": 37.0
+    },
+    {
+      "sl_no": 78,
+      "code": "8113",
+      "particulars": "2 PIN OUTLET (MELON)",
+      "pkg_outer": 100,
+      "master": 2400,
+      "rate_dlp": 21.0
+    },
+    {
+      "sl_no": 79,
+      "code": "9001",
+      "particulars": "SPARK DING DONG BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 211.0
+    },
+    {
+      "sl_no": 80,
+      "code": "9002",
+      "particulars": "AQUA DING DONG BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 211.0
+    },
+    {
+      "sl_no": 81,
+      "code": "V3031",
+      "particulars": "PULSE DING DONG BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 211.0
+    },
+    {
+      "sl_no": 82,
+      "code": "V3032",
+      "particulars": "PLUG DING DONG BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 211.0
+    },
+    {
+      "sl_no": 83,
+      "code": "9003",
+      "particulars": "WAVE DING DONG BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 268.0
+    },
+    {
+      "sl_no": 84,
+      "code": "9004",
+      "particulars": "OVAL DING DONG BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 211.0
+    },
+    {
+      "sl_no": 85,
+      "code": "9005",
+      "particulars": "BELLA DING DONG BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 211.0
+    },
+    {
+      "sl_no": 86,
+      "code": "9006",
+      "particulars": "FIONA DING DONG BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 245.0
+    },
+    {
+      "sl_no": 87,
+      "code": "9007",
+      "particulars": "ELVIS DING DONG BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 245.0
+    },
+    {
+      "sl_no": 88,
+      "code": "9011",
+      "particulars": "APPLE MUSICAL BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 436.0
+    },
+    {
+      "sl_no": 89,
+      "code": "9014",
+      "particulars": "PARROT MUSICAL BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 276.0
+    },
+    {
+      "sl_no": 90,
+      "code": "V3041",
+      "particulars": "MUSICAL BELL (OM MANTRAS)",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 513.0
+    },
+    {
+      "sl_no": 91,
+      "code": "V3041A",
+      "particulars": "MUSICAL BELL (AZAAN)",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 513.0
+    },
+    {
+      "sl_no": 92,
+      "code": "V3041B",
+      "particulars": "MUSICAL BELL (SATNAM WAHEGURU)",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 513.0
+    },
+    {
+      "sl_no": 93,
+      "code": "V3041C",
+      "particulars": "MUSICAL BELL (CHURCH)",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 513.0
+    },
+    {
+      "sl_no": 94,
+      "code": "V3041D",
+      "particulars": "MUSICAL BELL (KRISHNA)",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 513.0
+    },
+    {
+      "sl_no": 95,
+      "code": "V3042",
+      "particulars": "FLORA MUSICAL BELL",
+      "pkg_outer": 5,
+      "master": 80,
+      "rate_dlp": 533.0
+    },
+    {
+      "sl_no": 96,
+      "code": "9015",
+      "particulars": "RINGO MUSICAL BELL",
+      "pkg_outer": 5,
+      "master": 80,
+      "rate_dlp": 447.0
+    },
+    {
+      "sl_no": 97,
+      "code": "9016",
+      "particulars": "ITUNE MUSICAL BELL",
+      "pkg_outer": 10,
+      "master": 240,
+      "rate_dlp": 398.0
+    },
+    {
+      "sl_no": 98,
+      "code": "9017",
+      "particulars": "VOX PLUG IN WIRELESS DOOR BELL",
+      "pkg_outer": 5,
+      "master": 40,
+      "rate_dlp": 1750.0
+    },
+    {
+      "sl_no": 99,
+      "code": "9018",
+      "particulars": "LUNA PLUG IN WIRELESS DOOR BELL",
+      "pkg_outer": 5,
+      "master": 40,
+      "rate_dlp": 1750.0
+    },
+    {
+      "sl_no": 100,
+      "code": "8091",
+      "particulars": "COMEX 2 PIN FLEX BOX (5 MTRS.)",
+      "pkg_outer": 5,
+      "master": 60,
+      "rate_dlp": 352.0
+    },
+    {
+      "sl_no": 101,
+      "code": "8092",
+      "particulars": "COMEX 2 PIN FLEX BOX (10MTRS)",
+      "pkg_outer": 5,
+      "master": 60,
+      "rate_dlp": 464.0
+    },
+    {
+      "sl_no": 102,
+      "code": "8093",
+      "particulars": "COMEX 3 PIN FLEX BOX (5MTRS)",
+      "pkg_outer": 5,
+      "master": 60,
+      "rate_dlp": 464.0
+    },
+    {
+      "sl_no": 103,
+      "code": "V3063",
+      "particulars": "SQAURE 2 PIN FLEX BOX (5MTRS)",
+      "pkg_outer": 5,
+      "master": 60,
+      "rate_dlp": 413.0
+    },
+    {
+      "sl_no": 104,
+      "code": "V3065",
+      "particulars": "VROCK 2 PIN FLEX BOX (5MTRS)",
+      "pkg_outer": 5,
+      "master": 60,
+      "rate_dlp": 413.0
+    },
+    {
+      "sl_no": 105,
+      "code": "9021",
+      "particulars": "QUBIC 4X1 POWER STRIP",
+      "pkg_outer": 5,
+      "master": 50,
+      "rate_dlp": 702.0
+    },
+    {
+      "sl_no": 106,
+      "code": "9022",
+      "particulars": "QUBIC 4X4 POWER STRIP",
+      "pkg_outer": 5,
+      "master": 50,
+      "rate_dlp": 793.0
+    },
+    {
+      "sl_no": 107,
+      "code": "9059",
+      "particulars": "GIO ANGLE HOLDER",
+      "pkg_outer": 20,
+      "master": 400,
+      "rate_dlp": 51.73
+    },
+    {
+      "sl_no": 108,
+      "code": "9060",
+      "particulars": "GIO BATTEN HOLDER",
+      "pkg_outer": 20,
+      "master": 400,
+      "rate_dlp": 51.73
+    },
+    {
+      "sl_no": 109,
+      "code": "9069",
+      "particulars": "ANGLE HOLDER (PC)",
+      "pkg_outer": 20,
+      "master": 400,
+      "rate_dlp": 45.0
+    },
+    {
+      "sl_no": 110,
+      "code": "9070",
+      "particulars": "BATTEN HOLDER (PC)",
+      "pkg_outer": 20,
+      "master": 400,
+      "rate_dlp": 45.0
+    },
+    {
+      "sl_no": 111,
+      "code": "9073",
+      "particulars": "SLEEK ANGLE HOLDER",
+      "pkg_outer": 30,
+      "master": 600,
+      "rate_dlp": 41.17
+    },
+    {
+      "sl_no": 112,
+      "code": "9074",
+      "particulars": "SLEEK BATTEN HOLDER",
+      "pkg_outer": 30,
+      "master": 600,
+      "rate_dlp": 41.17
+    },
+    {
+      "sl_no": 113,
+      "code": "9068",
+      "particulars": "CIRCULAR PILOT CEILING ROSE (PC)",
+      "pkg_outer": null,
+      "master": null,
+      "rate_dlp": 37.0
+    },
+    {
+      "sl_no": 114,
+      "code": "9071",
+      "particulars": "CIRCULAR PILOT CEILING ROSE (PC)",
+      "pkg_outer": 30,
+      "master": 600,
+      "rate_dlp": 48.0
+    },
+    {
+      "sl_no": 115,
+      "code": "9081",
+      "particulars": "SQUARE ANGLE HOLDER",
+      "pkg_outer": 15,
+      "master": 300,
+      "rate_dlp": 74.94
+    },
+    {
+      "sl_no": 116,
+      "code": "9082",
+      "particulars": "SQUARE BATTEN HOLDER",
+      "pkg_outer": 15,
+      "master": 300,
+      "rate_dlp": 74.94
+    },
+    {
+      "sl_no": 117,
+      "code": "9083",
+      "particulars": "SQUARE PILOT CEILING ROSE (PC)",
+      "pkg_outer": 20,
+      "master": 600,
+      "rate_dlp": 76.0
+    },
+    {
+      "sl_no": 118,
+      "code": "9084",
+      "particulars": "GIO SQAURE ANGLE HOLDER",
+      "pkg_outer": 15,
+      "master": 300,
+      "rate_dlp": 74.94
+    },
+    {
+      "sl_no": 119,
+      "code": "9085",
+      "particulars": "GIO SQUARE BATTEN HOLDER",
+      "pkg_outer": 15,
+      "master": 300,
+      "rate_dlp": 74.94
+    },
+    {
+      "sl_no": 120,
+      "code": "9086",
+      "particulars": "5X5 SQUARE ANGLE HOLDER",
+      "pkg_outer": 20,
+      "master": 400,
+      "rate_dlp": 74.94
+    },
+    {
+      "sl_no": 121,
+      "code": "9087",
+      "particulars": "5X5 SQUARE BATTEN HOLDER",
+      "pkg_outer": 20,
+      "master": 400,
+      "rate_dlp": 74.94
+    },
+    {
+      "sl_no": 122,
+      "code": "9095",
+      "particulars": "5X5 SQUARE BLANK PLATE",
+      "pkg_outer": 30,
+      "master": 600,
+      "rate_dlp": 50.0
+    },
+    {
+      "sl_no": 123,
+      "code": "9088",
+      "particulars": "TWIST ANGLE HOLDER",
+      "pkg_outer": 15,
+      "master": 300,
+      "rate_dlp": 71.78
+    },
+    {
+      "sl_no": 124,
+      "code": "9089",
+      "particulars": "TWIST BATTEN HOLDER",
+      "pkg_outer": 15,
+      "master": 300,
+      "rate_dlp": 71.78
+    },
+    {
+      "sl_no": 125,
+      "code": "9090",
+      "particulars": "TWIST PILOT CEILING ROSE",
+      "pkg_outer": 30,
+      "master": 600,
+      "rate_dlp": 72.22
+    },
+    {
+      "sl_no": 126,
+      "code": "9091",
+      "particulars": "WIRE LINK 5 MTRS",
+      "pkg_outer": 10,
+      "master": 160,
+      "rate_dlp": 184.0
+    },
+    {
+      "sl_no": 127,
+      "code": "9098",
+      "particulars": "ROUND FAN JUNCTION PLATE (6.25 INCH)",
+      "pkg_outer": 25,
+      "master": 400,
+      "rate_dlp": 66.0
+    },
+    {
+      "sl_no": 128,
+      "code": "9099",
+      "particulars": "ROUND BATTEN HOLDER",
+      "pkg_outer": 10,
+      "master": 200,
+      "rate_dlp": 99.0
+    },
+    {
+      "sl_no": 129,
+      "code": "V4002",
+      "particulars": "CUBE WOOD PLATE 4.5 X 6.5",
+      "pkg_outer": 10,
+      "master": 480,
+      "rate_dlp": 89.0
+    },
+    {
+      "sl_no": 130,
+      "code": "9008",
+      "particulars": "HEXA DING DONG BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 211.0
+    },
+    {
+      "sl_no": 131,
+      "code": "9009",
+      "particulars": "ETOS DING DONG BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 245.0
+    },
+    {
+      "sl_no": 132,
+      "code": "9010",
+      "particulars": "PEARL DING DONG BELL",
+      "pkg_outer": 5,
+      "master": 100,
+      "rate_dlp": 211.0
+    },
+    {
+      "sl_no": 133,
+      "code": "8095",
+      "particulars": "PRIZMA 16A 3 PIN FLEX BOX (3.5 MTRS)",
+      "pkg_outer": 1,
+      "master": 30,
+      "rate_dlp": 1055.0
+    },
+    {
+      "sl_no": 134,
+      "code": "8131",
+      "particulars": "SHINE NIGHT LAMP (PARASWANATH)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 226.0
+    },
+    {
+      "sl_no": 135,
+      "code": "8132",
+      "particulars": "SHINE NIGHT LAMP (GANESHA)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 226.0
+    },
+    {
+      "sl_no": 136,
+      "code": "8133",
+      "particulars": "SHINE NIGHT LAMP (MAHALAKSHMI)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 226.0
+    },
+    {
+      "sl_no": 137,
+      "code": "8134",
+      "particulars": "SHINE NIGHT LAMP (TIRUPATI BALAJI)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 226.0
+    },
+    {
+      "sl_no": 138,
+      "code": "8135",
+      "particulars": "SHINE NIGHT LAMP (KRISHNA)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 226.0
+    },
+    {
+      "sl_no": 139,
+      "code": "8136",
+      "particulars": "SHINE NIGHT LAMP (SHIVJI)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 226.0
+    },
+    {
+      "sl_no": 140,
+      "code": "8137",
+      "particulars": "SHINE NIGHT LAMP (AMBE MATA)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 226.0
+    },
+    {
+      "sl_no": 141,
+      "code": "8138",
+      "particulars": "SHINE NIGHT LAMP (HANUMAN)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 226.0
+    },
+    {
+      "sl_no": 142,
+      "code": "8139",
+      "particulars": "SHINE NIGHT LAMP (GURU NANAK)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 226.0
+    },
+    {
+      "sl_no": 143,
+      "code": "8140",
+      "particulars": "SHINE NIGHT LAMP (AZAAN)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 226.0
+    },
+    {
+      "sl_no": 144,
+      "code": "8141",
+      "particulars": "SHINE NIGHT LAMP (JESUS CHRIST)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 226.0
+    },
+    {
+      "sl_no": 145,
+      "code": "8142",
+      "particulars": "SHINE NIGHT LAMP (SAI BABA)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 226.0
+    },
+    {
+      "sl_no": 146,
+      "code": "8146",
+      "particulars": "GLOW NIGHT LAMP (GANESH MANTRA)",
+      "pkg_outer": 10,
+      "master": 300,
+      "rate_dlp": 226.0
+    }
+  ]
+}

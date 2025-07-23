@@ -1,0 +1,620 @@
+{
+  "WOODEM PLATES PRICELIST - 01.04.2025": {
+    "AIR": [
+      {
+        "No.": 1,
+        "CODE": "W50001",
+        "Particulars": "1M",
+        "PKG OUTER": 10,
+        "MASTER": 600,
+        "BASIC GREEN/ WHITE/ GREY": 64,
+        "PLATINUM CHROME": 120,
+        "AFRICAN WENGE/ ITALIAN WALNUT": 131
+      },
+      {
+        "No.": 2,
+        "CODE": "W50002",
+        "Particulars": "2M",
+        "PKG OUTER": 10,
+        "MASTER": 600,
+        "BASIC GREEN/ WHITE/ GREY": 64,
+        "PLATINUM CHROME": 120,
+        "AFRICAN WENGE/ ITALIAN WALNUT": 131
+      },
+      {
+        "No.": 3,
+        "CODE": "W50003",
+        "Particulars": "3M",
+        "PKG OUTER": 10,
+        "MASTER": 600,
+        "BASIC GREEN/ WHITE/ GREY": 79,
+        "PLATINUM CHROME": 160,
+        "AFRICAN WENGE/ ITALIAN WALNUT": 176
+      },
+      {
+        "No.": 4,
+        "CODE": "W50004",
+        "Particulars": "4M",
+        "PKG OUTER": 10,
+        "MASTER": 450,
+        "BASIC GREEN/ WHITE/ GREY": 90.25,
+        "PLATINUM CHROME": 176,
+        "AFRICAN WENGE/ ITALIAN WALNUT": 204
+      },
+      {
+        "No.": 5,
+        "CODE": "W50005",
+        "Particulars": "6M",
+        "PKG OUTER": 10,
+        "MASTER": 300,
+        "BASIC GREEN/ WHITE/ GREY": 131.1,
+        "PLATINUM CHROME": 243,
+        "AFRICAN WENGE/ ITALIAN WALNUT": 266
+      },
+      {
+        "No.": 6,
+        "CODE": "W50006",
+        "Particulars": "8M (H)",
+        "PKG OUTER": 10,
+        "MASTER": 300,
+        "BASIC GREEN/ WHITE/ GREY": 166.25,
+        "PLATINUM CHROME": 329,
+        "AFRICAN WENGE/ ITALIAN WALNUT": 365
+      },
+      {
+        "No.": 7,
+        "CODE": "W50007",
+        "Particulars": "8M (V)",
+        "PKG OUTER": 10,
+        "MASTER": 270,
+        "BASIC GREEN/ WHITE/ GREY": 166.25,
+        "PLATINUM CHROME": 329,
+        "AFRICAN WENGE/ ITALIAN WALNUT": 365
+      },
+      {
+        "No.": 8,
+        "CODE": "W50012",
+        "Particulars": "12M",
+        "PKG OUTER": 10,
+        "MASTER": 240,
+        "BASIC GREEN/ WHITE/ GREY": 203.3,
+        "PLATINUM CHROME": 409,
+        "AFRICAN WENGE/ ITALIAN WALNUT": 501
+      },
+      {
+        "No.": 9,
+        "CODE": "W50010",
+        "Particulars": "16M",
+        "PKG OUTER": 10,
+        "MASTER": 200,
+        "BASIC GREEN/ WHITE/ GREY": 234,
+        "PLATINUM CHROME": 468,
+        "AFRICAN WENGE/ ITALIAN WALNUT": 534
+      },
+      {
+        "No.": 10,
+        "CODE": "W50009",
+        "Particulars": "18M",
+        "PKG OUTER": 10,
+        "MASTER": 160,
+        "BASIC GREEN/ WHITE/ GREY": 263,
+        "PLATINUM CHROME": 479,
+        "AFRICAN WENGE/ ITALIAN WALNUT": 559
+      }
+    ],
+    "ARROW": [
+      {
+        "No.": 1,
+        "CODE": "W70001",
+        "Particulars": "1M",
+        "PKG OUTER": 10,
+        "MASTER": 600,
+        "BASIC WHITE": 64,
+        "BASIC PREMIUM": 73,
+        "MYSTIC COPPER/ MYSTIC CHROME/ MATTY BLACK": 120,
+        "ITALIAN WALNUT": 131
+      },
+      {
+        "No.": 2,
+        "CODE": "W70002",
+        "Particulars": "2M",
+        "PKG OUTER": 10,
+        "MASTER": 600,
+        "BASIC WHITE": 64,
+        "BASIC PREMIUM": 73,
+        "MYSTIC COPPER/ MYSTIC CHROME/ MATTY BLACK": 120,
+        "ITALIAN WALNUT": 131
+      },
+      {
+        "No.": 3,
+        "CODE": "W70003",
+        "Particulars": "3M",
+        "PKG OUTER": 10,
+        "MASTER": 600,
+        "BASIC WHITE": 79,
+        "BASIC PREMIUM": 88,
+        "MYSTIC COPPER/ MYSTIC CHROME/ MATTY BLACK": 160,
+        "ITALIAN WALNUT": 176
+      },
+      {
+        "No.": 4,
+        "CODE": "W70004",
+        "Particulars": "4M",
+        "PKG OUTER": 10,
+        "MASTER": 450,
+        "BASIC WHITE": 90.25,
+        "BASIC PREMIUM": 100,
+        "MYSTIC COPPER/ MYSTIC CHROME/ MATTY BLACK": 176,
+        "ITALIAN WALNUT": 204
+      },
+      {
+        "No.": 5,
+        "CODE": "W70005",
+        "Particulars": "6M",
+        "PKG OUTER": 10,
+        "MASTER": 300,
+        "BASIC WHITE": 131.1,
+        "BASIC PREMIUM": 150,
+        "MYSTIC COPPER/ MYSTIC CHROME/ MATTY BLACK": 243,
+        "ITALIAN WALNUT": 266
+      },
+      {
+        "No.": 6,
+        "CODE": "W70006",
+        "Particulars": "8M (H)",
+        "PKG OUTER": 10,
+        "MASTER": 300,
+        "BASIC WHITE": 166.25,
+        "BASIC PREMIUM": 184,
+        "MYSTIC COPPER/ MYSTIC CHROME/ MATTY BLACK": 329,
+        "ITALIAN WALNUT": 365
+      },
+      {
+        "No.": 7,
+        "CODE": "W70007",
+        "Particulars": "8M (V)",
+        "PKG OUTER": 10,
+        "MASTER": 270,
+        "BASIC WHITE": 166.25,
+        "BASIC PREMIUM": 184,
+        "MYSTIC COPPER/ MYSTIC CHROME/ MATTY BLACK": 329,
+        "ITALIAN WALNUT": 365
+      },
+      {
+        "No.": 8,
+        "CODE": "W70008",
+        "Particulars": "12M",
+        "PKG OUTER": 10,
+        "MASTER": 240,
+        "BASIC WHITE": 203.3,
+        "BASIC PREMIUM": 250,
+        "MYSTIC COPPER/ MYSTIC CHROME/ MATTY BLACK": 409,
+        "ITALIAN WALNUT": 501
+      },
+      {
+        "No.": 9,
+        "CODE": "W70010",
+        "Particulars": "16M",
+        "PKG OUTER": 10,
+        "MASTER": 200,
+        "BASIC WHITE": 234,
+        "BASIC PREMIUM": 283,
+        "MYSTIC COPPER/ MYSTIC CHROME/ MATTY BLACK": 468,
+        "ITALIAN WALNUT": 534
+      },
+      {
+        "No.": 10,
+        "CODE": "W70009",
+        "Particulars": "18M",
+        "PKG OUTER": 10,
+        "MASTER": 160,
+        "BASIC WHITE": 263,
+        "BASIC PREMIUM": 287,
+        "MYSTIC COPPER/ MYSTIC CHROME/ MATTY BLACK": 479,
+        "ITALIAN WALNUT": 559
+      }
+    ],
+    "ALPHA ACRYLIC": [
+      {
+        "No.": 1,
+        "CODE": "W70051",
+        "Particulars": "1M",
+        "PKG OUTER": 10,
+        "MASTER": 180,
+        "POLAR WHITE/ THUNDER CHROME/ GALAXY BLUE/ DEEP MAROON/ SPACE BLACK/WARM TAN RATE": 238
+      },
+      {
+        "No.": 2,
+        "CODE": "W70052",
+        "Particulars": "2M",
+        "PKG OUTER": 10,
+        "MASTER": 180,
+        "POLAR WHITE/ THUNDER CHROME/ GALAXY BLUE/ DEEP MAROON/ SPACE BLACK/WARM TAN RATE": 238
+      },
+      {
+        "No.": 3,
+        "CODE": "W70053",
+        "Particulars": "3M",
+        "PKG OUTER": 10,
+        "MASTER": 180,
+        "POLAR WHITE/ THUNDER CHROME/ GALAXY BLUE/ DEEP MAROON/ SPACE BLACK/WARM TAN RATE": 307
+      },
+      {
+        "No.": 4,
+        "CODE": "W70054",
+        "Particulars": "4M",
+        "PKG OUTER": 10,
+        "MASTER": 180,
+        "POLAR WHITE/ THUNDER CHROME/ GALAXY BLUE/ DEEP MAROON/ SPACE BLACK/WARM TAN RATE": 355
+      },
+      {
+        "No.": 5,
+        "CODE": "W70055",
+        "Particulars": "6M",
+        "PKG OUTER": 5,
+        "MASTER": 90,
+        "POLAR WHITE/ THUNDER CHROME/ GALAXY BLUE/ DEEP MAROON/ SPACE BLACK/WARM TAN RATE": 472
+      },
+      {
+        "No.": 6,
+        "CODE": "W70056",
+        "Particulars": "8M (H)",
+        "PKG OUTER": 5,
+        "MASTER": 90,
+        "POLAR WHITE/ THUNDER CHROME/ GALAXY BLUE/ DEEP MAROON/ SPACE BLACK/WARM TAN RATE": 567
+      },
+      {
+        "No.": 7,
+        "CODE": "W70057",
+        "Particulars": "8M (V)",
+        "PKG OUTER": 5,
+        "MASTER": 90,
+        "POLAR WHITE/ THUNDER CHROME/ GALAXY BLUE/ DEEP MAROON/ SPACE BLACK/WARM TAN RATE": 567
+      },
+      {
+        "No.": 8,
+        "CODE": "W70058",
+        "Particulars": "12M",
+        "PKG OUTER": 5,
+        "MASTER": 60,
+        "POLAR WHITE/ THUNDER CHROME/ GALAXY BLUE/ DEEP MAROON/ SPACE BLACK/WARM TAN RATE": 708
+      },
+      {
+        "No.": 9,
+        "CODE": "W70059",
+        "Particulars": "16M",
+        "PKG OUTER": 5,
+        "MASTER": 40,
+        "POLAR WHITE/ THUNDER CHROME/ GALAXY BLUE/ DEEP MAROON/ SPACE BLACK/WARM TAN RATE": 802
+      },
+      {
+        "No.": 10,
+        "CODE": "W70060",
+        "Particulars": "18M",
+        "PKG OUTER": 5,
+        "MASTER": 40,
+        "POLAR WHITE/ THUNDER CHROME/ GALAXY BLUE/ DEEP MAROON/ SPACE BLACK/WARM TAN RATE": 896
+      }
+    ],
+    "ASTRA": [
+      {
+        "No.": 1,
+        "CODE": "W30051",
+        "Particulars": "1M",
+        "PKG OUTER": 10,
+        "MASTER": 600,
+        "BASIC WHITE": 64
+      },
+      {
+        "No.": 2,
+        "CODE": "W30052",
+        "Particulars": "2M",
+        "PKG OUTER": 10,
+        "MASTER": 600,
+        "BASIC WHITE": 64
+      },
+      {
+        "No.": 3,
+        "CODE": "W30053",
+        "Particulars": "3M",
+        "PKG OUTER": 10,
+        "MASTER": 600,
+        "BASIC WHITE": 79
+      },
+      {
+        "No.": 4,
+        "CODE": "W30054",
+        "Particulars": "4M",
+        "PKG OUTER": 10,
+        "MASTER": 450,
+        "BASIC WHITE": 90.25
+      },
+      {
+        "No.": 5,
+        "CODE": "W30055",
+        "Particulars": "6M",
+        "PKG OUTER": 10,
+        "MASTER": 300,
+        "BASIC WHITE": 131.1
+      },
+      {
+        "No.": 6,
+        "CODE": "W30056",
+        "Particulars": "8M (H)",
+        "PKG OUTER": 10,
+        "MASTER": 300,
+        "BASIC WHITE": 166.25
+      },
+      {
+        "No.": 7,
+        "CODE": "W30057",
+        "Particulars": "8M (V)",
+        "PKG OUTER": 10,
+        "MASTER": 270,
+        "BASIC WHITE": 166.25
+      },
+      {
+        "No.": 8,
+        "CODE": "W30058",
+        "Particulars": "12M",
+        "PKG OUTER": 10,
+        "MASTER": 240,
+        "BASIC WHITE": 203.3
+      },
+      {
+        "No.": 9,
+        "CODE": "W30060",
+        "Particulars": "16M",
+        "PKG OUTER": 10,
+        "MASTER": 200,
+        "BASIC WHITE": 234
+      },
+      {
+        "No.": 10,
+        "CODE": "W30059",
+        "Particulars": "18M",
+        "PKG OUTER": 10,
+        "MASTER": 160,
+        "BASIC WHITE": 263
+      }
+    ],
+    "AXEL": [
+      {
+        "No.": 1,
+        "CODE": "W30071",
+        "Particulars": "1M",
+        "PKG OUTER": 10,
+        "MASTER": 600,
+        "BASIC GREEN": 64
+      },
+      {
+        "No.": 2,
+        "CODE": "W30072",
+        "Particulars": "2M",
+        "PKG OUTER": 10,
+        "MASTER": 600,
+        "BASIC GREEN": 64
+      },
+      {
+        "No.": 3,
+        "CODE": "W30073",
+        "Particulars": "3M",
+        "PKG OUTER": 10,
+        "MASTER": 600,
+        "BASIC GREEN": 79
+      },
+      {
+        "No.": 4,
+        "CODE": "W30074",
+        "Particulars": "4M",
+        "PKG OUTER": 10,
+        "MASTER": 450,
+        "BASIC GREEN": 90.25
+      },
+      {
+        "No.": 5,
+        "CODE": "W30075",
+        "Particulars": "6M",
+        "PKG OUTER": 10,
+        "MASTER": 300,
+        "BASIC GREEN": 131.1
+      },
+      {
+        "No.": 6,
+        "CODE": "W30076",
+        "Particulars": "8M (H)",
+        "PKG OUTER": 10,
+        "MASTER": 300,
+        "BASIC GREEN": 166.25
+      },
+      {
+        "No.": 7,
+        "CODE": "W30077",
+        "Particulars": "8M (V)",
+        "PKG OUTER": 10,
+        "MASTER": 270,
+        "BASIC GREEN": 166.25
+      },
+      {
+        "No.": 8,
+        "CODE": "W30078",
+        "Particulars": "12M",
+        "PKG OUTER": 10,
+        "MASTER": 240,
+        "BASIC GREEN": 203.3
+      },
+      {
+        "No.": 9,
+        "CODE": "W30079",
+        "Particulars": "16M",
+        "PKG OUTER": 10,
+        "MASTER": 200,
+        "BASIC GREEN": 234
+      },
+      {
+        "No.": 10,
+        "CODE": "W30080",
+        "Particulars": "18M",
+        "PKG OUTER": 10,
+        "MASTER": 160,
+        "BASIC GREEN": 263
+      }
+    ],
+    "A NINE": [
+      {
+        "No.": 1,
+        "CODE": "W60001",
+        "Particulars": "1M",
+        "PKG OUTER": 10,
+        "MASTER": 480,
+        "BASIC IVORY/ WHITE/ GREEN": 79,
+        "BASIC PREMIUM WHITE": 91
+      },
+      {
+        "No.": 2,
+        "CODE": "W60002",
+        "Particulars": "2M",
+        "PKG OUTER": 10,
+        "MASTER": 480,
+        "BASIC IVORY/ WHITE/ GREEN": 79,
+        "BASIC PREMIUM WHITE": 91
+      },
+      {
+        "No.": 3,
+        "CODE": "W60003",
+        "Particulars": "3M",
+        "PKG OUTER": 10,
+        "MASTER": 360,
+        "BASIC IVORY/ WHITE/ GREEN": 93,
+        "BASIC PREMIUM WHITE": 116
+      },
+      {
+        "No.": 4,
+        "CODE": "W60004",
+        "Particulars": "4M",
+        "PKG OUTER": 10,
+        "MASTER": 240,
+        "BASIC IVORY/ WHITE/ GREEN": 122,
+        "BASIC PREMIUM WHITE": 144
+      },
+      {
+        "No.": 5,
+        "CODE": "W60005",
+        "Particulars": "6M",
+        "PKG OUTER": 10,
+        "MASTER": 240,
+        "BASIC IVORY/ WHITE/ GREEN": 143,
+        "BASIC PREMIUM WHITE": 174
+      },
+      {
+        "No.": 6,
+        "CODE": "W60006",
+        "Particulars": "8M (W/P)",
+        "PKG OUTER": 10,
+        "MASTER": 240,
+        "BASIC IVORY/ WHITE/ GREEN": 171,
+        "BASIC PREMIUM WHITE": 213
+      },
+      {
+        "No.": 7,
+        "CODE": "W60007",
+        "Particulars": "8M (H)",
+        "PKG OUTER": 10,
+        "MASTER": 240,
+        "BASIC IVORY/ WHITE/ GREEN": 171,
+        "BASIC PREMIUM WHITE": 213
+      },
+      {
+        "No.": 8,
+        "CODE": "W60016",
+        "Particulars": "8M (V)",
+        "PKG OUTER": 10,
+        "MASTER": 240,
+        "BASIC IVORY/ WHITE/ GREEN": 171,
+        "BASIC PREMIUM WHITE": 213
+      },
+      {
+        "No.": 9,
+        "CODE": "W60008",
+        "Particulars": "10M",
+        "PKG OUTER": 10,
+        "MASTER": 200,
+        "BASIC IVORY/ WHITE/ GREEN": 193,
+        "BASIC PREMIUM WHITE": 249
+      },
+      {
+        "No.": 10,
+        "CODE": "W60009",
+        "Particulars": "12M (V)",
+        "PKG OUTER": 10,
+        "MASTER": 180,
+        "BASIC IVORY/ WHITE/ GREEN": 208,
+        "BASIC PREMIUM WHITE": 278
+      },
+      {
+        "No.": 11,
+        "CODE": "W60017",
+        "Particulars": "12M (H)",
+        "PKG OUTER": 10,
+        "MASTER": 100,
+        "BASIC IVORY/ WHITE/ GREEN": 208,
+        "BASIC PREMIUM WHITE": 278
+      },
+      {
+        "No.": 12,
+        "CODE": "W60012",
+        "Particulars": "12M (H&V)",
+        "PKG OUTER": 10,
+        "MASTER": 180,
+        "BASIC IVORY/ WHITE/ GREEN": 301,
+        "BASIC PREMIUM WHITE": 379
+      },
+      {
+        "No.": 13,
+        "CODE": "W60010",
+        "Particulars": "16M",
+        "PKG OUTER": 10,
+        "MASTER": 180,
+        "BASIC IVORY/ WHITE/ GREEN": 238,
+        "BASIC PREMIUM WHITE": 308
+      },
+      {
+        "No.": 14,
+        "CODE": "W60011",
+        "Particulars": "18M (H)",
+        "PKG OUTER": 10,
+        "MASTER": 100,
+        "BASIC IVORY/ WHITE/ GREEN": 274,
+        "BASIC PREMIUM WHITE": 364
+      },
+      {
+        "No.": 15,
+        "CODE": "W60013",
+        "Particulars": "18M (V)",
+        "PKG OUTER": 10,
+        "MASTER": 100,
+        "BASIC IVORY/ WHITE/ GREEN": 274,
+        "BASIC PREMIUM WHITE": 364
+      },
+      {
+        "No.": 16,
+        "CODE": "W60014",
+        "Particulars": "20M",
+        "PKG OUTER": 10,
+        "MASTER": 120,
+        "BASIC IVORY/ WHITE/ GREEN": 326,
+        "BASIC PREMIUM WHITE": 429
+      },
+      {
+        "No.": 17,
+        "CODE": "W60015",
+        "Particulars": "24M",
+        "PKG OUTER": 10,
+        "MASTER": 100,
+        "BASIC IVORY/ WHITE/ GREEN": 380,
+        "BASIC PREMIUM WHITE": 477
+      }
+    ],
+    "Note": "*** Please note that the products mentioned in this price list will be maintained with us in stock. Any other product from the catalogue apart from this price list will not be available."
+  }
+}

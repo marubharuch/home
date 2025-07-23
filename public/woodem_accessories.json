@@ -1,0 +1,1230 @@
+
+
+
+
+[
+  {
+    "No":1,
+    "Code":"W10001WH",
+    "Particulars":"10 AMP RAZE 1WAY SWITCH  1 M (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":27.4,
+    "ChromeBlackRate":35.9
+  },
+  {
+    "No":2,
+    "Code":"W10002WH",
+    "Particulars":"10 AMP RAZE 2WAY SWITCH  1 M (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":75,
+    "ChromeBlackRate":88
+  },
+  {
+    "No":3,
+    "Code":"W10004WH",
+    "Particulars":"10 AMP RAZE  BELL PUSH 1 M (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":79,
+    "ChromeBlackRate":92
+  },
+  {
+    "No":4,
+    "Code":"W10008WH",
+    "Particulars":"10 AMP RAZE 1 WAY SWITCH WITH INDICATOR  2 M  (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":96,
+    "ChromeBlackRate":116
+  },
+  {
+    "No":5,
+    "Code":"W10009WH",
+    "Particulars":"10 AMP RAZE  BELL PUSH 2 M  (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":96,
+    "ChromeBlackRate":116
+  },
+  {
+    "No":6,
+    "Code":"W10011WH",
+    "Particulars":"20 AMP RAZE 1 WAY SWITCH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":82.65,
+    "ChromeBlackRate":94
+  },
+  {
+    "No":7,
+    "Code":"W10012WH",
+    "Particulars":"20 AMP RAZE 2 WAY SWITCH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":107,
+    "ChromeBlackRate":120
+  },
+  {
+    "No":8,
+    "Code":"W10013WH",
+    "Particulars":"20 AMP RAZE  1 WAY SWITCH WITH INDICATOR 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":97.85,
+    "ChromeBlackRate":108
+  },
+  {
+    "No":9,
+    "Code":"W10067WH",
+    "Particulars":"20 AMP RAZE  1 WAY SWITCH (PORCELAIN) 1 M (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":85,
+    "ChromeBlackRate":94
+  },
+  {
+    "No":10,
+    "Code":"W10014WH",
+    "Particulars":"20 AMP RAZE  1 WAY SWITCH 2 M  (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":113,
+    "ChromeBlackRate":133
+  },
+  {
+    "No":11,
+    "Code":"W10016WH",
+    "Particulars":"20 AMP RAZE 1 WAY SWITCH WITH INDICATOR 2 M  (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":120,
+    "ChromeBlackRate":139
+  },
+  {
+    "No":12,
+    "Code":"W10017WH",
+    "Particulars":"25 AMP RAZE 1 WAY SWITCH WITH INDICATOR 1 M  (WH)",
+    "PkgOuter":null,
+    "Master":null,
+    "WhiteRate":190,
+    "ChromeBlackRate":204
+  },
+  {
+    "No":13,
+    "Code":"W10018WH",
+    "Particulars":"32 AMP RAZE 1 WAY DP SWITCH WITH INDICATOR  (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":229,
+    "ChromeBlackRate":250
+  },
+  {
+    "No":14,
+    "Code":"W20051WH",
+    "Particulars":"10 AMP ARC 1 WAY SWITCH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":27.4,
+    "ChromeBlackRate":35.9
+  },
+  {
+    "No":15,
+    "Code":"W20052WH",
+    "Particulars":"10 AMP ARC 2 WAY SWITCH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":82,
+    "ChromeBlackRate":95
+  },
+  {
+    "No":16,
+    "Code":"W20053WH",
+    "Particulars":"10 AMP ARC 1 WAY SWITCH WITH INDICATOR  1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":87,
+    "ChromeBlackRate":100
+  },
+  {
+    "No":17,
+    "Code":"W20054WH",
+    "Particulars":"10 AMP ARC BELL PUSH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":87,
+    "ChromeBlackRate":100
+  },
+  {
+    "No":18,
+    "Code":"W20061WH",
+    "Particulars":"20 AMP ARC 1 WAY SWITCH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":92.15,
+    "ChromeBlackRate":102
+  },
+  {
+    "No":19,
+    "Code":"W90001WH",
+    "Particulars":"10 AMP PLANA 1 WAY SWITCH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":27.4,
+    "ChromeBlackRate":35.9
+  },
+  {
+    "No":20,
+    "Code":"W90002WH",
+    "Particulars":"10 AMP PLANA 2 WAY SWITCH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":82,
+    "ChromeBlackRate":95
+  },
+  {
+    "No":21,
+    "Code":"W90004WH",
+    "Particulars":"10 AMP PLANA BELL PUSH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":87,
+    "ChromeBlackRate":100
+  },
+  {
+    "No":22,
+    "Code":"W90008WH",
+    "Particulars":"10 AMP PLANA BELL PUSH WITH INDICATOR 2 M  (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":116,
+    "ChromeBlackRate":136
+  },
+  {
+    "No":23,
+    "Code":"W90009WH",
+    "Particulars":"20 AMP PLANA 1 WAY SWITCH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":92.15,
+    "ChromeBlackRate":102
+  },
+  {
+    "No":24,
+    "Code":"W90010WH",
+    "Particulars":"20 AMP PLANA 2 WAY SWITCH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":114,
+    "ChromeBlackRate":128
+  },
+  {
+    "No":25,
+    "Code":"W90011WH",
+    "Particulars":"20 AMP PLANA 1 WAY SWITCH WITH INDICATOR  1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":104.5,
+    "ChromeBlackRate":115
+  },
+  {
+    "No":26,
+    "Code":"W90012WH",
+    "Particulars":"20 AMP PLANA 1 WAY SWITCH 2 M  (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":125,
+    "ChromeBlackRate":143
+  },
+  {
+    "No":27,
+    "Code":"W90013WH",
+    "Particulars":"20 AMP PLANA 2 WAY SWITCH 2 M  (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":133,
+    "ChromeBlackRate":153
+  },
+  {
+    "No":28,
+    "Code":"W90014WH",
+    "Particulars":"20 AMP PLANA 1 WAY SWITCH WITH INDICATOR 2 M  (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":133,
+    "ChromeBlackRate":153
+  },
+  {
+    "No":29,
+    "Code":"W90015WH",
+    "Particulars":"32 AMP PLANA 1 WAY DP SWITCH WITH INDICATOR  2M (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":254,
+    "ChromeBlackRate":273
+  },
+  {
+    "No":30,
+    "Code":"W80001WH",
+    "Particulars":"10 AMP AURA 1 WAY SWITCH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":27.4,
+    "ChromeBlackRate":35.9
+  },
+  {
+    "No":31,
+    "Code":"W80002WH",
+    "Particulars":"10 AMP AURA 2 WAY SWITCH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":82,
+    "ChromeBlackRate":101
+  },
+  {
+    "No":32,
+    "Code":"W80004WH",
+    "Particulars":"10 AMP AURA BELL PUSH 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":87,
+    "ChromeBlackRate":107
+  },
+  {
+    "No":33,
+    "Code":"W80005WH",
+    "Particulars":"10 AMP AURA BELL PUSH WITH INDICATOR 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":95,
+    "ChromeBlackRate":113
+  },
+  {
+    "No":34,
+    "Code":"W80011WH",
+    "Particulars":"20 AMP AURA 1 WAY SWITCH  1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":92.15,
+    "ChromeBlackRate":109
+  },
+  {
+    "No":35,
+    "Code":"W80013WH",
+    "Particulars":"20 AMP AURA 1 WAY SWITCH WITH INDICATOR  1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":104.5,
+    "ChromeBlackRate":129
+  },
+  {
+    "No":36,
+    "Code":"W80051WH",
+    "Particulars":"CHARM 10A 1WAY SWITCH (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":28.56,
+    "ChromeBlackRate":35.92
+  },
+  {
+    "No":37,
+    "Code":"W80052WH",
+    "Particulars":"CHARM 10A 2WAY SWITCH (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":82,
+    "ChromeBlackRate":95
+  },
+  {
+    "No":38,
+    "Code":"W80054WH",
+    "Particulars":"CHARM 10A BELL PUSH SWITCH  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":87,
+    "ChromeBlackRate":100
+  },
+  {
+    "No":39,
+    "Code":"W80059WH",
+    "Particulars":"CHARM 10A GAMA BELL PUSH SWITCH (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":110,
+    "ChromeBlackRate":129
+  },
+  {
+    "No":40,
+    "Code":"W80061WH",
+    "Particulars":"CHARM 20A 1WAY SWITCH (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":92.15,
+    "ChromeBlackRate":102
+  },
+  {
+    "No":41,
+    "Code":"W80063WH",
+    "Particulars":"CHARM 20A 1WAY SWITCH WITH INDICATOR (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":104.5,
+    "ChromeBlackRate":115
+  },
+  {
+    "No":42,
+    "Code":"W80064WH",
+    "Particulars":"CHARM 20A GAMA 1WAY SWITCH (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":125,
+    "ChromeBlackRate":143
+  },
+  {
+    "No":43,
+    "Code":"W80067WH",
+    "Particulars":"CHARM 32DP SWITCH WITH INDICATOR (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":254,
+    "ChromeBlackRate":273
+  },
+  {
+    "No":44,
+    "Code":"W10019WH",
+    "Particulars":"6 AMP 2 PIN OUTLET WITH SAFETY  SHUTTER  1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":73,
+    "ChromeBlackRate":87
+  },
+  {
+    "No":45,
+    "Code":"W10020WH",
+    "Particulars":"6 AMP 2 IN 1 OUTLET  2 M  (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":55,
+    "ChromeBlackRate":64.55
+  },
+  {
+    "No":46,
+    "Code":"W10062WH",
+    "Particulars":"6A 3 Pin Socket Without Safety Shutter 2M (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":55,
+    "ChromeBlackRate":64.55
+  },
+  {
+    "No":47,
+    "Code":"W10022WH",
+    "Particulars":"13 AMP INTERNATIONAL OUTLET WITH SAFETY SHUTTER 2M (W",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":137,
+    "ChromeBlackRate":156
+  },
+  {
+    "No":48,
+    "Code":"W10023WH",
+    "Particulars":"6 AMP \/16 AMP UNIVERSAL SOCKET 2 M  (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":131.1,
+    "ChromeBlackRate":150
+  },
+  {
+    "No":49,
+    "Code":"W10024WH",
+    "Particulars":"6 & 25 AMP UNIVERSAL OUTLET WITH SAFETY  SHUTTER 2 M  (",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":175,
+    "ChromeBlackRate":196
+  },
+  {
+    "No":50,
+    "Code":"W10068WH",
+    "Particulars":"6 AMP \/16 AMP UNIVERSAL SOCKET 2 M PORCELAIN (WH)",
+    "PkgOuter":10,
+    "Master":300,
+    "WhiteRate":131.1,
+    "ChromeBlackRate":150
+  },
+  {
+    "No":51,
+    "Code":"W10027WH",
+    "Particulars":"GLAZE MEDIUM DIMMER 2 M  (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":288,
+    "ChromeBlackRate":306
+  },
+  {
+    "No":52,
+    "Code":"W10028WH",
+    "Particulars":"GLAZE EME 4 STEP FAN REGULATOR 1 M  (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":292.6,
+    "ChromeBlackRate":313
+  },
+  {
+    "No":53,
+    "Code":"W10029WH",
+    "Particulars":"GLAZE EME 5 STEP FAN REGULATOR 2 M  (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":323,
+    "ChromeBlackRate":347
+  },
+  {
+    "No":54,
+    "Code":"W10053WH",
+    "Particulars":"EME 5 STEP WEGA FAN REGULATOR FULL ROTARY 2M (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":323,
+    "ChromeBlackRate":347
+  },
+  {
+    "No":55,
+    "Code":"W10056WH",
+    "Particulars":"CRYSTAL 4 STEP FAN REGULATOR 1 M (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":292.6,
+    "ChromeBlackRate":313
+  },
+  {
+    "No":56,
+    "Code":"W10057WH",
+    "Particulars":"CRYSTAL 5 STEP FAN REGULATOR 2 M (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":323,
+    "ChromeBlackRate":347
+  },
+  {
+    "No":57,
+    "Code":"W10072WH",
+    "Particulars":"CRYSTAL 8 STEP FAN REGULATOR FULL ROTARY (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":336,
+    "ChromeBlackRate":358
+  },
+  {
+    "No":58,
+    "Code":"W10030WH",
+    "Particulars":"NEON INDICATOR 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":67,
+    "ChromeBlackRate":81
+  },
+  {
+    "No":59,
+    "Code":"W10031WH",
+    "Particulars":"MINI TV ANTENNA 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":86,
+    "ChromeBlackRate":98
+  },
+  {
+    "No":60,
+    "Code":"W10032WH",
+    "Particulars":"KITKAT FUSE 1 M  (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":98,
+    "ChromeBlackRate":111
+  },
+  {
+    "No":61,
+    "Code":"W10052WH",
+    "Particulars":"USB CHARGER 1 M  (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":590,
+    "ChromeBlackRate":602
+  },
+  {
+    "No":62,
+    "Code":"W10070WH",
+    "Particulars":"USB CHARGER 2 PORT C-TYPE & A-TYPE (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":1122,
+    "ChromeBlackRate":1135
+  },
+  {
+    "No":63,
+    "Code":"W10071WH",
+    "Particulars":"USB CHARGER C-TYPE (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":917,
+    "ChromeBlackRate":930
+  },
+  {
+    "No":64,
+    "Code":"W10033WH",
+    "Particulars":"TELEPHONE JACK SINGLE WITH SHUTTER 1M (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":93,
+    "ChromeBlackRate":106
+  },
+  {
+    "No":65,
+    "Code":"W10035WH",
+    "Particulars":"COMPUTER JACK WITH SHUTTER 2 M (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":150,
+    "ChromeBlackRate":170
+  },
+  {
+    "No":66,
+    "Code":"W10037WH",
+    "Particulars":"BLANK PLATE SINGLE 1M (WH)",
+    "PkgOuter":50,
+    "Master":3000,
+    "WhiteRate":17,
+    "ChromeBlackRate":20
+  },
+  {
+    "No":67,
+    "Code":"W10074WH",
+    "Particulars":"TELEPHONE JACK - RJ 11 (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":93,
+    "ChromeBlackRate":106
+  },
+  {
+    "No":68,
+    "Code":"W10075WH",
+    "Particulars":"EDP SOCKET OUTLET - RJ 45 (6e) (WH)",
+    "PkgOuter":20,
+    "Master":1200,
+    "WhiteRate":477,
+    "ChromeBlackRate":506
+  },
+  {
+    "No":69,
+    "Code":"W10063WH",
+    "Particulars":"32 AMP NOVA DP MAIN SWITCH WITH KEY TAG (WH)",
+    "PkgOuter":10,
+    "Master":200,
+    "WhiteRate":467,
+    "ChromeBlackRate":503
+  },
+  {
+    "No":70,
+    "Code":"W10064WH",
+    "Particulars":"NOVA Key Tag Ring (WH)",
+    "PkgOuter":200,
+    "Master":4000,
+    "WhiteRate":108,
+    "ChromeBlackRate":123
+  },
+  {
+    "No":71,
+    "Code":"W10040WH",
+    "Particulars":"ELECTRIC BUZZER  (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":261,
+    "ChromeBlackRate":280
+  },
+  {
+    "No":72,
+    "Code":"W10041WH",
+    "Particulars":"LED MOON NIGHT LAMP (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":253,
+    "ChromeBlackRate":273
+  },
+  {
+    "No":73,
+    "Code":"W10042WH",
+    "Particulars":"2M MINI LED FOOT LIGHT WHITE (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":253,
+    "ChromeBlackRate":273
+  },
+  {
+    "No":74,
+    "Code":"W10042RD(WH)",
+    "Particulars":"2M MINI LED FOOT LIGHT RED (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":253,
+    "ChromeBlackRate":273
+  },
+  {
+    "No":75,
+    "Code":"W10042BL",
+    "Particulars":"2M MINI LED FOOT LIGHT BLUE (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":253,
+    "ChromeBlackRate":273
+  },
+  {
+    "No":76,
+    "Code":"W10042WW",
+    "Particulars":"2M MINI LED FOOT LIGHT WARM WHITE (WH)",
+    "PkgOuter":10,
+    "Master":450,
+    "WhiteRate":253,
+    "ChromeBlackRate":273
+  },
+  {
+    "No":77,
+    "Code":"W10042AWH",
+    "Particulars":"3M LED FOOT LIGHT (WH)",
+    "PkgOuter":10,
+    "Master":300,
+    "WhiteRate":382,
+    "ChromeBlackRate":408
+  },
+  {
+    "No":78,
+    "Code":"W10042AWW",
+    "Particulars":"3M LED FOOT LIGHT  (WW)",
+    "PkgOuter":10,
+    "Master":300,
+    "WhiteRate":382,
+    "ChromeBlackRate":408
+  },
+  {
+    "No":79,
+    "Code":"W10065WH(WH)",
+    "Particulars":"PRISCA 4M FOOT LIGHT DIFFUSED WITH 8 LEDS WHITE (WH)",
+    "PkgOuter":5,
+    "Master":120,
+    "WhiteRate":436,
+    "ChromeBlackRate":462
+  },
+  {
+    "No":80,
+    "Code":"W10065BL(WH)",
+    "Particulars":"PRISCA 4M FOOT LIGHT DIFFUSED WITH 8 LEDS BLUE (WH)",
+    "PkgOuter":5,
+    "Master":120,
+    "WhiteRate":436,
+    "ChromeBlackRate":462
+  },
+  {
+    "No":81,
+    "Code":"W10065RD(WH)",
+    "Particulars":"PRISCA 4M FOOT LIGHT DIFFUSED WITH 8 LEDS RED (WH)",
+    "PkgOuter":5,
+    "Master":120,
+    "WhiteRate":436,
+    "ChromeBlackRate":462
+  },
+  {
+    "No":82,
+    "Code":"W10065WW(WH)",
+    "Particulars":"PRISCA 4M FOOT LIGHT DIFFUSED WITH 8 LEDS WARM WHITE (",
+    "PkgOuter":5,
+    "Master":120,
+    "WhiteRate":436,
+    "ChromeBlackRate":462
+  },
+  {
+    "No":83,
+    "Code":"W10066WH",
+    "Particulars":"Pulma 4M Foot Diffused With 8 LEDs (WH)",
+    "PkgOuter":null,
+    "Master":null,
+    "WhiteRate":436,
+    "ChromeBlackRate":462
+  },
+  {
+    "No":84,
+    "Code":"W10066(BL)WH",
+    "Particulars":"Pulma 4M Foot Diffused With 8 LEDs BLUE (WH)",
+    "PkgOuter":null,
+    "Master":null,
+    "WhiteRate":436,
+    "ChromeBlackRate":462
+  },
+  {
+    "No":85,
+    "Code":"W10066(RD)WH",
+    "Particulars":"Pulma 4M Foot Diffused With 8 LEDs RED (WH)",
+    "PkgOuter":null,
+    "Master":null,
+    "WhiteRate":436,
+    "ChromeBlackRate":462
+  },
+  {
+    "No":86,
+    "Code":"W10066WH (WW)",
+    "Particulars":"Pulma 4M Foot Diffused With 8 LEDs  (WW)",
+    "PkgOuter":null,
+    "Master":null,
+    "WhiteRate":436,
+    "ChromeBlackRate":462
+  },
+  {
+    "No":87,
+    "Code":"W10048WH10A",
+    "Particulars":"IKON SINGLE POLE MCB 10AMP (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":230,
+    "ChromeBlackRate":240
+  },
+  {
+    "No":88,
+    "Code":"W10048WH16A",
+    "Particulars":"IKON SINGLE POLE MCB 16AMP (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":230,
+    "ChromeBlackRate":240
+  },
+  {
+    "No":89,
+    "Code":"W10048WH20A",
+    "Particulars":"IKON SINGLE POLE MCB 20AMP (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":230,
+    "ChromeBlackRate":240
+  },
+  {
+    "No":90,
+    "Code":"W10048WH25A",
+    "Particulars":"IKON SINGLE POLE MCB 25AMP (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":230,
+    "ChromeBlackRate":240
+  },
+  {
+    "No":91,
+    "Code":"W10048WH32A",
+    "Particulars":"IKON SINGLE POLE MCB 32AMP (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":230,
+    "ChromeBlackRate":240
+  },
+  {
+    "No":92,
+    "Code":"W10048WH6A",
+    "Particulars":"IKON SINGLE POLE MCB 6AMP (WH)",
+    "PkgOuter":10,
+    "Master":600,
+    "WhiteRate":230,
+    "ChromeBlackRate":240
+  },
+  {
+    "No":93,
+    "Code":"W10049WH10A",
+    "Particulars":"IKON DOUBLE POLE MCB 10AMP (WH)",
+    "PkgOuter":10,
+    "Master":300,
+    "WhiteRate":470,
+    "ChromeBlackRate":490
+  },
+  {
+    "No":94,
+    "Code":"W10049WH16A",
+    "Particulars":"IKON DOUBLE POLE MCB 16AMP (WH)",
+    "PkgOuter":10,
+    "Master":300,
+    "WhiteRate":470,
+    "ChromeBlackRate":490
+  },
+  {
+    "No":95,
+    "Code":"W10049WH20A",
+    "Particulars":"IKON DOUBLE POLE MCB 20AMP (WH)",
+    "PkgOuter":10,
+    "Master":300,
+    "WhiteRate":470,
+    "ChromeBlackRate":490
+  },
+  {
+    "No":96,
+    "Code":"W10049WH25A",
+    "Particulars":"IKON DOUBLE POLE MCB 25AMP (WH)",
+    "PkgOuter":10,
+    "Master":300,
+    "WhiteRate":470,
+    "ChromeBlackRate":490
+  },
+  {
+    "No":97,
+    "Code":"W10049WH32A",
+    "Particulars":"IKON DOUBLE POLE MCB 32AMP (WH)",
+    "PkgOuter":10,
+    "Master":300,
+    "WhiteRate":470,
+    "ChromeBlackRate":490
+  },
+  {
+    "No":98,
+    "Code":"W10049WH6A",
+    "Particulars":"IKON DOUBLE POLE MCB 6AMP (WH)",
+    "PkgOuter":10,
+    "Master":300,
+    "WhiteRate":470,
+    "ChromeBlackRate":490
+  },
+  {
+    "No":99,
+    "Code":"W10047WH",
+    "Particulars":"25 AMP SINGLE PHASE MOTOR STARTER (WH)",
+    "PkgOuter":10,
+    "Master":300,
+    "WhiteRate":458,
+    "ChromeBlackRate":483
+  },
+  {
+    "No":100,
+    "Code":"W10047AW",
+    "Particulars":"25AMP SINGLE PHASE MOTOR STARTER (WH)",
+    "PkgOuter":10,
+    "Master":300,
+    "WhiteRate":458,
+    "ChromeBlackRate":483
+  },
+  {
+    "No":101,
+    "Code":"W10069WH(WH)",
+    "Particulars":"LARIO 4M FOOTLIGHT  DIFFUSED WITH 8 LEDs WHITE (WH)",
+    "PkgOuter":5,
+    "Master":120,
+    "WhiteRate":436,
+    "ChromeBlackRate":462
+  },
+  {
+    "No":102,
+    "Code":"W10069RD(WH)",
+    "Particulars":"LARIO 4M FOOTLIGHT  DIFFUSED WITH 8 LEDs RED (WH)",
+    "PkgOuter":5,
+    "Master":120,
+    "WhiteRate":436,
+    "ChromeBlackRate":462
+  },
+  {
+    "No":103,
+    "Code":"W10069WW(WH)",
+    "Particulars":"LARIO 4M FOOTLIGHT  DIFFUSED WITH 8 LEDs WARM WHITE (W",
+    "PkgOuter":5,
+    "Master":120,
+    "WhiteRate":436,
+    "ChromeBlackRate":462
+  },
+  {
+    "No":104,
+    "Code":"W10069BL(WH)",
+    "Particulars":"LARIO 4M FOOTLIGHT  DIFFUSED WITH 8 LEDs BLUE (WH)",
+    "PkgOuter":5,
+    "Master":120,
+    "WhiteRate":436,
+    "ChromeBlackRate":462
+  },
+  {
+    "No":105,
+    "Code":"W10101WH",
+    "Particulars":"Fybros 20A Wave Modular AC Box",
+    "PkgOuter":1,
+    "Master":50,
+    "WhiteRate":840,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":106,
+    "Code":"W40001",
+    "Particulars":"1M SWING SURFACE GANG BOX",
+    "PkgOuter":20,
+    "Master":360,
+    "WhiteRate":70,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":107,
+    "Code":"W40002",
+    "Particulars":"2M SWING SURFACE GANG BOX",
+    "PkgOuter":10,
+    "Master":180,
+    "WhiteRate":82,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":108,
+    "Code":"W40003",
+    "Particulars":"3M SWING SURFACE GANG BOX",
+    "PkgOuter":10,
+    "Master":180,
+    "WhiteRate":94,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":109,
+    "Code":"W40004",
+    "Particulars":"4M SWING SURFACE GANG BOX",
+    "PkgOuter":10,
+    "Master":180,
+    "WhiteRate":114,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":110,
+    "Code":"W40005",
+    "Particulars":"6M SWING SURFACE GANG BOX",
+    "PkgOuter":10,
+    "Master":120,
+    "WhiteRate":134,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":111,
+    "Code":"W40006",
+    "Particulars":"8M (H) SWING SURFACE GANG BOX",
+    "PkgOuter":10,
+    "Master":120,
+    "WhiteRate":164,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":112,
+    "Code":"W40007",
+    "Particulars":"8M (V) SWING SURFACE GANG BOX",
+    "PkgOuter":5,
+    "Master":90,
+    "WhiteRate":164,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":113,
+    "Code":"W40011",
+    "Particulars":"9M SWING SURFACE GANG BOX",
+    "PkgOuter":10,
+    "Master":120,
+    "WhiteRate":186,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":114,
+    "Code":"W40008",
+    "Particulars":"12M SWING SURFACE GANG BOX",
+    "PkgOuter":5,
+    "Master":90,
+    "WhiteRate":213,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":115,
+    "Code":"W40009",
+    "Particulars":"16M SWING SURFACE GANG BOX",
+    "PkgOuter":5,
+    "Master":60,
+    "WhiteRate":280,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":116,
+    "Code":"W40010",
+    "Particulars":"18M SWING SURFACE GANG BOX",
+    "PkgOuter":5,
+    "Master":60,
+    "WhiteRate":284,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":117,
+    "Code":"W40051",
+    "Particulars":"1M OVAL SURFACE GANG BOX",
+    "PkgOuter":20,
+    "Master":360,
+    "WhiteRate":70,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":118,
+    "Code":"W40052",
+    "Particulars":"2M OVAL SURFACE GANG BOX",
+    "PkgOuter":10,
+    "Master":180,
+    "WhiteRate":82,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":119,
+    "Code":"W40053",
+    "Particulars":"3M OVAL SURFACE GANG BOX",
+    "PkgOuter":10,
+    "Master":180,
+    "WhiteRate":94,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":120,
+    "Code":"W40054",
+    "Particulars":"4M OVAL SURFACE GANG BOX",
+    "PkgOuter":10,
+    "Master":180,
+    "WhiteRate":114,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":121,
+    "Code":"W40055",
+    "Particulars":"6M OVAL SURFACE GANG BOX",
+    "PkgOuter":10,
+    "Master":120,
+    "WhiteRate":134,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":122,
+    "Code":"W40056",
+    "Particulars":"8M OVAL (H) SURFACE GANG BOX",
+    "PkgOuter":10,
+    "Master":120,
+    "WhiteRate":164,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":123,
+    "Code":"W40057",
+    "Particulars":"8M OVAL (V) SURFACE GANG BOX",
+    "PkgOuter":5,
+    "Master":90,
+    "WhiteRate":164,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":124,
+    "Code":"W40061",
+    "Particulars":"9M OVAL SURFACE GANG BOX",
+    "PkgOuter":10,
+    "Master":120,
+    "WhiteRate":186,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":125,
+    "Code":"W40058",
+    "Particulars":"12M OVAL SURFACE GANG BOX",
+    "PkgOuter":5,
+    "Master":90,
+    "WhiteRate":213,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":126,
+    "Code":"W40059",
+    "Particulars":"16M OVAL SURFACE GANG BOX",
+    "PkgOuter":5,
+    "Master":60,
+    "WhiteRate":280,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":127,
+    "Code":"W40060",
+    "Particulars":"18M OVAL SURFACE GANG BOX",
+    "PkgOuter":5,
+    "Master":60,
+    "WhiteRate":284,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":128,
+    "Code":"FMB1001",
+    "Particulars":"Fybros  1 & 2 Module Renove Metal Gang Box",
+    "PkgOuter":20,
+    "Master":120,
+    "WhiteRate":63.65,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":129,
+    "Code":"FMB1002",
+    "Particulars":"Fybros  3 Module Renove Metal Gang Box",
+    "PkgOuter":20,
+    "Master":120,
+    "WhiteRate":79.8,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":130,
+    "Code":"FMB1003",
+    "Particulars":"Fybros  4 Module Renove Metal Gang Box",
+    "PkgOuter":20,
+    "Master":120,
+    "WhiteRate":91.2,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":131,
+    "Code":"FMB1004",
+    "Particulars":"Fybros  6 Module Renove Metal Gang Box",
+    "PkgOuter":10,
+    "Master":80,
+    "WhiteRate":135.85,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":132,
+    "Code":"FMB1005",
+    "Particulars":"Fybros  8H Module Renove Metal Gang Box",
+    "PkgOuter":10,
+    "Master":80,
+    "WhiteRate":164.35,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":133,
+    "Code":"FMB1006",
+    "Particulars":"Fybros  8V Module Renove Metal Gang Box",
+    "PkgOuter":5,
+    "Master":60,
+    "WhiteRate":164.35,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":134,
+    "Code":"FMB1007",
+    "Particulars":"Fybros  12 Module Renove Metal Gang Box",
+    "PkgOuter":5,
+    "Master":40,
+    "WhiteRate":210.9,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":135,
+    "Code":"FMB1008",
+    "Particulars":"Fybros  16 Module Renove Metal Gang Box",
+    "PkgOuter":5,
+    "Master":40,
+    "WhiteRate":265.05,
+    "ChromeBlackRate":null
+  },
+  {
+    "No":136,
+    "Code":"FMB1009",
+    "Particulars":"Fybros  18 Module Renove Metal Gang Box",
+    "PkgOuter":5,
+    "Master":40,
+    "WhiteRate":304,
+    "ChromeBlackRate":null
+  }
+]
