@@ -1,0 +1,873 @@
+ 
+ [ {
+    "Code": "S30111",
+    "Particulars": "1M SER-3",
+    "PKG OUTER": "10",
+    "MASTER": "500",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "106.00",
+    "EMERAL CHROME RATE": "150.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "177.00"
+  },
+  {
+    "Code": "S30212",
+    "Particulars": "2M SER-3",
+    "PKG OUTER": "10",
+    "MASTER": "500",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "106.00",
+    "EMERAL CHROME RATE": "150.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "177.00"
+  },
+  {
+    "Code": "S30313",
+    "Particulars": "3M SER-3",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "138.00",
+    "EMERAL CHROME RATE": "190.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "228.00"
+  },
+  {
+    "Code": "S30325",
+    "Particulars": "3M (H&V) SER-3",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "138.00",
+    "EMERAL CHROME RATE": "190.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "228.00"
+  },
+  {
+    "Code": "S30414",
+    "Particulars": "4M SER-3",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "181.00",
+    "EMERAL CHROME RATE": "255.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "308.00"
+  },
+  {
+    "Code": "S30415",
+    "Particulars": "4M (H&V) SER-3",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "181.00",
+    "EMERAL CHROME RATE": "255.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "308.00"
+  },
+  {
+    "Code": "S30616",
+    "Particulars": "6M SER-3",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "245.00",
+    "EMERAL CHROME RATE": "337.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "405.00"
+  },
+  {
+    "Code": "S30617",
+    "Particulars": "6M (H&V) SER-3",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "245.00",
+    "EMERAL CHROME RATE": "337.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "405.00"
+  },
+  {
+    "Code": "S30818",
+    "Particulars": "8M SER-3",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "338.00",
+    "EMERAL CHROME RATE": "428.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "510.00"
+  },
+  {
+    "Code": "S30819",
+    "Particulars": "8M (H&V) SER-3",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "338.00",
+    "EMERAL CHROME RATE": "428.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "510.00"
+  },
+  {
+    "Code": "S30820",
+    "Particulars": "8M (V) SER-3",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "338.00",
+    "EMERAL CHROME RATE": "428.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "510.00"
+  },
+  {
+    "Code": "S31221",
+    "Particulars": "12M SER-3",
+    "PKG OUTER": "5",
+    "MASTER": "120",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "384.00",
+    "EMERAL CHROME RATE": "537.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "657.00"
+  },
+  {
+    "Code": "S31222",
+    "Particulars": "12M (H&V) SER-3",
+    "PKG OUTER": "5",
+    "MASTER": "120",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "384.00",
+    "EMERAL CHROME RATE": "537.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "657.00"
+  },
+  {
+    "Code": "S31623",
+    "Particulars": "16M SER-3",
+    "PKG OUTER": "5",
+    "MASTER": "90",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "400.00",
+    "EMERAL CHROME RATE": "545.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "687.00"
+  },
+  {
+    "Code": "S31824",
+    "Particulars": "18M SER-3",
+    "PKG OUTER": "5",
+    "MASTER": "80",
+    "PURE WHITE/ ROSEGOLD\nWHITE RATE": "476.00",
+    "EMERAL CHROME RATE": "663.00",
+    "MAPPLE WOOD/ CAFÉ PIINE RATE": "803.00"
+  }
+ ,
+ 
+  {
+    "Code": "S1501251",
+    "Particulars": "1M SER-15",
+    "PKG OUTER": "10",
+    "MASTER": "500",
+    "LUNAR\nWHITE RATE": "106.00",
+    "GRAPHITE\nCHROME RATE": "150.00",
+    "AMERICAN\nWALNUT RATE": "177.00"
+  },
+  {
+    "Code": "S1502252",
+    "Particulars": "2M SER-15",
+    "PKG OUTER": "10",
+    "MASTER": "500",
+    "LUNAR\nWHITE RATE": "106.00",
+    "GRAPHITE\nCHROME RATE": "150.00",
+    "AMERICAN\nWALNUT RATE": "177.00"
+  },
+  {
+    "Code": "S1503253",
+    "Particulars": "3M SER-15",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "LUNAR\nWHITE RATE": "138.00",
+    "GRAPHITE\nCHROME RATE": "190.00",
+    "AMERICAN\nWALNUT RATE": "228.00"
+  },
+  {
+    "Code": "S1503265",
+    "Particulars": "3M (H&V) SER-15",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "LUNAR\nWHITE RATE": "138.00",
+    "GRAPHITE\nCHROME RATE": "190.00",
+    "AMERICAN\nWALNUT RATE": "228.00"
+  },
+  {
+    "Code": "S1504254",
+    "Particulars": "4M SER-15",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "LUNAR\nWHITE RATE": "181.00",
+    "GRAPHITE\nCHROME RATE": "255.00",
+    "AMERICAN\nWALNUT RATE": "308.00"
+  },
+  {
+    "Code": "S1504255",
+    "Particulars": "4M (H&V) SER-15",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "LUNAR\nWHITE RATE": "181.00",
+    "GRAPHITE\nCHROME RATE": "255.00",
+    "AMERICAN\nWALNUT RATE": "308.00"
+  },
+  {
+    "Code": "S1506256",
+    "Particulars": "6M SER-15",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "LUNAR\nWHITE RATE": "245.00",
+    "GRAPHITE\nCHROME RATE": "337.00",
+    "AMERICAN\nWALNUT RATE": "405.00"
+  },
+  {
+    "Code": "S1506257",
+    "Particulars": "6M (H&V) SER-15",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "LUNAR\nWHITE RATE": "245.00",
+    "GRAPHITE\nCHROME RATE": "337.00",
+    "AMERICAN\nWALNUT RATE": "405.00"
+  },
+  {
+    "Code": "S1508258",
+    "Particulars": "8M SER-15",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "LUNAR\nWHITE RATE": "338.00",
+    "GRAPHITE\nCHROME RATE": "428.00",
+    "AMERICAN\nWALNUT RATE": "510.00"
+  },
+  {
+    "Code": "S1508259",
+    "Particulars": "8M (H&V) SER-15",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "LUNAR\nWHITE RATE": "338.00",
+    "GRAPHITE\nCHROME RATE": "428.00",
+    "AMERICAN\nWALNUT RATE": "510.00"
+  },
+  {
+    "Code": "S1508260",
+    "Particulars": "8M (V) SER-15",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "LUNAR\nWHITE RATE": "338.00",
+    "GRAPHITE\nCHROME RATE": "428.00",
+    "AMERICAN\nWALNUT RATE": "510.00"
+  },
+  {
+    "Code": "S1512261",
+    "Particulars": "12M SER-15",
+    "PKG OUTER": "5",
+    "MASTER": "120",
+    "LUNAR\nWHITE RATE": "384.00",
+    "GRAPHITE\nCHROME RATE": "537.00",
+    "AMERICAN\nWALNUT RATE": "657.00"
+  },
+  {
+    "Code": "S1512262",
+    "Particulars": "12M (H&V) SER-15",
+    "PKG OUTER": "5",
+    "MASTER": "120",
+    "LUNAR\nWHITE RATE": "384.00",
+    "GRAPHITE\nCHROME RATE": "537.00",
+    "AMERICAN\nWALNUT RATE": "657.00"
+  },
+  {
+    "Code": "S1516263",
+    "Particulars": "16M SER-15",
+    "PKG OUTER": "5",
+    "MASTER": "90",
+    "LUNAR\nWHITE RATE": "400.00",
+    "GRAPHITE\nCHROME RATE": "545.00",
+    "AMERICAN\nWALNUT RATE": "687.00"
+  },
+  {
+    "Code": "S1518264",
+    "Particulars": "18M SER-15",
+    "PKG OUTER": "5",
+    "MASTER": "80",
+    "LUNAR\nWHITE RATE": "476.00",
+    "GRAPHITE\nCHROME RATE": "663.00",
+    "AMERICAN\nWALNUT RATE": "803.00"
+  }
+ , 
+  {
+    "Code": "S50151",
+    "Particulars": "1M SER-5",
+    "PKG OUTER": "10",
+    "MASTER": "500",
+    "SNOW WHITE RATE": "101.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "143.00",
+    "TEAK WOOD RATE": "167.00"
+  },
+  {
+    "Code": "S50252",
+    "Particulars": "2M SER-5",
+    "PKG OUTER": "10",
+    "MASTER": "500",
+    "SNOW WHITE RATE": "101.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "143.00",
+    "TEAK WOOD RATE": "167.00"
+  },
+  {
+    "Code": "S50353",
+    "Particulars": "3M SER-5",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "SNOW WHITE RATE": "130.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "182.00",
+    "TEAK WOOD RATE": "217.00"
+  },
+  {
+    "Code": "S50365",
+    "Particulars": "3M (H&V) SER-5",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "SNOW WHITE RATE": "130.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "182.00",
+    "TEAK WOOD RATE": "217.00"
+  },
+  {
+    "Code": "S50454",
+    "Particulars": "4M SER-5",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "SNOW WHITE RATE": "171.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "244.00",
+    "TEAK WOOD RATE": "294.00"
+  },
+  {
+    "Code": "S50455",
+    "Particulars": "4M (H&V) SER-5",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "SNOW WHITE RATE": "171.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "244.00",
+    "TEAK WOOD RATE": "294.00"
+  },
+  {
+    "Code": "S50656",
+    "Particulars": "6M SER-5",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "SNOW WHITE RATE": "232.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "321.00",
+    "TEAK WOOD RATE": "385.00"
+  },
+  {
+    "Code": "S50657",
+    "Particulars": "6M (H&V) SER-5",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "SNOW WHITE RATE": "232.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "321.00",
+    "TEAK WOOD RATE": "385.00"
+  },
+  {
+    "Code": "S50858",
+    "Particulars": "8M SER-5",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "SNOW WHITE RATE": "338.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "428.00",
+    "TEAK WOOD RATE": "510.00"
+  },
+  {
+    "Code": "S50859",
+    "Particulars": "8M (H&V) SER-5",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "SNOW WHITE RATE": "319.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "406.00",
+    "TEAK WOOD RATE": "484.00"
+  },
+  {
+    "Code": "S50860",
+    "Particulars": "8M (V) SER-5",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "SNOW WHITE RATE": "319.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "406.00",
+    "TEAK WOOD RATE": "484.00"
+  },
+  {
+    "Code": "S51261",
+    "Particulars": "12M SER-5",
+    "PKG OUTER": "5",
+    "MASTER": "120",
+    "SNOW WHITE RATE": "366.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "510.00",
+    "TEAK WOOD RATE": "626.00"
+  },
+  {
+    "Code": "S51262",
+    "Particulars": "12M (H&V) SER-5",
+    "PKG OUTER": "5",
+    "MASTER": "120",
+    "SNOW WHITE RATE": "366.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "510.00",
+    "TEAK WOOD RATE": "626.00"
+  },
+  {
+    "Code": "S51663",
+    "Particulars": "16M SER-5",
+    "PKG OUTER": "5",
+    "MASTER": "90",
+    "SNOW WHITE RATE": "379.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "518.00",
+    "TEAK WOOD RATE": "654.00"
+  },
+  {
+    "Code": "S51864",
+    "Particulars": "18M SER-5",
+    "PKG OUTER": "5",
+    "MASTER": "80",
+    "SNOW WHITE RATE": "453.00",
+    "METALIK CHROME/ VELVET GREY/ ONYX BLACK RATE": "627.00",
+    "TEAK WOOD RATE": "764.00"
+  }
+ , 
+  {
+    "Code": "S502152",
+    "Particulars": "1M & 2M SER-5 MOUNTING FRAME",
+    "PKG OUTER": "10",
+    "MASTER": "160",
+    "RATE": "61.00"
+  },
+  {
+    "Code": "S503153",
+    "Particulars": "3M SER-5 MOUNTING FRAME",
+    "PKG OUTER": "10",
+    "MASTER": "160",
+    "RATE": "69.00"
+  },
+  {
+    "Code": "S504154",
+    "Particulars": "4M SER-5 MOUNTING FRAME",
+    "PKG OUTER": "10",
+    "MASTER": "160",
+    "RATE": "82.00"
+  },
+  {
+    "Code": "S506156",
+    "Particulars": "6M SER-5 MOUNTING FRAME",
+    "PKG OUTER": "5",
+    "MASTER": "90",
+    "RATE": "118.00"
+  },
+  {
+    "Code": "S508158",
+    "Particulars": "8M (H) SER-5 MOUNTING FRAME",
+    "PKG OUTER": "5",
+    "MASTER": "90",
+    "RATE": "162.00"
+  },
+  {
+    "Code": "S508160",
+    "Particulars": "8M (V) SER-5 MOUNTING FRAME",
+    "PKG OUTER": "5",
+    "MASTER": "90",
+    "RATE": "141.00"
+  },
+  {
+    "Code": "S512161",
+    "Particulars": "12M SER-5 MOUNTING FRAME",
+    "PKG OUTER": "5",
+    "MASTER": "60",
+    "RATE": "183.00"
+  },
+  {
+    "Code": "S516163",
+    "Particulars": "16M SER-5 MOUNTING FRAME",
+    "PKG OUTER": "5",
+    "MASTER": "40",
+    "RATE": "218.00"
+  },
+  {
+    "Code": "S518164",
+    "Particulars": "18M SER-5 MOUNTING FRAME",
+    "PKG OUTER": "5",
+    "MASTER": "40",
+    "RATE": "225.00"
+  }
+ ,
+ 
+  {
+    "Code": "S70171",
+    "Particulars": "1M SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "SHIMMER\nWHITE RATE": "114.00",
+    "ALLOY CHROME RATE": "189.00",
+    "SHADYY\nWOOD RATE": "224.00"
+  },
+  {
+    "Code": "S70272",
+    "Particulars": "2M SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "SHIMMER\nWHITE RATE": "114.00",
+    "ALLOY CHROME RATE": "189.00",
+    "SHADYY\nWOOD RATE": "224.00"
+  },
+  {
+    "Code": "S70373",
+    "Particulars": "3M SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "SHIMMER\nWHITE RATE": "144.00",
+    "ALLOY CHROME RATE": "239.00",
+    "SHADYY\nWOOD RATE": "284.00"
+  },
+  {
+    "Code": "S70474",
+    "Particulars": "4M SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "300",
+    "SHIMMER\nWHITE RATE": "199.00",
+    "ALLOY CHROME RATE": "311.00",
+    "SHADYY\nWOOD RATE": "389.00"
+  },
+  {
+    "Code": "S70675",
+    "Particulars": "6M SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "SHIMMER\nWHITE RATE": "265.00",
+    "ALLOY CHROME RATE": "433.00",
+    "SHADYY\nWOOD RATE": "540.00"
+  },
+  {
+    "Code": "S70876",
+    "Particulars": "8M (H) SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "SHIMMER\nWHITE RATE": "316.00",
+    "ALLOY CHROME RATE": "517.00",
+    "SHADYY\nWOOD RATE": "649.00"
+  },
+  {
+    "Code": "S70884",
+    "Particulars": "8M (V) SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "160",
+    "SHIMMER\nWHITE RATE": "316.00",
+    "ALLOY CHROME RATE": "517.00",
+    "SHADYY\nWOOD RATE": "649.00"
+  },
+  {
+    "Code": "S71077",
+    "Particulars": "10M SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "150",
+    "SHIMMER\nWHITE RATE": "364.00",
+    "ALLOY CHROME RATE": "598.00",
+    "SHADYY\nWOOD RATE": "751.00"
+  },
+  {
+    "Code": "S71278",
+    "Particulars": "12M (H) SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "120",
+    "SHIMMER\nWHITE RATE": "411.00",
+    "ALLOY CHROME RATE": "677.00",
+    "SHADYY\nWOOD RATE": "851.00"
+  },
+  {
+    "Code": "S71279",
+    "Particulars": "12M (V) SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "120",
+    "SHIMMER\nWHITE RATE": "405.00",
+    "ALLOY CHROME RATE": "671.00",
+    "SHADYY\nWOOD RATE": "844.00"
+  },
+  {
+    "Code": "S71680",
+    "Particulars": "16M SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "90",
+    "SHIMMER\nWHITE RATE": "437.00",
+    "ALLOY CHROME RATE": "722.00",
+    "SHADYY\nWOOD RATE": "905.00"
+  },
+  {
+    "Code": "S71881",
+    "Particulars": "18M (H&V) SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "80",
+    "SHIMMER\nWHITE RATE": "530.00",
+    "ALLOY CHROME RATE": "865.00",
+    "SHADYY\nWOOD RATE": "1083.00"
+  },
+  {
+    "Code": "S72082",
+    "Particulars": "20M SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "80",
+    "SHIMMER\nWHITE RATE": "666.00",
+    "ALLOY CHROME RATE": "1092.00",
+    "SHADYY\nWOOD RATE": "1364.00"
+  },
+  {
+    "Code": "S72483",
+    "Particulars": "24M SER-7",
+    "PKG OUTER": "10",
+    "MASTER": "80",
+    "SHIMMER\nWHITE RATE": "828.00",
+    "ALLOY CHROME RATE": "1356.00",
+    "SHADYY\nWOOD RATE": "1697.00"
+  }
+ , 
+  {
+    "Code": "S110131",
+    "Particulars": "1M SER-11",
+    "PKG OUTER": "10",
+    "MASTER": "500",
+    "DOVE WHITE RATE": "117.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "167.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "195.00"
+  },
+  {
+    "Code": "S110232",
+    "Particulars": "2M SER-11",
+    "PKG OUTER": "10",
+    "MASTER": "500",
+    "DOVE WHITE RATE": "117.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "167.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "195.00"
+  },
+  {
+    "Code": "S110333",
+    "Particulars": "3M SER-11",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "DOVE WHITE RATE": "150.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "210.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "250.00"
+  },
+  {
+    "Code": "S110345",
+    "Particulars": "3M (P) SER-11",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "DOVE WHITE RATE": "150.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "210.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "250.00"
+  },
+  {
+    "Code": "S110434",
+    "Particulars": "4M SER-11",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "DOVE WHITE RATE": "197.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "280.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "340.00"
+  },
+  {
+    "Code": "S110435",
+    "Particulars": "4M (H&V) SER-11",
+    "PKG OUTER": "10",
+    "MASTER": "400",
+    "DOVE WHITE RATE": "197.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "280.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "340.00"
+  },
+  {
+    "Code": "S110636",
+    "Particulars": "6M SER-11",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "DOVE WHITE RATE": "267.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "370.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "444.00"
+  },
+  {
+    "Code": "S110637",
+    "Particulars": "6M (H&V) SER-11",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "DOVE WHITE RATE": "267.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "370.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "444.00"
+  },
+  {
+    "Code": "S110838",
+    "Particulars": "8M SER-11",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "DOVE WHITE RATE": "369.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "472.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "561.00"
+  },
+  {
+    "Code": "S110839",
+    "Particulars": "8M (H&V) SER-11",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "DOVE WHITE RATE": "369.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "472.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "561.00"
+  },
+  {
+    "Code": "S110840",
+    "Particulars": "8M (V) SER-11",
+    "PKG OUTER": "10",
+    "MASTER": "200",
+    "DOVE WHITE RATE": "369.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "472.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "561.00"
+  },
+  {
+    "Code": "S111241",
+    "Particulars": "12M SER-11",
+    "PKG OUTER": "5",
+    "MASTER": "120",
+    "DOVE WHITE RATE": "421.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "592.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "724.00"
+  },
+  {
+    "Code": "S111242",
+    "Particulars": "12M (H&V) SER-11",
+    "PKG OUTER": "5",
+    "MASTER": "120",
+    "DOVE WHITE RATE": "421.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "592.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "724.00"
+  },
+  {
+    "Code": "S111643",
+    "Particulars": "16M SER-11",
+    "PKG OUTER": "5",
+    "MASTER": "90",
+    "DOVE WHITE RATE": "436.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "602.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "757.00"
+  },
+  {
+    "Code": "S111844",
+    "Particulars": "18M SER-11",
+    "PKG OUTER": "5",
+    "MASTER": "80",
+    "DOVE WHITE RATE": "521.00",
+    "LAVA CHROME/ KHAKHI MUD/ RICH UMER/ JADE LACK RATE": "730.00",
+    "ESPRESSO WOOD/ DARK\nWALNUT RATE": "885.00"
+  }
+ , 
+  {
+    "Code": "S90191",
+    "Particulars": "1M SER-9",
+    "PKG OUTER": "10",
+    "MASTER": "160",
+    "RATE": "618.00"
+  },
+  {
+    "Code": "S90292",
+    "Particulars": "2M SER-9",
+    "PKG OUTER": "10",
+    "MASTER": "160",
+    "RATE": "618.00"
+  },
+  {
+    "Code": "S90393",
+    "Particulars": "3M SER-9",
+    "PKG OUTER": "10",
+    "MASTER": "160",
+    "RATE": "884.00"
+  },
+  {
+    "Code": "S90494",
+    "Particulars": "4M SER-9",
+    "PKG OUTER": "10",
+    "MASTER": "160",
+    "RATE": "1173.00"
+  },
+  {
+    "Code": "S90695",
+    "Particulars": "6M SER-9",
+    "PKG OUTER": "5",
+    "MASTER": "90",
+    "RATE": "1705.00"
+  },
+  {
+    "Code": "S90896",
+    "Particulars": "8M (H) SER-9",
+    "PKG OUTER": "5",
+    "MASTER": "90",
+    "RATE": "1919.00"
+  },
+  {
+    "Code": "S90897",
+    "Particulars": "8M (V) SER-9",
+    "PKG OUTER": "5",
+    "MASTER": "90",
+    "RATE": "1919.00"
+  },
+  {
+    "Code": "S91298",
+    "Particulars": "12M SER-9",
+    "PKG OUTER": "5",
+    "MASTER": "60",
+    "RATE": "2159.00"
+  },
+  {
+    "Code": "S916100",
+    "Particulars": "16M SER-9",
+    "PKG OUTER": "5",
+    "MASTER": "40",
+    "RATE": "2487.00"
+  },
+  {
+    "Code": "S91899",
+    "Particulars": "18M SER-9",
+    "PKG OUTER": "5",
+    "MASTER": "40",
+    "RATE": "2653.00"
+  }
+ , 
+  {
+    "Code": "S902102",
+    "Particulars": "1M & 2M SER-9  MOUNTING FRAME",
+    "PKG OUTER": "10",
+    "MASTER": "160",
+    "RATE": "75.00"
+  },
+  {
+    "Code": "S903103",
+    "Particulars": "3M SER-9  MOUNTING FRAME",
+    "PKG OUTER": "10",
+    "MASTER": "160",
+    "RATE": "90.00"
+  },
+  {
+    "Code": "S904104",
+    "Particulars": "4M SER-9  MOUNTING FRAME",
+    "PKG OUTER": "10",
+    "MASTER": "160",
+    "RATE": "105.00"
+  },
+  {
+    "Code": "S906105",
+    "Particulars": "6M SER-9  MOUNTING FRAME",
+    "PKG OUTER": "5",
+    "MASTER": "90",
+    "RATE": "154.00"
+  },
+  {
+    "Code": "S908106",
+    "Particulars": "8M (H) SER-9  MOUNTING FRAME",
+    "PKG OUTER": "5",
+    "MASTER": "90",
+    "RATE": "192.00"
+  },
+  {
+    "Code": "S908107",
+    "Particulars": "8M (V) SER-9  MOUNTING FRAME",
+    "PKG OUTER": "5",
+    "MASTER": "90",
+    "RATE": "192.00"
+  },
+  {
+    "Code": "S912108",
+    "Particulars": "12M SER-9  MOUNTING FRAME",
+    "PKG OUTER": "5",
+    "MASTER": "60",
+    "RATE": "247.00"
+  },
+  {
+    "Code": "S916110",
+    "Particulars": "16M SER-9  MOUNTING FRAME",
+    "PKG OUTER": "5",
+    "MASTER": "40",
+    "RATE": "284.00"
+  },
+  {
+    "Code": "S918109",
+    "Particulars": "18M SER-9  MOUNTING FRAME",
+    "PKG OUTER": "5",
+    "MASTER": "40",
+    "RATE": "333.00"
+  }
+]
