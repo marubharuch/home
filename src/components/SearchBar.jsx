@@ -8,32 +8,39 @@ export default function SearchBar() {
   const [filtered, setFiltered] = useState([]);
   const [showMessage, setShowMessage] = useState(false);
 
+  // Function to create number-safe regex
+  const createNumberSafeRegex = (term) => {
+    if (/^\d+$/.test(term)) {
+      // Only digits → add boundaries to avoid adjacent numbers
+      return new RegExp(`(^|\\D)${term}(\\D|$)`);
+    }
+    return new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), "i"); // Escape non-number terms
+  };
+
   // Debounced search function
   const debouncedSearch = useCallback(
     debounce((searchQuery) => {
       const q = searchQuery.toLowerCase().trim();
-      
-      // Clear results if query is too short
+
       if (q.length < 3) {
         setFiltered([]);
         setShowMessage(q.length > 0);
         return;
       }
-      
+
       setShowMessage(false);
-      
-      // Split query into individual terms
+
       const searchTerms = q.split(/\s+/);
-      
+
       const result = allItems.filter((item) => {
-        const text = item.searchableText || '';
-        
-        // Check if all search terms appear in the text (in any order)
-        return searchTerms.every(term => 
-          text.includes(term)
-        );
+        const text = item.searchableText?.toLowerCase() || "";
+
+        return searchTerms.every((term) => {
+          const regex = createNumberSafeRegex(term);
+          return regex.test(text);
+        });
       });
-      
+
       setFiltered(result);
     }, 300),
     [allItems]
@@ -52,7 +59,7 @@ export default function SearchBar() {
 
   return (
     <div className="flex flex-col h-screen">
-      {/* Results area that takes up remaining space and scrolls */}
+      {/* Results */}
       <div className="flex-1 overflow-auto p-4">
         <div className="grid gap-2">
           {filtered.map((item, idx) => (
@@ -68,15 +75,15 @@ export default function SearchBar() {
           ))}
         </div>
       </div>
-      
-      {/* Sticky search bar at the bottom */}
+
+      {/* Sticky search bar */}
       <div className="sticky bottom-0 bg-white p-4 border-t">
         {showMessage && (
           <div className="text-gray-500 mb-2">
             Please enter at least 3 characters to search
           </div>
         )}
-        
+
         <div className="flex gap-2">
           <input
             type="text"
