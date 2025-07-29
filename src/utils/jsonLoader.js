@@ -8,6 +8,9 @@ export const jsonFiles = [
   "ZINE_ACCESSORIES.json",
   "4x_ACCESSORIES.json",
   "FAN_fybros.json",
+  "other.json",
+  "diwali.json",
+  "rapid.json"
 ];
 
 const parseJSONFile = (raw, source) => {
