@@ -1,451 +1,451 @@
 [
     {
       "code": "R-464",
-      "items__description": "New 5 x 5 Angle Holder (Alu. Ring)",
+      "description": "New 5 x 5 Angle Holder (Alu. Ring)",
       "Pkg": "20",
       "price": "100"
     },
     {
       "code": "R-465",
-      "items__description": "New 5 x 5 Batten Holder (Alu. Ring)",
+      "description": "New 5 x 5 Batten Holder (Alu. Ring)",
       "Pkg": "20",
       "price": "100"
     },
     {
       "code": "R-501",
-      "items__description": "4 x 4 Angle Holder (Orange PBT Ring)",
+      "description": "4 x 4 Angle Holder (Orange PBT Ring)",
       "Pkg": "20",
       "price": "64"
     },
     {
       "code": "R-502",
-      "items__description": "4 x 4 Batten Holder (Orange PBT Ring)",
+      "description": "4 x 4 Batten Holder (Orange PBT Ring)",
       "Pkg": "20",
       "price": "64"
     },
     {
       "code": "R-503",
-      "items__description": "4 x 4 Angle Holder (Alu. Ring)",
+      "description": "4 x 4 Angle Holder (Alu. Ring)",
       "Pkg": "20",
       "price": "70"
     },
     {
       "code": "R-504",
-      "items__description": "4 x 4 Batten Holder (Alu. Ring)",
+      "description": "4 x 4 Batten Holder (Alu. Ring)",
       "Pkg": "20",
       "price": "70"
     },
     {
       "code": "R-505",
-      "items__description": "1/2 Pole MCB Box",
+      "description": "1/2 Pole MCB Box",
       "Pkg": "10",
       "price": "66"
     },
     {
       "code": "R-506",
-      "items__description": "3/4 Pole MCB Box",
+      "description": "3/4 Pole MCB Box",
       "Pkg": "10",
       "price": "100"
     },
     {
       "code": "R-507",
-      "items__description": "S.S.C. Junction Box",
+      "description": "S.S.C. Junction Box",
       "Pkg": "10",
       "price": "52"
     },
     {
       "code": "R-508",
-      "items__description": "Patti Bracket (Chotu)",
+      "description": "Patti Bracket (Chotu)",
       "Pkg": "36",
       "price": "12"
     },
     {
       "code": "R-510",
-      "items__description": "S.S. Combine",
+      "description": "S.S. Combine",
       "Pkg": "5",
       "price": "213"
     },
     {
       "code": "R-511",
-      "items__description": "S.S.C. with Box",
+      "description": "S.S.C. with Box",
       "Pkg": "5",
       "price": "288"
     },
     {
       "code": "R-621",
-      "items__description": "1 Modular Surface Box",
+      "description": "1 Modular Surface Box",
       "Pkg": "10",
       "price": "62"
     },
     {
       "code": "R-622",
-      "items__description": "2 Modular Surface Box",
+      "description": "2 Modular Surface Box",
       "Pkg": "10",
       "price": "72"
     },
     {
       "code": "R-623",
-      "items__description": "3 Modular Surface Box",
+      "description": "3 Modular Surface Box",
       "Pkg": "10",
       "price": "93"
     },
     {
       "code": "R-624",
-      "items__description": "4 Modular Surface Box",
+      "description": "4 Modular Surface Box",
       "Pkg": "10",
       "price": "107"
     },
     {
       "code": "R-625",
-      "items__description": "6 Modular Surface Box",
+      "description": "6 Modular Surface Box",
       "Pkg": "5",
       "price": "134"
     },
     {
       "code": "R-626",
-      "items__description": "8 Modular Surface Box (HZ)",
+      "description": "8 Modular Surface Box (HZ)",
       "Pkg": "5",
       "price": "162"
     },
     {
       "code": "R-627",
-      "items__description": "8 Modular Surface Box (Square)",
+      "description": "8 Modular Surface Box (Square)",
       "Pkg": "5",
       "price": "160"
     },
     {
       "code": "R-628",
-      "items__description": "9 Modular Surface Box",
+      "description": "9 Modular Surface Box",
       "Pkg": "5",
       "price": "186"
     },
     {
       "code": "R-629",
-      "items__description": "12 Modular Surface Box",
+      "description": "12 Modular Surface Box",
       "Pkg": "5",
       "price": "188"
     },
     {
       "code": "R-630",
-      "items__description": "16 Modular Surface Box",
+      "description": "16 Modular Surface Box",
       "Pkg": "5",
       "price": "256"
     },
     {
       "code": "R-631",
-      "items__description": "18 Modular Surface Box",
+      "description": "18 Modular Surface Box",
       "Pkg": "5",
       "price": "264"
     },
     {
       "code": "R-632",
-      "items__description": "24 Modular Surface Box",
+      "description": "24 Modular Surface Box",
       "Pkg": "5",
       "price": "350"
     },
     {
       "code": "R-701",
-      "items__description": "19mm Pipe 1 Way Junction",
+      "description": "19mm Pipe 1 Way Junction",
       "Pkg": "30",
       "price": "16"
     },
     {
       "code": "R-702",
-      "items__description": "19mm Pipe 2 Way Junction",
+      "description": "19mm Pipe 2 Way Junction",
       "Pkg": "30",
       "price": "16"
     },
     {
       "code": "R-703",
-      "items__description": "19mm Pipe 3 Way Junction",
+      "description": "19mm Pipe 3 Way Junction",
       "Pkg": "30",
       "price": "16"
     },
     {
       "code": "R-704",
-      "items__description": "19mm Pipe 4 Way Junction",
+      "description": "19mm Pipe 4 Way Junction",
       "Pkg": "30",
       "price": "16"
     },
     {
       "code": "R-705",
-      "items__description": "19mm Pipe L Way Junction",
+      "description": "19mm Pipe L Way Junction",
       "Pkg": "30",
       "price": "16"
     },
     {
       "code": "R-706",
-      "items__description": "19mm Pipe Elbow",
+      "description": "19mm Pipe Elbow",
       "Pkg": "200",
       "price": "4"
     },
     {
       "code": "R-707",
-      "items__description": "19mm Pipe TEE",
+      "description": "19mm Pipe TEE",
       "Pkg": "100",
       "price": "7.2"
     },
     {
       "code": "R-708",
-      "items__description": "19mm Pipe Saddle",
+      "description": "19mm Pipe Saddle",
       "Pkg": "144",
       "price": "7.2"
     },
     {
       "code": "R-801",
-      "items__description": "Square Truncking Fitting",
+      "description": "Square Truncking Fitting",
       "Pkg": "20",
       "price": "12.3"
     },
     {
       "code": "R-802",
-      "items__description": "1 Way Truncking Fitting",
+      "description": "1 Way Truncking Fitting",
       "Pkg": "20",
       "price": "12.3"
     },
     {
       "code": "R-803",
-      "items__description": "2 Way Truncking Fitting",
+      "description": "2 Way Truncking Fitting",
       "Pkg": "20",
       "price": "12.3"
     },
     {
       "code": "R-804",
-      "items__description": "3 Way Truncking Fitting",
+      "description": "3 Way Truncking Fitting",
       "Pkg": "20",
       "price": "12.3"
     },
     {
       "code": "R-805",
-      "items__description": "4 Way Truncking Fitting",
+      "description": "4 Way Truncking Fitting",
       "Pkg": "20",
       "price": "12.3"
     },
     {
       "code": "R-806",
-      "items__description": "L Way Truncking Fitting",
+      "description": "L Way Truncking Fitting",
       "Pkg": "20",
       "price": "12.3"
     },
     {
       "code": "R-807",
-      "items__description": "Square Truncking Fitting (Brass Molded)",
+      "description": "Square Truncking Fitting (Brass Molded)",
       "Pkg": "20",
       "price": "16.5"
     },
     {
       "code": "R-808",
-      "items__description": "1 Way Truncking Fitting (Brass Molded)",
+      "description": "1 Way Truncking Fitting (Brass Molded)",
       "Pkg": "20",
       "price": "16.5"
     },
     {
       "code": "R-809",
-      "items__description": "2 Way Truncking Fitting (Brass Molded)",
+      "description": "2 Way Truncking Fitting (Brass Molded)",
       "Pkg": "20",
       "price": "16.5"
     },
     {
       "code": "R-810",
-      "items__description": "3 Way Truncking Fitting (Brass Molded)",
+      "description": "3 Way Truncking Fitting (Brass Molded)",
       "Pkg": "20",
       "price": "16.5"
     },
     {
       "code": "R-811",
-      "items__description": "4 Way Truncking Fitting (Brass Molded)",
+      "description": "4 Way Truncking Fitting (Brass Molded)",
       "Pkg": "20",
       "price": "16.5"
     },
     {
       "code": "R-812",
-      "items__description": "L Way Truncking Fitting (Brass Molded)",
+      "description": "L Way Truncking Fitting (Brass Molded)",
       "Pkg": "20",
       "price": "16.5"
     },
     {
       "code": "R-813",
-      "items__description": "Internal Angle Truncking Fitting",
+      "description": "Internal Angle Truncking Fitting",
       "Pkg": "100",
       "price": "5.5"
     },
     {
       "code": "R-814",
-      "items__description": "External Angle Truncking Fitting",
+      "description": "External Angle Truncking Fitting",
       "Pkg": "100",
       "price": "5.5"
     },
     {
       "code": "R-815",
-      "items__description": "Elbow Truncking Fitting",
+      "description": "Elbow Truncking Fitting",
       "Pkg": "100",
       "price": "5.5"
     },
     {
       "code": "R-816",
-      "items__description": "TEE Truncking Fitting",
+      "description": "TEE Truncking Fitting",
       "Pkg": "50",
       "price": "7.2"
     },
     {
       "code": "R-817",
-      "items__description": "Coupler Truncking Fitting",
+      "description": "Coupler Truncking Fitting",
       "Pkg": "100",
       "price": "3.6"
     },
     {
       "code": "R-818",
-      "items__description": "4 Way Cap Truncking Fitting",
+      "description": "4 Way Cap Truncking Fitting",
       "Pkg": "100",
       "price": "14"
     },
     {
       "code": "R-819",
-      "items__description": "Dual Junction (3 x 6)",
+      "description": "Dual Junction (3 x 6)",
       "Pkg": "20",
       "price": "36"
     },
     {
       "code": "wm1",
-      "items__description": "Angle Holder (Orange PBT Ring)",
+      "description": "Angle Holder (Orange PBT Ring)",
       "Pkg": "37",
       "price": "20"
     },
     {
       "code": "wm10",
-      "items__description": "4x4 Batten Holder (With Aluminum Ring)",
+      "description": "4x4 Batten Holder (With Aluminum Ring)",
       "Pkg": "80",
       "price": "20"
     },
     {
       "code": "wm11",
-      "items__description": "5x5 Angle Holder (Orange PBT Ring)",
+      "description": "5x5 Angle Holder (Orange PBT Ring)",
       "Pkg": "81",
       "price": "20"
     },
     {
       "code": "wm12",
-      "items__description": "5x5 Batten Holder (Orange PBT Ring)",
+      "description": "5x5 Batten Holder (Orange PBT Ring)",
       "Pkg": "81",
       "price": "20"
     },
     {
       "code": "wm13",
-      "items__description": "5x5 Ceiling Rose (Two Parts)",
+      "description": "5x5 Ceiling Rose (Two Parts)",
       "Pkg": "84",
       "price": "12"
     },
     {
       "code": "wm14",
-      "items__description": "5x5 Angle Holder (With Aluminum Ring)",
+      "description": "5x5 Angle Holder (With Aluminum Ring)",
       "Pkg": "84",
       "price": "20"
     },
     {
       "code": "wm15",
-      "items__description": "5x5 Batten Holder (With Aluminum Ring)",
+      "description": "5x5 Batten Holder (With Aluminum Ring)",
       "Pkg": "84",
       "price": "20"
     },
     {
       "code": "wm16",
-      "items__description": "1/2 Modular Surface Box",
+      "description": "1/2 Modular Surface Box",
       "Pkg": "64",
       "price": "20"
     },
     {
       "code": "wm17",
-      "items__description": "3 Modular Surface Box",
+      "description": "3 Modular Surface Box",
       "Pkg": "76",
       "price": "20"
     },
     {
       "code": "wm18",
-      "items__description": "4 Modular Surface Box",
+      "description": "4 Modular Surface Box",
       "Pkg": "88",
       "price": "20"
     },
     {
       "code": "wm19",
-      "items__description": "6 Modular Surface Box",
+      "description": "6 Modular Surface Box",
       "Pkg": "120",
       "price": "10"
     },
     {
       "code": "wm2",
-      "items__description": "Batten Holder (Orange PBT Ring)",
+      "description": "Batten Holder (Orange PBT Ring)",
       "Pkg": "37",
       "price": "20"
     },
     {
       "code": "wm20",
-      "items__description": "8 Modular Surface Box (Square)",
+      "description": "8 Modular Surface Box (Square)",
       "Pkg": "160",
       "price": "10"
     },
     {
       "code": "wm21",
-      "items__description": "8 Modular Surface Box (Z)",
+      "description": "8 Modular Surface Box (Z)",
       "Pkg": "160",
       "price": "10"
     },
     {
       "code": "wm22",
-      "items__description": "12 Modular Surface Box",
+      "description": "12 Modular Surface Box",
       "Pkg": "196",
       "price": "5"
     },
     {
       "code": "wm23",
-      "items__description": "18 Modular Surface Box",
+      "description": "18 Modular Surface Box",
       "Pkg": "260",
       "price": "5"
     },
     {
       "code": "wm24",
-      "items__description": "Eco 6.5x6.5 Fan Plate",
+      "description": "Eco 6.5x6.5 Fan Plate",
       "Pkg": "44",
       "price": "30"
     },
     {
       "code": "wm3",
-      "items__description": "Ceiling Rose (Two Parts)",
+      "description": "Ceiling Rose (Two Parts)",
       "Pkg": "42",
       "price": "30"
     },
     {
       "code": "wm4",
-      "items__description": "Angle Holder (With Aluminum Ring)",
+      "description": "Angle Holder (With Aluminum Ring)",
       "Pkg": "40",
       "price": "20"
     },
     {
       "code": "wm5",
-      "items__description": "Batten Holder (With Aluminum Ring)",
+      "description": "Batten Holder (With Aluminum Ring)",
       "Pkg": "40",
       "price": "20"
     },
     {
       "code": "wm6",
-      "items__description": "4x4 Angle Holder (Orange PBT Ring)",
+      "description": "4x4 Angle Holder (Orange PBT Ring)",
       "Pkg": "74",
       "price": "20"
     },
     {
       "code": "wm7",
-      "items__description": "4x4 Batten Holder (Orange PBT Ring)",
+      "description": "4x4 Batten Holder (Orange PBT Ring)",
       "Pkg": "74",
       "price": "20"
     },
     {
       "code": "wm8",
-      "items__description": "4x4 Ceiling Rose (Two Parts)",
+      "description": "4x4 Ceiling Rose (Two Parts)",
       "Pkg": "74",
       "price": "30"
     },
     {
       "code": "wm9",
-      "items__description": "4x4 Angle Holder (With Aluminum Ring)",
+      "description": "4x4 Angle Holder (With Aluminum Ring)",
       "Pkg": "80",
       "price": "20"
     }

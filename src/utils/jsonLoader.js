@@ -1,17 +1,19 @@
 import localforage from "localforage";
 
-export const jsonFiles = [
-  "woodem_plats.json",
-  "4x_plats.json",
-  "Switchgear.json",
-  "woodem_accessories.json",
-  "ZINE_ACCESSORIES.json",
+export const jsonFiles =[
   "4x_ACCESSORIES.json",
+  "4x_plats.json",
+  "diwali.json",
   "FAN_fybros.json",
   "other.json",
-  "diwali.json",
-  "rapid.json"
-];
+  "rapid.json",
+  "Switchgear.json",
+  "wire.json",
+  "woodem_accessories.json",
+  "woodem_plats.json",
+  "ZINE_ACCESSORIES.json"
+]
+ ;
 
 const parseJSONFile = (raw, source) => {
   const items = [];
