@@ -1,808 +1,135 @@
-{
-  "SWITCHGEAR_PRICELIST": {
-    "date": "01.04.2025",
-    "products": [
-      {
-        "category": "ARMOR - MCB AND RCCB",
-        "items": [
-          {
-            "S.NO.": 1,
-            "CODE": "KSG400201",
-            "DESCRIPTION": "Fybros 6A SP Armor MCB C Series",
-            "DLP": 176.50
-          },
-          {
-            "S.NO.": 2,
-            "CODE": "KSG400202",
-            "DESCRIPTION": "Fybros 10A SP Armor MCB C Series",
-            "DLP": 176.50
-          },
-          {
-            "S.NO.": 3,
-            "CODE": "KSG400203",
-            "DESCRIPTION": "Fybros 16A SP Armor MCB C Series",
-            "DLP": 176.50
-          },
-          {
-            "S.NO.": 4,
-            "CODE": "KSG400204",
-            "DESCRIPTION": "Fybros 20A SP Armor MCB C Series",
-            "DLP": 176.50
-          },
-          {
-            "S.NO.": 5,
-            "CODE": "KSG400205",
-            "DESCRIPTION": "Fybros 25A SP Armor MCB C Series",
-            "DLP": 176.50
-          },
-          {
-            "S.NO.": 6,
-            "CODE": "KSG400206",
-            "DESCRIPTION": "Fybros 32A SP Armor MCB C Series",
-            "DLP": 176.50
-          },
-          {
-            "S.NO.": 7,
-            "CODE": "KSG400300",
-            "DESCRIPTION": "Fybros 40A SP Armor MCB C Series",
-            "DLP": 336.00
-          },
-          {
-            "S.NO.": 8,
-            "CODE": "KSG400402",
-            "DESCRIPTION": "Fybros 63A SP Armor MCB C Series",
-            "DLP": 382.00
-          },
-          {
-            "S.NO.": 9,
-            "CODE": "KSG401001",
-            "DESCRIPTION": "Fybros 6A DP Armor MCB C Series",
-            "DLP": 645.00
-          },
-          {
-            "S.NO.": 10,
-            "CODE": "KSG401002",
-            "DESCRIPTION": "Fybros 10A DP Armor MCB C Series",
-            "DLP": 645.00
-          },
-          {
-            "S.NO.": 11,
-            "CODE": "KSG401003",
-            "DESCRIPTION": "Fybros 16A DP Armor MCB C Series",
-            "DLP": 645.00
-          },
-          {
-            "S.NO.": 12,
-            "CODE": "KSG401004",
-            "DESCRIPTION": "Fybros 20A DP Armor MCB C Series",
-            "DLP": 645.00
-          },
-          {
-            "S.NO.": 13,
-            "CODE": "KSG401005",
-            "DESCRIPTION": "Fybros 25A DP Armor MCB C Series",
-            "DLP": 645.00
-          },
-          {
-            "S.NO.": 14,
-            "CODE": "KSG401006",
-            "DESCRIPTION": "Fybros 32A DP Armor MCB C Series",
-            "DLP": 645.00
-          },
-          {
-            "S.NO.": 15,
-            "CODE": "KSG401100",
-            "DESCRIPTION": "Fybros 40A DP Armor MCB C Series",
-            "DLP": 775.00
-          },
-          {
-            "S.NO.": 16,
-            "CODE": "KSG401202",
-            "DESCRIPTION": "Fybros 63A DP Armor MCB C Series",
-            "DLP": 910.00
-          },
-          {
-            "S.NO.": 17,
-            "CODE": "KSG401401",
-            "DESCRIPTION": "Fybros 6A TP Armor MCB C Series",
-            "DLP": 955.00
-          },
-          {
-            "S.NO.": 18,
-            "CODE": "KSG401402",
-            "DESCRIPTION": "Fybros 10A TP Armor MCB C Series",
-            "DLP": 955.00
-          },
-          {
-            "S.NO.": 19,
-            "CODE": "KSG401403",
-            "DESCRIPTION": "Fybros 16A TP Armor MCB C Series",
-            "DLP": 955.00
-          },
-          {
-            "S.NO.": 20,
-            "CODE": "KSG401404",
-            "DESCRIPTION": "Fybros 20A TP Armor MCB C Series",
-            "DLP": 955.00
-          },
-          {
-            "S.NO.": 21,
-            "CODE": "KSG401405",
-            "DESCRIPTION": "Fybros 25A TP Armor MCB C Series",
-            "DLP": 955.00
-          },
-          {
-            "S.NO.": 22,
-            "CODE": "KSG401406",
-            "DESCRIPTION": "Fybros 32A TP Armor MCB C Series",
-            "DLP": 955.00
-          },
-          {
-            "S.NO.": 23,
-            "CODE": "KSG401500",
-            "DESCRIPTION": "Fybros 40A TP Armor MCB C Series",
-            "DLP": 1265.00
-          },
-          {
-            "S.NO.": 24,
-            "CODE": "KSG401602",
-            "DESCRIPTION": "Fybros 63A TP Armor MCB C Series",
-            "DLP": 1510.00
-          },
-          {
-            "S.NO.": 25,
-            "CODE": "KSG401805",
-            "DESCRIPTION": "Fybros 25A TPN Armor MCB C Series",
-            "DLP": 1260.00
-          },
-          {
-            "S.NO.": 26,
-            "CODE": "KSG401806",
-            "DESCRIPTION": "Fybros 32A TPN Armor MCB C Series",
-            "DLP": 1260.00
-          },
-          {
-            "S.NO.": 27,
-            "CODE": "KSG401900",
-            "DESCRIPTION": "Fybros 40A TPN Armor MCB C Series",
-            "DLP": 1515.00
-          },
-          {
-            "S.NO.": 28,
-            "CODE": "KSG402202",
-            "DESCRIPTION": "Fybros 10A FP Armor MCB C Series",
-            "DLP": 1300.00
-          },
-          {
-            "S.NO.": 29,
-            "CODE": "KSG402203",
-            "DESCRIPTION": "Fybros 16A FP Armor MCB C Series",
-            "DLP": 1300.00
-          },
-          {
-            "S.NO.": 30,
-            "CODE": "KSG402204",
-            "DESCRIPTION": "Fybros 20A FP Armor MCB C Series",
-            "DLP": 1300.00
-          },
-          {
-            "S.NO.": 31,
-            "CODE": "KSG402205",
-            "DESCRIPTION": "Fybros 25A FP Armor MCB C Series",
-            "DLP": 1300.00
-          },
-          {
-            "S.NO.": 32,
-            "CODE": "KSG402206",
-            "DESCRIPTION": "Fybros 32A FP Armor MCB C Series",
-            "DLP": 1265.00
-          },
-          {
-            "S.NO.": 33,
-            "CODE": "KSG402300",
-            "DESCRIPTION": "Fybros 40A FP Armor MCB C Series",
-            "DLP": 1520.00
-          },
-          {
-            "S.NO.": 34,
-            "CODE": "KSG402402",
-            "DESCRIPTION": "Fybros 63A FP Armor MCB C Series",
-            "DLP": 1810.00
-          },
-          {
-            "S.NO.": 35,
-            "CODE": "KSG404902",
-            "DESCRIPTION": "Fybros 25A DP Armor RCCB 30mA Sensitivity",
-            "DLP": 1990.00
-          },
-          {
-            "S.NO.": 36,
-            "CODE": "KSG405000",
-            "DESCRIPTION": "Fybros 40A DP Armor RCCB 30mA Sensitivity",
-            "DLP": 1990.00
-          },
-          {
-            "S.NO.": 37,
-            "CODE": "KSG405100",
-            "DESCRIPTION": "Fybros 63A DP Armor RCCB 30mA Sensitivity",
-            "DLP": 2770.00
-          },
-          {
-            "S.NO.": 38,
-            "CODE": "KSG405402A",
-            "DESCRIPTION": "Fybros 25A DP Armor RCCB 100mA Sensitivity",
-            "DLP": 1990.00
-          },
-          {
-            "S.NO.": 39,
-            "CODE": "KSG405501A",
-            "DESCRIPTION": "Fybros 40A DP Armor RCCB 100mA Sensitivity",
-            "DLP": 1990.00
-          },
-          {
-            "S.NO.": 40,
-            "CODE": "KSG405601A",
-            "DESCRIPTION": "Fybros 63A DP Armor RCCB 100mA Sensitivity",
-            "DLP": 2645.00
-          },
-          {
-            "S.NO.": 41,
-            "CODE": "KSG405902",
-            "DESCRIPTION": "Fybros 25A FP Armor RCCB 30mA Sensitivity",
-            "DLP": 2470.00
-          },
-          {
-            "S.NO.": 42,
-            "CODE": "KSG406000",
-            "DESCRIPTION": "Fybros 40A FP Armor RCCB 30mA Sensitivity",
-            "DLP": 2470.00
-          },
-          {
-            "S.NO.": 43,
-            "CODE": "KSG406100",
-            "DESCRIPTION": "Fybros 63A FP Armor RCCB 30mA Sensitivity",
-            "DLP": 3050.00
-          },
-          {
-            "S.NO.": 44,
-            "CODE": "KSG406501A",
-            "DESCRIPTION": "Fybros 40A FP Armor RCCB 100mA Sensitivity",
-            "DLP": 2470.00
-          },
-          {
-            "S.NO.": 45,
-            "CODE": "KSG406601A",
-            "DESCRIPTION": "Fybros 63A FP Armor RCCB 100mA Sensitivity",
-            "DLP": 2945.00
-          }
-        ]
-      },
-      {
-        "category": "RENOVE -MCB RANGE",
-        "items": [
-          {
-            "S.NO.": 46,
-            "CODE": "KSG2201",
-            "DESCRIPTION": "6A SP MCB 10 kA C Series",
-            "DLP": 159.25
-          },
-          {
-            "S.NO.": 47,
-            "CODE": "KSG2202",
-            "DESCRIPTION": "10A SP MCB 10kA C Series",
-            "DLP": 159.25
-          },
-          {
-            "S.NO.": 48,
-            "CODE": "KSG2203",
-            "DESCRIPTION": "16A SP MCB 10kA C Series",
-            "DLP": 159.25
-          },
-          {
-            "S.NO.": 49,
-            "CODE": "KSG2204",
-            "DESCRIPTION": "20A SP MCB 10kA C Series",
-            "DLP": 159.25
-          },
-          {
-            "S.NO.": 50,
-            "CODE": "KSG2205",
-            "DESCRIPTION": "25A SP MCB 10kA C Series",
-            "DLP": 159.25
-          },
-          {
-            "S.NO.": 51,
-            "CODE": "KSG2206",
-            "DESCRIPTION": "32A SP MCB 10kA C Series",
-            "DLP": 159.25
-          },
-          {
-            "S.NO.": 52,
-            "CODE": "KSG2207",
-            "DESCRIPTION": "40A SP MCB 10kA C Series",
-            "DLP": 277.50
-          },
-          {
-            "S.NO.": 53,
-            "CODE": "KSG2208",
-            "DESCRIPTION": "63A SP MCB 10kA C Series",
-            "DLP": 309.50
-          },
-          {
-            "S.NO.": 54,
-            "CODE": "KSG2217",
-            "DESCRIPTION": "6A DP MCB 10kA C Series",
-            "DLP": 535.00
-          },
-          {
-            "S.NO.": 55,
-            "CODE": "KSG2218",
-            "DESCRIPTION": "10A DP MCB 10kA C Series",
-            "DLP": 535.00
-          },
-          {
-            "S.NO.": 56,
-            "CODE": "KSG2219",
-            "DESCRIPTION": "16A DP MCB 10kA C Series",
-            "DLP": 535.00
-          },
-          {
-            "S.NO.": 57,
-            "CODE": "KSG2220",
-            "DESCRIPTION": "20A DP MCB 10kA C Series",
-            "DLP": 535.00
-          },
-          {
-            "S.NO.": 58,
-            "CODE": "KSG2221",
-            "DESCRIPTION": "25A DP MCB 10kA C Series",
-            "DLP": 535.00
-          },
-          {
-            "S.NO.": 59,
-            "CODE": "KSG2222",
-            "DESCRIPTION": "32A DP MCB 10kA C Series",
-            "DLP": 535.00
-          },
-          {
-            "S.NO.": 60,
-            "CODE": "KSG2223",
-            "DESCRIPTION": "40A DP MCB 10kA C Series",
-            "DLP": 650.00
-          },
-          {
-            "S.NO.": 61,
-            "CODE": "KSG2224",
-            "DESCRIPTION": "63A DP MCB 10kA C Series",
-            "DLP": 760.00
-          },
-          {
-            "S.NO.": 62,
-            "CODE": "KSG2225",
-            "DESCRIPTION": "6A TP MCB 10 kA C Series",
-            "DLP": 810.00
-          },
-          {
-            "S.NO.": 63,
-            "CODE": "KSG2226",
-            "DESCRIPTION": "10A TP MCB 10 kA C Series",
-            "DLP": 810.00
-          },
-          {
-            "S.NO.": 64,
-            "CODE": "KSG2227",
-            "DESCRIPTION": "16A TP MCB 10 kA C Series",
-            "DLP": 810.00
-          },
-          {
-            "S.NO.": 65,
-            "CODE": "KSG2228",
-            "DESCRIPTION": "20A TP MCB 10 kA C Series",
-            "DLP": 810.00
-          },
-          {
-            "S.NO.": 66,
-            "CODE": "KSG2229",
-            "DESCRIPTION": "25A TP MCB 10 kA C Series",
-            "DLP": 810.00
-          },
-          {
-            "S.NO.": 67,
-            "CODE": "KSG2230",
-            "DESCRIPTION": "32A TP MCB 10 kA C Series",
-            "DLP": 810.00
-          },
-          {
-            "S.NO.": 68,
-            "CODE": "KSG2231",
-            "DESCRIPTION": "40A TP MCB 10 kA C Series",
-            "DLP": 1075.00
-          },
-          {
-            "S.NO.": 69,
-            "CODE": "KSG2232",
-            "DESCRIPTION": "63A TP MCB 10 kA C Series",
-            "DLP": 1280.00
-          },
-          {
-            "S.NO.": 70,
-            "CODE": "KSG2233",
-            "DESCRIPTION": "6A TPN MCB 10 kA C Series",
-            "DLP": 1070.00
-          },
-          {
-            "S.NO.": 71,
-            "CODE": "KSG2234",
-            "DESCRIPTION": "10A TPN MCB 10 kA C Series",
-            "DLP": 1070.00
-          },
-          {
-            "S.NO.": 72,
-            "CODE": "KSG2235",
-            "DESCRIPTION": "16A TPN MCB 10 kA C Series",
-            "DLP": 1070.00
-          },
-          {
-            "S.NO.": 73,
-            "CODE": "KSG2236",
-            "DESCRIPTION": "20A TPN MCB 10 kA C Series",
-            "DLP": 1070.00
-          },
-          {
-            "S.NO.": 74,
-            "CODE": "KSG2237",
-            "DESCRIPTION": "25A TPN MCB 10 kA C Series",
-            "DLP": 1070.00
-          },
-          {
-            "S.NO.": 75,
-            "CODE": "KSG2238",
-            "DESCRIPTION": "32A TPN MCB 10 kA C Series",
-            "DLP": 1070.00
-          },
-          {
-            "S.NO.": 76,
-            "CODE": "KSG2239",
-            "DESCRIPTION": "40A TPN MCB 10 kA C Series",
-            "DLP": 1315.00
-          },
-          {
-            "S.NO.": 77,
-            "CODE": "KSG2240",
-            "DESCRIPTION": "63A TPN MCB 10 kA C Series",
-            "DLP": 1565.00
-          },
-          {
-            "S.NO.": 78,
-            "CODE": "KSG2241",
-            "DESCRIPTION": "6A FP MCB 10 kA C Series",
-            "DLP": 1100.00
-          },
-          {
-            "S.NO.": 79,
-            "CODE": "KSG2242",
-            "DESCRIPTION": "10A FP MCB 10 kA C Series",
-            "DLP": 1100.00
-          },
-          {
-            "S.NO.": 80,
-            "CODE": "KSG2243",
-            "DESCRIPTION": "16A FP MCB 10 kA C Series",
-            "DLP": 1100.00
-          },
-          {
-            "S.NO.": 81,
-            "CODE": "KSG2244",
-            "DESCRIPTION": "20A FP MCB 10 kA C Series",
-            "DLP": 1100.00
-          },
-          {
-            "S.NO.": 82,
-            "CODE": "KSG2245",
-            "DESCRIPTION": "25A FP MCB 10 kA C Series",
-            "DLP": 1100.00
-          },
-          {
-            "S.NO.": 83,
-            "CODE": "KSG2246",
-            "DESCRIPTION": "32A FP MCB 10 kA C Series",
-            "DLP": 1100.00
-          },
-          {
-            "S.NO.": 84,
-            "CODE": "KSG2247",
-            "DESCRIPTION": "40A FP MCB 10 kA C Series",
-            "DLP": 1320.00
-          },
-          {
-            "S.NO.": 85,
-            "CODE": "KSG2248",
-            "DESCRIPTION": "63A FP MCB 10 kA C Series",
-            "DLP": 1570.00
-          }
-        ]
-      },
-      {
-        "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE",
-        "items": [
-          {
-            "S.NO.": 86,
-            "CODE": "KDB3080",
-            "DESCRIPTION": "Fybros 2 POLE NEX DB",
-            "DLP": 215.00
-          },
-          {
-            "S.NO.": 87,
-            "CODE": "KDB3081",
-            "DESCRIPTION": "Fybros 3 POLE NEX DB",
-            "DLP": 305.00
-          },
-          {
-            "S.NO.": 88,
-            "CODE": "KDB3082",
-            "DESCRIPTION": "Fybros 4 POLE NEX DB",
-            "DLP": 305.00
-          },
-          {
-            "S.NO.": 89,
-            "CODE": "KDB3083",
-            "DESCRIPTION": "Fybros 4 Way SD NEX DB",
-            "DLP": 490.00
-          },
-          {
-            "S.NO.": 90,
-            "CODE": "KDB3084",
-            "DESCRIPTION": "Fybros 6 Way SD NEX DB",
-            "DLP": 595.00
-          },
-          {
-            "S.NO.": 91,
-            "CODE": "KDB3085",
-            "DESCRIPTION": "Fybros 8 Way SD NEX DB",
-            "DLP": 670.00
-          },
-          {
-            "S.NO.": 92,
-            "CODE": "KDB3086",
-            "DESCRIPTION": "Fybros 10 Way SD NEX DB",
-            "DLP": 780.00
-          },
-          {
-            "S.NO.": 93,
-            "CODE": "KDB3087",
-            "DESCRIPTION": "Fybros 12 Way SD NEX DB",
-            "DLP": 875.00
-          },
-          {
-            "S.NO.": 94,
-            "CODE": "KDB3088",
-            "DESCRIPTION": "Fybros 16 Way SD NEX DB",
-            "DLP": 1090.00
-          },
-          {
-            "S.NO.": 95,
-            "CODE": "KDB3089",
-            "DESCRIPTION": "Fybros 4 Way DD NEX DB",
-            "DLP": 900.00
-          },
-          {
-            "S.NO.": 96,
-            "CODE": "KDB3090",
-            "DESCRIPTION": "Fybros 6 Way DD NEX DB",
-            "DLP": 1040.00
-          },
-          {
-            "S.NO.": 97,
-            "CODE": "KDB3091",
-            "DESCRIPTION": "Fybros 8 Way DD NEX DB",
-            "DLP": 1200.00
-          },
-          {
-            "S.NO.": 98,
-            "CODE": "KDB3092",
-            "DESCRIPTION": "Fybros 10 Way DD NEX DB",
-            "DLP": 1330.00
-          },
-          {
-            "S.NO.": 99,
-            "CODE": "KDB3093",
-            "DESCRIPTION": "Fybros 12 Way DD NEX DB",
-            "DLP": 1485.00
-          },
-          {
-            "S.NO.": 100,
-            "CODE": "KDB3094",
-            "DESCRIPTION": "Fybros 16 Way DD NEX DB",
-            "DLP": 1780.00
-          },
-          {
-            "S.NO.": 101,
-            "CODE": "KDB3098",
-            "DESCRIPTION": "Fybros 4 Way DD TPN NEX DB",
-            "DLP": 2535.00
-          },
-          {
-            "S.NO.": 102,
-            "CODE": "KDB3099",
-            "DESCRIPTION": "Fybros 6 Way DD TPN NEX DB",
-            "DLP": 3010.00
-          },
-          {
-            "S.NO.": 103,
-            "CODE": "KDB3100",
-            "DESCRIPTION": "Fybros 8 Way DD TPN NEX DB",
-            "DLP": 3535.00
-          },
-          {
-            "S.NO.": 104,
-            "CODE": "KDB3103",
-            "DESCRIPTION": "Fybros 12 Way DD TPN NEX DB",
-            "DLP": 4410.00
-          },
-          {
-            "S.NO.": 105,
-            "CODE": "KDB3411",
-            "DESCRIPTION": "Fybros 4 Way DD ELITE DB",
-            "DLP": 900.00
-          },
-          {
-            "S.NO.": 106,
-            "CODE": "KDB3412",
-            "DESCRIPTION": "Fybros 6 Way DD ELITE DB",
-            "DLP": 1040.00
-          },
-          {
-            "S.NO.": 107,
-            "CODE": "KDB3413",
-            "DESCRIPTION": "Fybros 8 Way DD ELITE DB",
-            "DLP": 1200.00
-          },
-          {
-            "S.NO.": 108,
-            "CODE": "KDB3414",
-            "DESCRIPTION": "Fybros 10 Way DD ELITE DB",
-            "DLP": 1330.00
-          },
-          {
-            "S.NO.": 109,
-            "CODE": "KDB3415",
-            "DESCRIPTION": "Fybros 12 Way DD ELITE DB",
-            "DLP": 1485.00
-          },
-          {
-            "S.NO.": 110,
-            "CODE": "KDB3416",
-            "DESCRIPTION": "Fybros 16 Way DD ELITE DB",
-            "DLP": 1780.00
-          }
-        ]
-      },
-      {
-        "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE",
-        "items": [
-          {
-            "S.NO.": 111,
-            "CODE": "KSG2023",
-            "DESCRIPTION": "Fybros 16A/240V Nuevo Rewirable Kit Kat Fuse Unit Pilot",
-            "DLP": 88.00
-          },
-          {
-            "S.NO.": 112,
-            "CODE": "KSG2025",
-            "DESCRIPTION": "Fybros 32A/415V Nuevo Rewirable Kit Kat Fuse Unit Excell",
-            "DLP": 242.00
-          },
-          {
-            "S.NO.": 113,
-            "CODE": "KSG2026",
-            "DESCRIPTION": "Fybros 63A/415V Nuevo Rewirable Kit Kat Fuse Unit Excell",
-            "DLP": 605.00
-          },
-          {
-            "S.NO.": 114,
-            "CODE": "KSG2027",
-            "DESCRIPTION": "Fybros 100A/415V Nuevo Rewirable Kit Kat Fuse Unit Excell Handle Typ",
-            "DLP": 1130.00
-          },
-          {
-            "S.NO.": 115,
-            "CODE": "KSG2028",
-            "DESCRIPTION": "Fybros 200A/415V Nuevo Rewirable Kit Kat Fuse Unit Excell Handle Typ",
-            "DLP": 1950.00
-          },
-          {
-            "S.NO.": 116,
-            "CODE": "KSG2030",
-            "DESCRIPTION": "Fybros 500A/415V Nuevo Rewirable Kit Kat Fuse Unit Fitting with Legs",
-            "DLP": 3510.00
-          },
-          {
-            "S.NO.": 117,
-            "CODE": "KSG2039",
-            "DESCRIPTION": "Fybros 16A/415V Nuevo Reverse & Forward Switch Plastic Handle",
-            "DLP": 670.00
-          },
-          {
-            "S.NO.": 118,
-            "CODE": "KSG2040",
-            "DESCRIPTION": "Fybros 25A/415V Nuevo Reverse & Forward Switch Plastic Handle",
-            "DLP": 1110.00
-          },
-          {
-            "S.NO.": 119,
-            "CODE": "KSG2047",
-            "DESCRIPTION": "Fybros 63A Nuevo Busbar Chamber",
-            "DLP": 2720.00
-          },
-          {
-            "S.NO.": 120,
-            "CODE": "KSG2048",
-            "DESCRIPTION": "Fybros 100A Nuevo Busbar Chamber",
-            "DLP": 4270.00
-          },
-          {
-            "S.NO.": 121,
-            "CODE": "KSG2049",
-            "DESCRIPTION": "Fybros 200A Nuevo Busbar Chamber",
-            "DLP": 6410.00
-          },
-          {
-            "S.NO.": 123,
-            "CODE": "KSG2055",
-            "DESCRIPTION": "Fybros 16A/415V TP Nuevo Rewirable Switch Fuse Unit",
-            "DLP": 2145.00
-          },
-          {
-            "S.NO.": 124,
-            "CODE": "KSG2056",
-            "DESCRIPTION": "Fybros 32A/415V TP Nuevo Rewirable Switch Fuse Unit",
-            "DLP": 2660.00
-          },
-          {
-            "S.NO.": 125,
-            "CODE": "KSG2057",
-            "DESCRIPTION": "Fybros 63A/415V TP Nuevo Rewirable Switch Fuse Unit",
-            "DLP": 6365.00
-          },
-          {
-            "S.NO.": 126,
-            "CODE": "KSG2058",
-            "DESCRIPTION": "Fybros 100A/415V TP Nuevo Rewirable Switch Fuse Unit",
-            "DLP": 12895.00
-          },
-          {
-            "S.NO.": 127,
-            "CODE": "KSG2061",
-            "DESCRIPTION": "Fybros 32A/240V DP Nuevo Change Over Switch Off load",
-            "DLP": 1930.00
-          },
-          {
-            "S.NO.": 128,
-            "CODE": "KSG2066",
-            "DESCRIPTION": "Fybros 32A/415V FP Nuevo Change Over Switch Off load",
-            "DLP": 3025.00
-          },
-          {
-            "S.NO.": 129,
-            "CODE": "KSG2067",
-            "DESCRIPTION": "Fybros 63A/415V FP Nuevo Change Over Switch Off load",
-            "DLP": 8080.00
-          },
-          {
-            "S.NO.": 130,
-            "CODE": "KSG2068",
-            "DESCRIPTION": "Fybros 100A/415V FP Nuevo Change Over Switch Off load",
-            "DLP": 12815.00
-          },
-          {
-            "S.NO.": 131,
-            "CODE": "KDB3337",
-            "DESCRIPTION": "Fybros 20A SPN Magna DB Plug & Socket Enclosures AC Distribution Bd",
-            "DLP": 850.00
-          }
-        ]
-      }
-    ],
-    "note": "Please note that the products mentioned in this price list will be maintained with us in stock. Any other product from the catalogue apart from this price list will not be available."
-  }
-}
+[
+  {"S.NO.": 1, "CODE": "KSG400201", "DESCRIPTION": "Fybros 6A SP Armor MCB C Series", "DLP": 176.50, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 2, "CODE": "KSG400202", "DESCRIPTION": "Fybros 10A SP Armor MCB C Series", "DLP": 176.50, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 3, "CODE": "KSG400203", "DESCRIPTION": "Fybros 16A SP Armor MCB C Series", "DLP": 176.50, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 4, "CODE": "KSG400204", "DESCRIPTION": "Fybros 20A SP Armor MCB C Series", "DLP": 176.50, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 5, "CODE": "KSG400205", "DESCRIPTION": "Fybros 25A SP Armor MCB C Series", "DLP": 176.50, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 6, "CODE": "KSG400206", "DESCRIPTION": "Fybros 32A SP Armor MCB C Series", "DLP": 176.50, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 7, "CODE": "KSG400300", "DESCRIPTION": "Fybros 40A SP Armor MCB C Series", "DLP": 336.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 8, "CODE": "KSG400402", "DESCRIPTION": "Fybros 63A SP Armor MCB C Series", "DLP": 382.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 9, "CODE": "KSG401001", "DESCRIPTION": "Fybros 6A DP Armor MCB C Series", "DLP": 645.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 10, "CODE": "KSG401002", "DESCRIPTION": "Fybros 10A DP Armor MCB C Series", "DLP": 645.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 11, "CODE": "KSG401003", "DESCRIPTION": "Fybros 16A DP Armor MCB C Series", "DLP": 645.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 12, "CODE": "KSG401004", "DESCRIPTION": "Fybros 20A DP Armor MCB C Series", "DLP": 645.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 13, "CODE": "KSG401005", "DESCRIPTION": "Fybros 25A DP Armor MCB C Series", "DLP": 645.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 14, "CODE": "KSG401006", "DESCRIPTION": "Fybros 32A DP Armor MCB C Series", "DLP": 645.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 15, "CODE": "KSG401100", "DESCRIPTION": "Fybros 40A DP Armor MCB C Series", "DLP": 775.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 16, "CODE": "KSG401202", "DESCRIPTION": "Fybros 63A DP Armor MCB C Series", "DLP": 910.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 17, "CODE": "KSG401401", "DESCRIPTION": "Fybros 6A TP Armor MCB C Series", "DLP": 955.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 18, "CODE": "KSG401402", "DESCRIPTION": "Fybros 10A TP Armor MCB C Series", "DLP": 955.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 19, "CODE": "KSG401403", "DESCRIPTION": "Fybros 16A TP Armor MCB C Series", "DLP": 955.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 20, "CODE": "KSG401404", "DESCRIPTION": "Fybros 20A TP Armor MCB C Series", "DLP": 955.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 21, "CODE": "KSG401405", "DESCRIPTION": "Fybros 25A TP Armor MCB C Series", "DLP": 955.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 22, "CODE": "KSG401406", "DESCRIPTION": "Fybros 32A TP Armor MCB C Series", "DLP": 955.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 23, "CODE": "KSG401500", "DESCRIPTION": "Fybros 40A TP Armor MCB C Series", "DLP": 1265.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 24, "CODE": "KSG401602", "DESCRIPTION": "Fybros 63A TP Armor MCB C Series", "DLP": 1510.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 25, "CODE": "KSG401805", "DESCRIPTION": "Fybros 25A TPN Armor MCB C Series", "DLP": 1260.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 26, "CODE": "KSG401806", "DESCRIPTION": "Fybros 32A TPN Armor MCB C Series", "DLP": 1260.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 27, "CODE": "KSG401900", "DESCRIPTION": "Fybros 40A TPN Armor MCB C Series", "DLP": 1515.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 28, "CODE": "KSG402202", "DESCRIPTION": "Fybros 10A FP Armor MCB C Series", "DLP": 1300.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 29, "CODE": "KSG402203", "DESCRIPTION": "Fybros 16A FP Armor MCB C Series", "DLP": 1300.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 30, "CODE": "KSG402204", "DESCRIPTION": "Fybros 20A FP Armor MCB C Series", "DLP": 1300.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 31, "CODE": "KSG402205", "DESCRIPTION": "Fybros 25A FP Armor MCB C Series", "DLP": 1300.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 32, "CODE": "KSG402206", "DESCRIPTION": "Fybros 32A FP Armor MCB C Series", "DLP": 1265.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 33, "CODE": "KSG402300", "DESCRIPTION": "Fybros 40A FP Armor MCB C Series", "DLP": 1520.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 34, "CODE": "KSG402402", "DESCRIPTION": "Fybros 63A FP Armor MCB C Series", "DLP": 1810.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 35, "CODE": "KSG404902", "DESCRIPTION": "Fybros 25A DP Armor RCCB 30mA Sensitivity", "DLP": 1990.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 36, "CODE": "KSG405000", "DESCRIPTION": "Fybros 40A DP Armor RCCB 30mA Sensitivity", "DLP": 1990.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 37, "CODE": "KSG405100", "DESCRIPTION": "Fybros 63A DP Armor RCCB 30mA Sensitivity", "DLP": 2770.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 38, "CODE": "KSG405402A", "DESCRIPTION": "Fybros 25A DP Armor RCCB 100mA Sensitivity", "DLP": 1990.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 39, "CODE": "KSG405501A", "DESCRIPTION": "Fybros 40A DP Armor RCCB 100mA Sensitivity", "DLP": 1990.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 40, "CODE": "KSG405601A", "DESCRIPTION": "Fybros 63A DP Armor RCCB 100mA Sensitivity", "DLP": 2645.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 41, "CODE": "KSG405902", "DESCRIPTION": "Fybros 25A FP Armor RCCB 30mA Sensitivity", "DLP": 2470.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 42, "CODE": "KSG406000", "DESCRIPTION": "Fybros 40A FP Armor RCCB 30mA Sensitivity", "DLP": 2470.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 43, "CODE": "KSG406100", "DESCRIPTION": "Fybros 63A FP Armor RCCB 30mA Sensitivity", "DLP": 3050.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 44, "CODE": "KSG406501A", "DESCRIPTION": "Fybros 40A FP Armor RCCB 100mA Sensitivity", "DLP": 2470.00, "category": "ARMOR - MCB AND RCCB"},
+  {"S.NO.": 45, "CODE": "KSG406601A", "DESCRIPTION": "Fybros 63A FP Armor RCCB 100mA Sensitivity", "DLP": 2945.00, "category": "ARMOR - MCB AND RCCB"},
+  
+  {"S.NO.": 46, "CODE": "KSG2201", "DESCRIPTION": "6A SP MCB 10 kA C Series", "DLP": 159.25, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 47, "CODE": "KSG2202", "DESCRIPTION": "10A SP MCB 10kA C Series", "DLP": 159.25, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 48, "CODE": "KSG2203", "DESCRIPTION": "16A SP MCB 10kA C Series", "DLP": 159.25, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 49, "CODE": "KSG2204", "DESCRIPTION": "20A SP MCB 10kA C Series", "DLP": 159.25, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 50, "CODE": "KSG2205", "DESCRIPTION": "25A SP MCB 10kA C Series", "DLP": 159.25, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 51, "CODE": "KSG2206", "DESCRIPTION": "32A SP MCB 10kA C Series", "DLP": 159.25, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 52, "CODE": "KSG2207", "DESCRIPTION": "40A SP MCB 10kA C Series", "DLP": 277.50, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 53, "CODE": "KSG2208", "DESCRIPTION": "63A SP MCB 10kA C Series", "DLP": 309.50, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 54, "CODE": "KSG2217", "DESCRIPTION": "6A DP MCB 10kA C Series", "DLP": 535.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 55, "CODE": "KSG2218", "DESCRIPTION": "10A DP MCB 10kA C Series", "DLP": 535.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 56, "CODE": "KSG2219", "DESCRIPTION": "16A DP MCB 10kA C Series", "DLP": 535.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 57, "CODE": "KSG2220", "DESCRIPTION": "20A DP MCB 10kA C Series", "DLP": 535.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 58, "CODE": "KSG2221", "DESCRIPTION": "25A DP MCB 10kA C Series", "DLP": 535.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 59, "CODE": "KSG2222", "DESCRIPTION": "32A DP MCB 10kA C Series", "DLP": 535.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 60, "CODE": "KSG2223", "DESCRIPTION": "40A DP MCB 10kA C Series", "DLP": 650.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 61, "CODE": "KSG2224", "DESCRIPTION": "63A DP MCB 10kA C Series", "DLP": 760.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 62, "CODE": "KSG2225", "DESCRIPTION": "6A TP MCB 10 kA C Series", "DLP": 810.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 63, "CODE": "KSG2226", "DESCRIPTION": "10A TP MCB 10 kA C Series", "DLP": 810.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 64, "CODE": "KSG2227", "DESCRIPTION": "16A TP MCB 10 kA C Series", "DLP": 810.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 65, "CODE": "KSG2228", "DESCRIPTION": "20A TP MCB 10 kA C Series", "DLP": 810.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 66, "CODE": "KSG2229", "DESCRIPTION": "25A TP MCB 10 kA C Series", "DLP": 810.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 67, "CODE": "KSG2230", "DESCRIPTION": "32A TP MCB 10 kA C Series", "DLP": 810.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 68, "CODE": "KSG2231", "DESCRIPTION": "40A TP MCB 10 kA C Series", "DLP": 1075.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 69, "CODE": "KSG2232", "DESCRIPTION": "63A TP MCB 10 kA C Series", "DLP": 1280.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 70, "CODE": "KSG2233", "DESCRIPTION": "6A TPN MCB 10 kA C Series", "DLP": 1070.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 71, "CODE": "KSG2234", "DESCRIPTION": "10A TPN MCB 10 kA C Series", "DLP": 1070.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 72, "CODE": "KSG2235", "DESCRIPTION": "16A TPN MCB 10 kA C Series", "DLP": 1070.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 73, "CODE": "KSG2236", "DESCRIPTION": "20A TPN MCB 10 kA C Series", "DLP": 1070.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 74, "CODE": "KSG2237", "DESCRIPTION": "25A TPN MCB 10 kA C Series", "DLP": 1070.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 75, "CODE": "KSG2238", "DESCRIPTION": "32A TPN MCB 10 kA C Series", "DLP": 1070.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 76, "CODE": "KSG2239", "DESCRIPTION": "40A TPN MCB 10 kA C Series", "DLP": 1315.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 77, "CODE": "KSG2240", "DESCRIPTION": "63A TPN MCB 10 kA C Series", "DLP": 1565.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 78, "CODE": "KSG2241", "DESCRIPTION": "6A FP MCB 10 kA C Series", "DLP": 1100.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 79, "CODE": "KSG2242", "DESCRIPTION": "10A FP MCB 10 kA C Series", "DLP": 1100.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 80, "CODE": "KSG2243", "DESCRIPTION": "16A FP MCB 10 kA C Series", "DLP": 1100.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 81, "CODE": "KSG2244", "DESCRIPTION": "20A FP MCB 10 kA C Series", "DLP": 1100.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 82, "CODE": "KSG2245", "DESCRIPTION": "25A FP MCB 10 kA C Series", "DLP": 1100.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 83, "CODE": "KSG2246", "DESCRIPTION": "32A FP MCB 10 kA C Series", "DLP": 1100.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 84, "CODE": "KSG2247", "DESCRIPTION": "40A FP MCB 10 kA C Series", "DLP": 1320.00, "category": "RENOVE -MCB RANGE"},
+  {"S.NO.": 85, "CODE": "KSG2248", "DESCRIPTION": "63A FP MCB 10 kA C Series", "DLP": 1570.00, "category": "RENOVE -MCB RANGE"},
+
+  {"S.NO.": 86, "CODE": "KDB3080", "DESCRIPTION": "Fybros 2 POLE NEX DB", "DLP": 215.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 87, "CODE": "KDB3081", "DESCRIPTION": "Fybros 3 POLE NEX DB", "DLP": 305.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 88, "CODE": "KDB3082", "DESCRIPTION": "Fybros 4 POLE NEX DB", "DLP": 305.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 89, "CODE": "KDB3083", "DESCRIPTION": "Fybros 4 Way SD NEX DB", "DLP": 490.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 90, "CODE": "KDB3084", "DESCRIPTION": "Fybros 6 Way SD NEX DB", "DLP": 595.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 91, "CODE": "KDB3085", "DESCRIPTION": "Fybros 8 Way SD NEX DB", "DLP": 670.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 92, "CODE": "KDB3086", "DESCRIPTION": "Fybros 10 Way SD NEX DB", "DLP": 780.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 93, "CODE": "KDB3087", "DESCRIPTION": "Fybros 12 Way SD NEX DB", "DLP": 875.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 94, "CODE": "KDB3088", "DESCRIPTION": "Fybros 16 Way SD NEX DB", "DLP": 1090.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 95, "CODE": "KDB3089", "DESCRIPTION": "Fybros 4 Way DD NEX DB", "DLP": 900.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 96, "CODE": "KDB3090", "DESCRIPTION": "Fybros 6 Way DD NEX DB", "DLP": 1040.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 97, "CODE": "KDB3091", "DESCRIPTION": "Fybros 8 Way DD NEX DB", "DLP": 1200.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 98, "CODE": "KDB3092", "DESCRIPTION": "Fybros 10 Way DD NEX DB", "DLP": 1330.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 99, "CODE": "KDB3093", "DESCRIPTION": "Fybros 12 Way DD NEX DB", "DLP": 1485.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 100, "CODE": "KDB3094", "DESCRIPTION": "Fybros 16 Way DD NEX DB", "DLP": 1780.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 101, "CODE": "KDB3098", "DESCRIPTION": "Fybros 4 Way DD TPN NEX DB", "DLP": 2535.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 102, "CODE": "KDB3099", "DESCRIPTION": "Fybros 6 Way DD TPN NEX DB", "DLP": 3010.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 103, "CODE": "KDB3100", "DESCRIPTION": "Fybros 8 Way DD TPN NEX DB", "DLP": 3535.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 104, "CODE": "KDB3103", "DESCRIPTION": "Fybros 12 Way DD TPN NEX DB", "DLP": 4410.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 105, "CODE": "KDB3411", "DESCRIPTION": "Fybros 4 Way DD ELITE DB", "DLP": 900.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 106, "CODE": "KDB3412", "DESCRIPTION": "Fybros 6 Way DD ELITE DB", "DLP": 1040.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 107, "CODE": "KDB3413", "DESCRIPTION": "Fybros 8 Way DD ELITE DB", "DLP": 1200.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 108, "CODE": "KDB3414", "DESCRIPTION": "Fybros 10 Way DD ELITE DB", "DLP": 1330.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 109, "CODE": "KDB3415", "DESCRIPTION": "Fybros 12 Way DD ELITE DB", "DLP": 1485.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+  {"S.NO.": 110, "CODE": "KDB3416", "DESCRIPTION": "Fybros 16 Way DD ELITE DB", "DLP": 1780.00, "category": "MCCB BOX DOUBLE DOOR AND SINGLE DOOR NEX AND ELITE"},
+
+  {"S.NO.": 111, "CODE": "KSG2023", "DESCRIPTION": "Fybros 16A/240V Nuevo Rewirable Kit Kat Fuse Unit Pilot", "DLP": 88.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 112, "CODE": "KSG2025", "DESCRIPTION": "Fybros 32A/415V Nuevo Rewirable Kit Kat Fuse Unit Excell", "DLP": 242.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 113, "CODE": "KSG2026", "DESCRIPTION": "Fybros 63A/415V Nuevo Rewirable Kit Kat Fuse Unit Excell", "DLP": 605.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 114, "CODE": "KSG2027", "DESCRIPTION": "Fybros 100A/415V Nuevo Rewirable Kit Kat Fuse Unit Excell Handle Typ", "DLP": 1130.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 115, "CODE": "KSG2028", "DESCRIPTION": "Fybros 200A/415V Nuevo Rewirable Kit Kat Fuse Unit Excell Handle Typ", "DLP": 1950.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 116, "CODE": "KSG2030", "DESCRIPTION": "Fybros 500A/415V Nuevo Rewirable Kit Kat Fuse Unit Fitting with Legs", "DLP": 3510.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 117, "CODE": "KSG2039", "DESCRIPTION": "Fybros 16A/415V Nuevo Reverse & Forward Switch Plastic Handle", "DLP": 670.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 118, "CODE": "KSG2040", "DESCRIPTION": "Fybros 25A/415V Nuevo Reverse & Forward Switch Plastic Handle", "DLP": 1110.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 119, "CODE": "KSG2047", "DESCRIPTION": "Fybros 63A Nuevo Busbar Chamber", "DLP": 2720.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 120, "CODE": "KSG2048", "DESCRIPTION": "Fybros 100A Nuevo Busbar Chamber", "DLP": 4270.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 121, "CODE": "KSG2049", "DESCRIPTION": "Fybros 200A Nuevo Busbar Chamber", "DLP": 6410.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 123, "CODE": "KSG2055", "DESCRIPTION": "Fybros 16A/415V TP Nuevo Rewirable Switch Fuse Unit", "DLP": 2145.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 124, "CODE": "KSG2056", "DESCRIPTION": "Fybros 32A/415V TP Nuevo Rewirable Switch Fuse Unit", "DLP": 2660.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 125, "CODE": "KSG2057", "DESCRIPTION": "Fybros 63A/415V TP Nuevo Rewirable Switch Fuse Unit", "DLP": 6365.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 126, "CODE": "KSG2058", "DESCRIPTION": "Fybros 100A/415V TP Nuevo Rewirable Switch Fuse Unit", "DLP": 12895.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 127, "CODE": "KSG2061", "DESCRIPTION": "Fybros 32A/240V DP Nuevo Change Over Switch Off load", "DLP": 1930.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 128, "CODE": "KSG2066", "DESCRIPTION": "Fybros 32A/415V FP Nuevo Change Over Switch Off load", "DLP": 3025.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 129, "CODE": "KSG2067", "DESCRIPTION": "Fybros 63A/415V FP Nuevo Change Over Switch Off load", "DLP": 8080.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 130, "CODE": "KSG2068", "DESCRIPTION": "Fybros 100A/415V FP Nuevo Change Over Switch Off load", "DLP": 12815.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
+  {"S.NO.": 131, "CODE": "KDB3337", "DESCRIPTION": "Fybros 20A SPN Magna DB Plug & Socket Enclosures AC Distribution Bd", "DLP": 850.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"}
+]
