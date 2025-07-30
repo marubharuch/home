@@ -2,7 +2,7 @@
  {
   "CATEGORY": "Super Premium Fans",
   "CODE": "FF 1101",
-  "PRODUCT NAME": "F-WAVE bldc",
+  "description": "F-WAVE bldc",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "40",
   "SPEED\n(RPM)": "350",
@@ -15,7 +15,7 @@
  {
   "CATEGORY": "Super Premium Fans",
   "CODE": "FF 1102",
-  "PRODUCT NAME": "ELLA BLDC",
+  "description": "ELLA BLDC",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "40",
   "SPEED\n(RPM)": "240",
@@ -28,7 +28,7 @@
  {
   "CATEGORY": "Super Premium Fans",
   "CODE": "FF 1103",
-  "PRODUCT NAME": "URUS* BLDC",
+  "description": "URUS* BLDC",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "40",
   "SPEED\n(RPM)": "330",
@@ -41,7 +41,7 @@
  {
   "CATEGORY": "Super Premium Fans",
   "CODE": "FF 1104",
-  "PRODUCT NAME": "AERIS PRO BLDC",
+  "description": "AERIS PRO BLDC",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "32",
   "SPEED\n(RPM)": "350",
@@ -54,7 +54,7 @@
  {
   "CATEGORY": "Super Premium Fans",
   "CODE": "FF 1105",
-  "PRODUCT NAME": "AERIS BLDC",
+  "description": "AERIS BLDC",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "32",
   "SPEED\n(RPM)": "350",
@@ -67,7 +67,7 @@
  {
   "CATEGORY": "Super Premium Fans",
   "CODE": "FF 1106",
-  "PRODUCT NAME": "LOFT",
+  "description": "LOFT",
   "SWEEP\n(MM)": "800",
   "POWER\n(Watt)": "50",
   "SPEED\n(RPM)": "350",
@@ -80,7 +80,7 @@
  {
   "CATEGORY": "Super Premium Fans",
   "CODE": "FF 1107",
-  "PRODUCT NAME": "STELLA",
+  "description": "STELLA",
   "SWEEP\n(MM)": "600",
   "POWER\n(Watt)": "65",
   "SPEED\n(RPM)": "850",
@@ -93,7 +93,7 @@
  {
   "CATEGORY": "Premium Fans",
   "CODE": "FF 2101",
-  "PRODUCT NAME": "CASA",
+  "description": "CASA",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "52",
   "SPEED\n(RPM)": "350",
@@ -106,7 +106,7 @@
  {
   "CATEGORY": "Premium Fans",
   "CODE": "FF 2102",
-  "PRODUCT NAME": "CASA  BLDC",
+  "description": "CASA  BLDC",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "32",
   "SPEED\n(RPM)": "350",
@@ -119,7 +119,7 @@
  {
   "CATEGORY": "Premium Fans",
   "CODE": "FF 2103-900",
-  "PRODUCT NAME": "OL YMPIA 900",
+  "description": "OL YMPIA 900",
   "SWEEP\n(MM)": "900",
   "POWER\n(Watt)": "45",
   "SPEED\n(RPM)": "450",
@@ -132,7 +132,7 @@
  {
   "CATEGORY": "Premium Fans",
   "CODE": "FF 2103-1200",
-  "PRODUCT NAME": "OL YMPIA 1200",
+  "description": "OL YMPIA 1200",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "53",
   "SPEED\n(RPM)": "350",
@@ -145,7 +145,7 @@
  {
   "CATEGORY": "Premium Fans",
   "CODE": "FF 2104-600",
-  "PRODUCT NAME": "AERO 600",
+  "description": "AERO 600",
   "SWEEP\n(MM)": "600",
   "POWER\n(Watt)": "65",
   "SPEED\n(RPM)": "850",
@@ -158,7 +158,7 @@
  {
   "CATEGORY": "Premium Fans",
   "CODE": "FF 2104-900",
-  "PRODUCT NAME": "AERO 900",
+  "description": "AERO 900",
   "SWEEP\n(MM)": "900",
   "POWER\n(Watt)": "45",
   "SPEED\n(RPM)": "450",
@@ -171,7 +171,7 @@
  {
   "CATEGORY": "Premium Fans",
   "CODE": "FF 2104-1200",
-  "PRODUCT NAME": "AERO 1200",
+  "description": "AERO 1200",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "53",
   "SPEED\n(RPM)": "350",
@@ -184,7 +184,7 @@
  {
   "CATEGORY": "Premium Fans",
   "CODE": "FF 2105",
-  "PRODUCT NAME": "BLDC",
+  "description": "BLDC",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "30",
   "SPEED\n(RPM)": "340",
@@ -197,7 +197,7 @@
  {
   "CATEGORY": "Premium Fans",
   "CODE": "FF 2106-900",
-  "PRODUCT NAME": "SOLIS 900",
+  "description": "SOLIS 900",
   "SWEEP\n(MM)": "900",
   "POWER\n(Watt)": "45",
   "SPEED\n(RPM)": "450",
@@ -209,7 +209,7 @@
  },
  {
   "CODE": "FF 2106-1200",
-  "PRODUCT NAME": "SOLIS 1200",
+  "description": "SOLIS 1200",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "52",
   "SPEED\n(RPM)": "380",
@@ -222,7 +222,7 @@
  {
   "CATEGORY": "Decorative Fans",
   "CODE": "FF 3101-600",
-  "PRODUCT NAME": "F-FLOW PRO 600",
+  "description": "F-FLOW PRO 600",
   "SWEEP\n(MM)": "600",
   "POWER\n(Watt)": "65",
   "SPEED\n(RPM)": "850",
@@ -235,7 +235,7 @@
  {
   "CATEGORY": "Decorative Fans",
   "CODE": "FF 3101-900",
-  "PRODUCT NAME": "F-FLOW PRO 900",
+  "description": "F-FLOW PRO 900",
   "SWEEP\n(MM)": "900",
   "POWER\n(Watt)": "45",
   "SPEED\n(RPM)": "450",
@@ -248,7 +248,7 @@
  {
   "CATEGORY": "Decorative Fans",
   "CODE": "FF 3101-1200",
-  "PRODUCT NAME": "F-FLOW PRO 1200",
+  "description": "F-FLOW PRO 1200",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "52",
   "SPEED\n(RPM)": "390",
@@ -261,7 +261,7 @@
  {
   "CATEGORY": "Decorative Fans",
   "CODE": "FF 3102-900",
-  "PRODUCT NAME": "AIR-1 PRO 900",
+  "description": "AIR-1 PRO 900",
   "SWEEP\n(MM)": "900",
   "POWER\n(Watt)": "45",
   "SPEED\n(RPM)": "450",
@@ -274,7 +274,7 @@
  {
   "CATEGORY": "Decorative Fans",
   "CODE": "FF 3102-1200",
-  "PRODUCT NAME": "AIR-1 PRO 1200",
+  "description": "AIR-1 PRO 1200",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "52",
   "SPEED\n(RPM)": "400",
@@ -285,7 +285,7 @@
  {
   "CATEGORY": "Decorative Fans",
   "CODE": "FF 3102-1400",
-  "PRODUCT NAME": "AIR-1 PRO 1400",
+  "description": "AIR-1 PRO 1400",
   "SWEEP\n(MM)": "1400",
   "POWER\n(Watt)": "56",
   "SPEED\n(RPM)": "290",
@@ -297,7 +297,7 @@
  {
   "CATEGORY": "Standard Fans",
   "CODE": "FF 4101-900",
-  "PRODUCT NAME": "AIR-1 900",
+  "description": "AIR-1 900",
   "SWEEP\n(MM)": "900",
   "POWER\n(Watt)": "45",
   "SPEED\n(RPM)": "450",
@@ -308,7 +308,7 @@
  {
   "CATEGORY": "Standard Fans",
   "CODE": "FF 4101-1200",
-  "PRODUCT NAME": "AIR-2 1200",
+  "description": "AIR-2 1200",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "52",
   "SPEED\n(RPM)": "400",
@@ -321,7 +321,7 @@
  {
   "CATEGORY": "Standard Fans",
   "CODE": "FF 4101-1400",
-  "PRODUCT NAME": "AIR-3 1400",
+  "description": "AIR-3 1400",
   "SWEEP\n(MM)": "1400",
   "POWER\n(Watt)": "56",
   "SPEED\n(RPM)": "290",
@@ -334,7 +334,7 @@
  {
   "CATEGORY": "Standard Fans",
   "CODE": "FF 4102-900",
-  "PRODUCT NAME": "FALCON SS 900",
+  "description": "FALCON SS 900",
   "SWEEP\n(MM)": "900",
   "POWER\n(Watt)": "45",
   "SPEED\n(RPM)": "450",
@@ -347,7 +347,7 @@
  {
   "CATEGORY": "Standard Fans",
   "CODE": "FF 4102-1200",
-  "PRODUCT NAME": "FALCON SS 1200",
+  "description": "FALCON SS 1200",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "52",
   "SPEED\n(RPM)": "380",
@@ -360,7 +360,7 @@
  {
   "CATEGORY": "Standard Fans",
   "CODE": "FF 4103-600",
-  "PRODUCT NAME": "F-FLOW 600",
+  "description": "F-FLOW 600",
   "SWEEP\n(MM)": "600",
   "POWER\n(Watt)": "65",
   "SPEED\n(RPM)": "850",
@@ -373,7 +373,7 @@
  {
   "CATEGORY": "Standard Fans",
   "CODE": "FF 4103-900",
-  "PRODUCT NAME": "F-FLOW 900",
+  "description": "F-FLOW 900",
   "SWEEP\n(MM)": "900",
   "POWER\n(Watt)": "45",
   "SPEED\n(RPM)": "450",
@@ -386,7 +386,7 @@
  {
   "CATEGORY": "Standard Fans",
   "CODE": "FF 4103-1200",
-  "PRODUCT NAME": "F-FLOW 1200",
+  "description": "F-FLOW 1200",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "52",
   "SPEED\n(RPM)": "390",
@@ -399,7 +399,7 @@
  {
   "CATEGORY": "Standard Fans",
   "CODE": "FF 4104",
-  "PRODUCT NAME": "VELO BLDC",
+  "description": "VELO BLDC",
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "30",
   "SPEED\n(RPM)": "350",
@@ -417,7 +417,7 @@
  {
   "CATEGORY": "CATEGORY",
   "CODE": "PRODUCT CODE",
-  "PRODUCT NAME": "PRODUCT NAME",
+  "description": "description",
   "SWEEP\n(MM)": "SWEEP\n(MM)",
   "POWER\n(Watt)": "POWER\n(Watt)",
   "SPEED\n(RPM)": "WIND SPEED\n(MS)",
@@ -429,7 +429,7 @@
  {
   "CATEGORY": "Bladeless Fan\nwith Air Purifier",
   "CODE": "FF 1001",
-  "PRODUCT NAME": "GUDE",
+  "description": "GUDE",
   "SWEEP\n(MM)": "Bladeless",
   "POWER\n(Watt)": "35",
   "SPEED\n(RPM)": "5.8",
@@ -445,7 +445,7 @@
  {
   "CATEGORY": "Axici Fans",
   "CODE": "FF 6101",
-  "PRODUCT NAME": "ZEST",
+  "description": "ZEST",
   "SWEEP\n(MM)": "150",
   "POWER\n(Watt)": "22",
   "SPEED\n(RPM)": "1800",
@@ -458,7 +458,7 @@
  {
   "CATEGORY": "Axici Fans",
   "CODE": "FF 6102",
-  "PRODUCT NAME": "ENOR",
+  "description": "ENOR",
   "SWEEP\n(MM)": 150,
   "POWER\n(Watt)": "22",
   "SPEED\n(RPM)": "1800",
@@ -471,7 +471,7 @@
  {
   "CATEGORY": "Axici Fans",
   "CODE": "FF 6103-100",
-  "PRODUCT NAME": "LUSH 100",
+  "description": "LUSH 100",
   "SWEEP\n(MM)": "100",
   "POWER\n(Watt)": "a",
   "SPEED\n(RPM)": "2200",
@@ -484,7 +484,7 @@
  {
   "CATEGORY": "Axici Fans",
   "CODE": "FF 6103-150",
-  "PRODUCT NAME": "LUSH 150",
+  "description": "LUSH 150",
   "SWEEP\n(MM)": "150",
   "POWER\n(Watt)": "22",
   "SPEED\n(RPM)": "1800",
@@ -497,7 +497,7 @@
  {
   "CATEGORY": "Ventilation Fans",
   "CODE": "FF 6201-150",
-  "PRODUCT NAME": "VENTFLO 150",
+  "description": "VENTFLO 150",
   "SWEEP\n(MM)": "150",
   "POWER\n(Watt)": "15",
   "SPEED\n(RPM)": "1350",
@@ -510,7 +510,7 @@
  {
   "CATEGORY": "Ventilation Fans",
   "CODE": "FF 6201-200",
-  "PRODUCT NAME": "VENTFLO 200",
+  "description": "VENTFLO 200",
   "SWEEP\n(MM)": "200",
   "POWER\n(Watt)": "36",
   "SPEED\n(RPM)": "1300",
@@ -523,7 +523,7 @@
  {
   "CATEGORY": "Ventilation Fans",
   "CODE": "FF 6201-250",
-  "PRODUCT NAME": "VENTFLO 250",
+  "description": "VENTFLO 250",
   "SWEEP\n(MM)": "250",
   "POWER\n(Watt)": "40",
   "SPEED\n(RPM)": "1250",
@@ -536,7 +536,7 @@
  {
   "CATEGORY": "Ventilation Fans",
   "CODE": "FF 6301",
-  "PRODUCT NAME": "VENTI AR",
+  "description": "VENTI AR",
   "SWEEP\n(MM)": "200",
   "POWER\n(Watt)": "35",
   "SPEED\n(RPM)": "1350",
@@ -549,7 +549,7 @@
  {
   "CATEGORY": "METAL EXHAUST FAN",
   "CODE": "FF 6401-150",
-  "PRODUCT NAME": "EXFLO PLUS  150",
+  "description": "EXFLO PLUS  150",
   "SWEEP\n(MM)": "150",
   "POWER\n(Watt)": "40",
   "SPEED\n(RPM)": "2350",
@@ -562,7 +562,7 @@
  {
   "CATEGORY": "METAL EXHAUST FAN",
   "CODE": "FF 6401-225",
-  "PRODUCT NAME": "EXFLO PLUS  225",
+  "description": "EXFLO PLUS  225",
   "SWEEP\n(MM)": "225",
   "POWER\n(Watt)": "70",
   "SPEED\n(RPM)": "2500",
@@ -575,7 +575,7 @@
  {
   "CATEGORY": "METAL EXHAUST FAN",
   "CODE": "FF 6402-225",
-  "PRODUCT NAME": "EXFLO 225",
+  "description": "EXFLO 225",
   "SWEEP\n(MM)": "225",
   "POWER\n(Watt)": "35",
   "SPEED\n(RPM)": "1350",
@@ -588,7 +588,7 @@
  {
   "CATEGORY": "METAL EXHAUST FAN",
   "CODE": "FF 6402-300",
-  "PRODUCT NAME": "EXFLO 300",
+  "description": "EXFLO 300",
   "SWEEP\n(MM)": "300",
   "POWER\n(Watt)": "45",
   "SPEED\n(RPM)": "1350",
@@ -601,7 +601,7 @@
  {
   "CATEGORY": "Table Fans",
   "CODE": "FF SIX",
-  "PRODUCT NAME": "VAYU",
+  "description": "VAYU",
   "SWEEP\n(MM)": "400",
   "POWER\n(Watt)": "58",
   "SPEED\n(RPM)": "1330",
@@ -614,7 +614,7 @@
  {
   "CATEGORY": "Table Fans",
   "CODE": "FF 5102",
-  "PRODUCT NAME": "GUSH",
+  "description": "GUSH",
   "SWEEP\n(MM)": "400",
   "POWER\n(Watt)": "no",
   "SPEED\n(RPM)": "2200",
@@ -627,7 +627,7 @@
  {
   "CATEGORY": "Wall Fans",
   "CODE": "FF 5201",
-  "PRODUCT NAME": "VAYU",
+  "description": "VAYU",
   "SWEEP\n(MM)": "400",
   "POWER\n(Watt)": "58",
   "SPEED\n(RPM)": "1330",
@@ -640,7 +640,7 @@
  {
   "CATEGORY": "Wall Fans",
   "CODE": "FF 5202-300",
-  "PRODUCT NAME": "GUSH 300",
+  "description": "GUSH 300",
   "SWEEP\n(MM)": "300",
   "POWER\n(Watt)": "75",
   "SPEED\n(RPM)": "2400",
@@ -653,7 +653,7 @@
  {
   "CATEGORY": "Wall Fans",
   "CODE": "FF 5202-400",
-  "PRODUCT NAME": "GUSH 400",
+  "description": "GUSH 400",
   "SWEEP\n(MM)": "400",
   "POWER\n(Watt)": "10",
   "SPEED\n(RPM)": "2200",
@@ -666,7 +666,7 @@
  {
   "CATEGORY": "Wall Fans",
   "CODE": "FF 5203",
-  "PRODUCT NAME": "MAGNUM",
+  "description": "MAGNUM",
   "SWEEP\n(MM)": "450",
   "POWER\n(Watt)": "90",
   "SPEED\n(RPM)": "1350",
@@ -679,7 +679,7 @@
  {
   "CATEGORY": "Pedestal Fans",
   "CODE": "FF 5301",
-  "PRODUCT NAME": "VAYU",
+  "description": "VAYU",
   "SWEEP\n(MM)": "400",
   "POWER\n(Watt)": "58",
   "SPEED\n(RPM)": "1330",
@@ -692,7 +692,7 @@
  {
   "CATEGORY": "Pedestal Fans",
   "CODE": "FF 5302",
-  "PRODUCT NAME": "OUSH",
+  "description": "OUSH",
   "SWEEP\n(MM)": "400",
   "POWER\n(Watt)": "TID",
   "SPEED\n(RPM)": "2200",
@@ -705,7 +705,7 @@
  {
   "CATEGORY": "Pedestal Fans",
   "CODE": "FF 5401",
-  "PRODUCT NAME": "F-SFIN",
+  "description": "F-SFIN",
   "SWEEP\n(MM)": "400",
   "POWER\n(Watt)": "105",
   "SPEED\n(RPM)": "2800",
@@ -718,7 +718,7 @@
  {
   "CATEGORY": "Pedestal Fans",
   "CODE": "FF 5402",
-  "PRODUCT NAME": "MAGNUM",
+  "description": "MAGNUM",
   "SWEEP\n(MM)": "450",
   "POWER\n(Watt)": "90",
   "SPEED\n(RPM)": "1350",
@@ -731,7 +731,7 @@
  {
   "CATEGORY": "Pedestal Fans",
   "CODE": "FF 5403",
-  "PRODUCT NAME": "THUNDER",
+  "description": "THUNDER",
   "SWEEP\n(MM)": "500",
   "POWER\n(Watt)": "140",
   "SPEED\n(RPM)": "1350",
@@ -744,7 +744,7 @@
  {
   "CATEGORY": "Personal Fans",
   "CODE": "FF 5501",
-  "PRODUCT NAME": "GALE",
+  "description": "GALE",
   "SWEEP\n(MM)": "300",
   "POWER\n(Watt)": "75",
   "SPEED\n(RPM)": "2200",
@@ -757,7 +757,7 @@
  {
   "CATEGORY": "Personal Fans",
   "CODE": "FF 5601",
-  "PRODUCT NAME": "TRI AIR",
+  "description": "TRI AIR",
   "SWEEP\n(MM)": "225",
   "POWER\n(Watt)": "45",
   "SPEED\n(RPM)": "2500",
@@ -770,7 +770,7 @@
  {
   "CATEGORY": "Personal Fans",
   "CODE": "FF 5701",
-  "PRODUCT NAME": "HANDY GUST",
+  "description": "HANDY GUST",
   "SWEEP\n(MM)": "150",
   "POWER\n(Watt)": "35",
   "SPEED\n(RPM)": "55",

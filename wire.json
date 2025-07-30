@@ -1,0 +1,870 @@
+
+
+
+
+[
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "SINGLE CORE UNSHEATHED COPPER FLEXIBLE CABLES (1100 V)",
+    "code": "IX102",
+    "size": 0.75,
+    "amp": 5,
+    "pkg": 24,
+    "90 Mtr Coil DLP": "1199/-",
+    "45 Mtr Coil DLP": null
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "SINGLE CORE UNSHEATHED COPPER FLEXIBLE CABLES (1100 V)",
+    "code": "IX103",
+    "size": 1,
+    "amp": 8,
+    "pkg": 24,
+    "90 Mtr Coil DLP": "1639/-",
+    "45 Mtr Coil DLP": "825/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "SINGLE CORE UNSHEATHED COPPER FLEXIBLE CABLES (1100 V)",
+    "code": "IX104",
+    "size": 1.5,
+    "amp": 12,
+    "pkg": 24,
+    "90 Mtr Coil DLP": "2503/-",
+    "45 Mtr Coil DLP": "1289/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "SINGLE CORE UNSHEATHED COPPER FLEXIBLE CABLES (1100 V)",
+    "code": "IX105",
+    "size": 2.5,
+    "amp": 15,
+    "pkg": 16,
+    "90 Mtr Coil DLP": "4043/-",
+    "45 Mtr Coil DLP": "2063/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "SINGLE CORE UNSHEATHED COPPER FLEXIBLE CABLES (1100 V)",
+    "code": "IX106",
+    "size": 4,
+    "amp": 18,
+    "pkg": 12,
+    "90 Mtr Coil DLP": "6094/-",
+    "45 Mtr Coil DLP": null
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "SINGLE CORE UNSHEATHED COPPER FLEXIBLE CABLES (1100 V)",
+    "code": "IX107",
+    "size": 6,
+    "amp": 22,
+    "pkg": null,
+    "90 Mtr Coil DLP": "9317/-",
+    "45 Mtr Coil DLP": null
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "SINGLE CORE UNSHEATHED COPPER FLEXIBLE CABLES (1100 V)",
+    "code": "IX108",
+    "size": 10,
+    "amp": 25,
+    "pkg": null,
+    "90 Mtr Coil DLP": "15488/-",
+    "45 Mtr Coil DLP": null
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "SINGLE CORE UNSHEATHED COPPER FLEXIBLE CABLES (1100 V)",
+    "code": "IX108 A",
+    "size": 16,
+    "amp": 40,
+    "pkg": null,
+    "90 Mtr Coil DLP": "23760/-",
+    "45 Mtr Coil DLP": null
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "MULTI CORE COPPER FLEXIBLE CABLES (ROUND) 1100 V PVC INSULATED & SHEATHED",
+    "code": "IX109",
+    "size": 0.5,
+    "3Core DLP": "2061/-",
+    "2Core DLP": "2947/-",
+    "4Core DLP": "3696/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "MULTI CORE COPPER FLEXIBLE CABLES (ROUND) 1100 V PVC INSULATED & SHEATHED",
+    "code": "IX110",
+    "size": 0.75,
+    "3Core DLP": "3086/-",
+    "2Core DLP": "4487/-",
+    "4Core DLP": "5604/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "MULTI CORE COPPER FLEXIBLE CABLES (ROUND) 1100 V PVC INSULATED & SHEATHED",
+    "code": "IX111",
+    "size": 1,
+    "3Core DLP": "4036/-",
+    "2Core DLP": "5629/-",
+    "4Core DLP": "7505/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "MULTI CORE COPPER FLEXIBLE CABLES (ROUND) 1100 V PVC INSULATED & SHEATHED",
+    "code": "IX112",
+    "size": 1.5,
+    "3Core DLP": "5947/-",
+    "2Core DLP": "8624/-",
+    "4Core DLP": "11024/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "MULTI CORE COPPER FLEXIBLE CABLES (ROUND) 1100 V PVC INSULATED & SHEATHED",
+    "code": "IX113",
+    "size": 2.5,
+    "3Core DLP": "8960/-",
+    "2Core DLP": "12729/-",
+    "4Core DLP": "16800/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "MULTI CORE COPPER FLEXIBLE CABLES (ROUND) 1100 V PVC INSULATED & SHEATHED",
+    "code": "IX114",
+    "size": 4,
+    "3Core DLP": "13160/-",
+    "2Core DLP": "19432/-",
+    "4Core DLP": "25480/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "MULTI CORE COPPER FLEXIBLE CABLES (ROUND) 1100 V PVC INSULATED & SHEATHED",
+    "code": "IX114A",
+    "size": 6,
+    "3Core DLP": "......",
+    "2Core DLP": "......",
+    "4Core DLP": "431/- per mtr"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "THREE CORE FLAT FLEXIBLE CABLES FOR SUBMERSIBLE PUMP",
+    "code": "IX115",
+    "size": 1,
+    "amp": 10,
+    "Per Mtr DLP": "73/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "THREE CORE FLAT FLEXIBLE CABLES FOR SUBMERSIBLE PUMP",
+    "code": "IX116",
+    "size": 1.5,
+    "amp": 15,
+    "Per Mtr DLP": "101/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "THREE CORE FLAT FLEXIBLE CABLES FOR SUBMERSIBLE PUMP",
+    "code": "IX117",
+    "size": 2.5,
+    "amp": 18,
+    "Per Mtr DLP": "153/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "THREE CORE FLAT FLEXIBLE CABLES FOR SUBMERSIBLE PUMP",
+    "code": "IX118",
+    "size": 4,
+    "amp": 20,
+    "Per Mtr DLP": "233/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "THREE CORE FLAT FLEXIBLE CABLES FOR SUBMERSIBLE PUMP",
+    "code": "IX119",
+    "size": 6,
+    "amp": 25,
+    "Per Mtr DLP": "345/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "TWIN FLAT P.V.C. INSULATED ALUMINIUM CONDUCTOR CABLES",
+    "code": "IX120",
+    "size": 2.5,
+    "Length": "90 Mtrs.",
+    "DLP": "1417/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "TWIN FLAT P.V.C. INSULATED ALUMINIUM CONDUCTOR CABLES",
+    "code": "IX121",
+    "size": 4,
+    "Length": "90 Mtrs.",
+    "DLP": "1865/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "TWIN FLAT P.V.C. INSULATED ALUMINIUM CONDUCTOR CABLES",
+    "code": "IX122",
+    "size": 6,
+    "Length": "90 Mtrs.",
+    "DLP": "2920/-"
+    },
+    {
+    "Brand": "INDOLEX",
+    "Particulars": "TWIN FLAT P.V.C. INSULATED ALUMINIUM CONDUCTOR CABLES",
+    "code": "IX123",
+    "size": 10,
+    "Length": "90 Mtrs.",
+    "DLP": "3840/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "FEVILEX SINGLE CORE CABLES",
+    "code": "F101",
+    "size": 0.5,
+    "WireConst": "16/0.2",
+    "pkg": 24,
+    "90 Mtr Coil DLP": "1180/-",
+    "45 Mtr Coil DLP": null,
+    "270 Mtr DLP": null
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "FEVILEX SINGLE CORE CABLES",
+    "code": "F102",
+    "size": 0.75,
+    "WireConst": "10/0.3",
+    "pkg": 24,
+    "90 Mtr Coil DLP": "1560/-",
+    "45 Mtr Coil DLP": null,
+    "270 Mtr DLP": "4556/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "FEVILEX SINGLE CORE CABLES",
+    "code": "F103",
+    "size": 1,
+    "WireConst": "14/0.3",
+    "pkg": 24,
+    "90 Mtr Coil DLP": "2040/-",
+    "45 Mtr Coil DLP": "1057/-",
+    "270 Mtr DLP": "5995/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "FEVILEX SINGLE CORE CABLES",
+    "code": "F104",
+    "size": 1.5,
+    "WireConst": "22/0.3",
+    "pkg": 24,
+    "90 Mtr Coil DLP": "3060/-",
+    "45 Mtr Coil DLP": "1566/-",
+    "270 Mtr DLP": "9053/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "FEVILEX SINGLE CORE CABLES",
+    "code": "F105",
+    "size": 2.5,
+    "WireConst": "36/0.3",
+    "pkg": 16,
+    "90 Mtr Coil DLP": "5000/-",
+    "45 Mtr Coil DLP": "2497/-",
+    "270 Mtr DLP": "14628/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "FEVILEX SINGLE CORE CABLES",
+    "code": "F106",
+    "size": 4,
+    "WireConst": "56/0.3",
+    "pkg": 12,
+    "90 Mtr Coil DLP": "7675/-",
+    "45 Mtr Coil DLP": "3777/-",
+    "270 Mtr DLP": "22182/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "FEVILEX SINGLE CORE CABLES",
+    "code": "F107",
+    "size": 6,
+    "WireConst": "84/0.3",
+    "pkg": null,
+    "90 Mtr Coil DLP": "11600/-",
+    "45 Mtr Coil DLP": null,
+    "270 Mtr DLP": null
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "FEVILEX SINGLE CORE CABLES",
+    "code": "F108",
+    "size": 10,
+    "WireConst": "140/0.3",
+    "pkg": null,
+    "90 Mtr Coil DLP": "19300/-",
+    "45 Mtr Coil DLP": null,
+    "270 Mtr DLP": null
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "FEVILEX SINGLE CORE CABLES",
+    "code": "F109",
+    "size": 16,
+    "WireConst": "224/0.3",
+    "pkg": null,
+    "90 Mtr Coil DLP": "31100/-",
+    "45 Mtr Coil DLP": null,
+    "270 Mtr DLP": null
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Rate Per Mtr ",
+    "code": "F110",
+    "size": 25,
+    "WireConst": "350/0.3",
+    "Per Mtr DLP": "556/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Rate Per Mtr ",
+    "code": "F111",
+    "size": 35,
+    "WireConst": "490/0.3",
+    "Per Mtr DLP": "775/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Rate Per Mtr ",
+    "code": "F112",
+    "size": 50,
+    "WireConst": "700/0.3",
+    "Per Mtr DLP": "1111/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Rate Per Mtr ",
+    "code": "F113",
+    "size": 70,
+    "WireConst": "980/0.3",
+    "Per Mtr DLP": "1550/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Rate Per Mtr ",
+    "code": "F114",
+    "size": 95,
+    "WireConst": "1330/0.3",
+    "Per Mtr DLP": "2106/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Rate Per Mtr ",
+    "code": "F115",
+    "size": 120,
+    "WireConst": "1680/0.3",
+    "Per Mtr DLP": "2661/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Rate Per Mtr ",
+    "code": "F116",
+    "size": 150,
+    "WireConst": "1193/0.4",
+    "Per Mtr DLP": "3174/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Rate Per Mtr ",
+    "code": "F117",
+    "size": 185,
+    "WireConst": "1472/0.4",
+    "Per Mtr DLP": "3846/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Rate Per Mtr ",
+    "code": "F118",
+    "size": 240,
+    "WireConst": "1210/0.5",
+    "Per Mtr DLP": "4916/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Rate Per Mtr ",
+    "code": "F119",
+    "size": 300,
+    "WireConst": "1527/0.5",
+    "Per Mtr DLP": "6104/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Rate Per Mtr ",
+    "code": "F120",
+    "size": 400,
+    "WireConst": "2036/0.5",
+    "Per Mtr DLP": "7935/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Multicore Copper Flexible Cables (2-4 Core)",
+    "code": "F138",
+    "size": 0.5,
+    "const": "16/0.20",
+    "amp": 4,
+    "2Core DLP": "2895/-",
+    "3Core DLP": "4186/-",
+    "4Core DLP": "5324/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Multicore Copper Flexible Cables (2-4 Core)",
+    "code": "F139",
+    "size": 0.75,
+    "const": "24/0.20",
+    "amp": 7,
+    "2Core DLP": "4032/-",
+    "3Core DLP": "5893/-",
+    "4Core DLP": "7446/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Multicore Copper Flexible Cables (2-4 Core)",
+    "code": "F140",
+    "size": 1,
+    "const": "32/0.20",
+    "amp": 11,
+    "2Core DLP": "5169/-",
+    "3Core DLP": "7293/-",
+    "4Core DLP": "9722/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Multicore Copper Flexible Cables (2-4 Core)",
+    "code": "F141",
+    "size": 1.5,
+    "const": "30/0.25",
+    "amp": 14,
+    "2Core DLP": "7019/-",
+    "3Core DLP": "10220/-",
+    "4Core DLP": "13112/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Multicore Copper Flexible Cables (2-4 Core)",
+    "code": "F142",
+    "size": 2.5,
+    "const": "50/0.25",
+    "amp": 19,
+    "2Core DLP": "10989/-",
+    "3Core DLP": "15704/-",
+    "4Core DLP": "20739/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Multicore Copper Flexible Cables (2-4 Core)",
+    "code": "F143",
+    "size": 4,
+    "const": "56/0.30",
+    "amp": 26,
+    "2Core DLP": "17233/-",
+    "3Core DLP": "25534/-",
+    "4Core DLP": "33566/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Flexible Cables (5 Core to 12 Core) – Rate Per Mtr",
+    "code": "F149",
+    "size": 0.5,
+    "5Core dlp": "81/-",
+    "6Core dlp": "101/-",
+    "7Core dlp": "131/-",
+    "8Core dlp": "149/-",
+    "10Core dlp": "183/-",
+    "12Core dlp": "205/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Flexible Cables (5 Core to 12 Core) – Rate Per Mtr",
+    "code": "F150",
+    "size": 0.75,
+    "5Core dlp": "115/-",
+    "6Core dlp": "132/-",
+    "7Core dlp": "167/-",
+    "8Core dlp": "195/-",
+    "10Core dlp": "241/-",
+    "12Core dlp": "270/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Flexible Cables (5 Core to 12 Core) – Rate Per Mtr",
+    "code": "F151",
+    "size": 1,
+    "5Core dlp": "139/-",
+    "6Core dlp": "168/-",
+    "7Core dlp": "218/-",
+    "8Core dlp": "251/-",
+    "10Core dlp": "312/-",
+    "12Core dlp": "352/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Flexible Cables (5 Core to 12 Core) – Rate Per Mtr",
+    "code": "F152",
+    "size": 1.5,
+    "5Core dlp": "196/-",
+    "6Core dlp": "232/-",
+    "7Core dlp": "306/-",
+    "8Core dlp": "348/-",
+    "10Core dlp": "432/-",
+    "12Core dlp": "491/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Flexible Cables (5 Core to 12 Core) – Rate Per Mtr",
+    "code": "F153",
+    "size": 2.5,
+    "5Core dlp": "316/-",
+    "6Core dlp": "377/-",
+    "7Core dlp": "493/-",
+    "8Core dlp": "564/-",
+    "10Core dlp": "710/-",
+    "12Core dlp": "811/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Aluminium Weatherproof Twin Flat Cables",
+    "code": "FY-166",
+    "size": 2.5,
+    "Length": "90 Mtr",
+    "DLP": "1417/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Aluminium Weatherproof Twin Flat Cables",
+    "code": "FY-167",
+    "size": 4,
+    "Length": "90 Mtr",
+    "DLP": "1865/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Aluminium Weatherproof Twin Flat Cables",
+    "code": "FY-168",
+    "size": 6,
+    "Length": "90 Mtr",
+    "DLP": "2920/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Aluminium Weatherproof Twin Flat Cables",
+    "code": "FY-169",
+    "size": 10,
+    "Length": "90 Mtr",
+    "DLP": "3840/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Telephone / Switchboard Cables",
+    "code": "F186",
+    "NoOfPairs": "1 Pair",
+    "Length": "90 Mtr",
+    "Diameter_mm": 0.5,
+    "DLP": "841/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Telephone / Switchboard Cables",
+    "code": "F187",
+    "NoOfPairs": "2 Pair",
+    "Length": "90 Mtr",
+    "Diameter_mm": 0.5,
+    "DLP": "1552/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Telephone / Switchboard Cables",
+    "code": "F188",
+    "NoOfPairs": "3 Pair",
+    "Length": "90 Mtr",
+    "Diameter_mm": 0.5,
+    "DLP": "2328/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Telephone / Switchboard Cables",
+    "code": "F189",
+    "NoOfPairs": "4 Pair",
+    "Length": "90 Mtr",
+    "Diameter_mm": 0.5,
+    "DLP": "3105/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Telephone / Switchboard Cables",
+    "code": "F190",
+    "NoOfPairs": "5 Pair",
+    "Length": "90 Mtr",
+    "Diameter_mm": 0.5,
+    "DLP": "3881/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Telephone / Switchboard Cables",
+    "code": "F191",
+    "NoOfPairs": "10 Pair",
+    "Length": "90 Mtr",
+    "Diameter_mm": 0.5,
+    "DLP": "7762/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Industrial Screened Cables (Per 100 Mtr)",
+    "code": "F192",
+    "CoreCount": 2,
+    "0_5mm2 dlp": "5751/-",
+    "0.75mm2 dlp": "6449/-",
+    "1.0mm2 dlp": "8945/-",
+    "1.5mm2 dlp": "11330/-",
+    "2.5mm2 dlp": "16557/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Industrial Screened Cables (Per 100 Mtr)",
+    "code": "F193",
+    "CoreCount": 3,
+    "0_5mm2 dlp": "7322/-",
+    "0.75mm2 dlp": "9588/-",
+    "1.0mm2 dlp": "11330/-",
+    "1.5mm2 dlp": "15336/-",
+    "2.5mm2 dlp": "21787/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Industrial Screened Cables (Per 100 Mtr)",
+    "code": "F194",
+    "CoreCount": 4,
+    "0_5mm2 dlp": "8887/-",
+    "0.75mm2 dlp": "11851/-",
+    "1.0mm2 dlp": "14292/-",
+    "1.5mm2 dlp": "19171/-",
+    "2.5mm2 dlp": "28756/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Industrial Screened Cables (Per 100 Mtr)",
+    "code": "F195",
+    "CoreCount": 6,
+    "0_5mm2 dlp": "13941/-",
+    "0.75mm2 dlp": "18822/-",
+    "1.0mm2 dlp": "24400/-",
+    "1.5mm2 dlp": "32939/-",
+    "2.5mm2 dlp": "48448/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Industrial Screened Cables (Per 100 Mtr)",
+    "code": "F196",
+    "CoreCount": 7,
+    "0_5mm2 dlp": "15511/-",
+    "0.75mm2 dlp": "23529/-",
+    "1.0mm2 dlp": "28060/-",
+    "1.5mm2 dlp": "38693/-",
+    "2.5mm2 dlp": "57163/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Industrial Screened Cables (Per 100 Mtr)",
+    "code": "F197",
+    "CoreCount": 10,
+    "0_5mm2 dlp": "22135/-",
+    "0.75mm2 dlp": "32765/-",
+    "1.0mm2 dlp": "31718/-",
+    "1.5mm2 dlp": "43570/-",
+    "2.5mm2 dlp": "67968/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Industrial Screened Cables (Per 100 Mtr)",
+    "code": "F198",
+    "CoreCount": 12,
+    "0_5mm2 dlp": "27188/-",
+    "0.75mm2 dlp": "40956/-",
+    "1.0mm2 dlp": "42700/-",
+    "1.5mm2 dlp": "58386/-",
+    "2.5mm2 dlp": "85399/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Coaxial Cables (Per 100 Mtrs)",
+    "code": "F200",
+    "Model": "RG-06",
+    "CCA DLP": "1733/-",
+    "Copper DLP": "2705/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Coaxial Cables (Per 100 Mtrs)",
+    "code": "F201",
+    "Model": "RG-08",
+    "CCA DLP": "2137/-",
+    "Copper DLP": "3058/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Networking Cables",
+    "code": "F204",
+    "Model": "Cat-5",
+    "Desc": "Standard 300 Mtr Box",
+    "DLP": "12729/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Networking Cables",
+    "code": "F205",
+    "Model": "Cat-6",
+    "Desc": "Outdoor XLPE Double Coat",
+    "DLP": "14256/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Networking Cables",
+    "code": "F205 A",
+    "Model": "Cat-6",
+    "Desc": "Armoured for Outdoor",
+    "DLP": "100/- Mtr"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Twisted Flexible Copper Wires — 2 Core",
+    "code": "F206",
+    "size": "0.50 S",
+    "WireConst": "1936-10-01 00:00:00",
+    "Length": "90 Mtr",
+    "DLP": "1064/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Twisted Flexible Copper Wires — 2 Core",
+    "code": "F207",
+    "size": 0.5,
+    "WireConst": "14/40",
+    "Length": "90 Mtr",
+    "DLP": "998/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Twisted Flexible Copper Wires — 2 Core",
+    "code": "F208",
+    "size": 0.75,
+    "WireConst": "20/40",
+    "Length": "90 Mtr",
+    "DLP": "1397/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Twisted Flexible Copper Wires — 2 Core",
+    "code": "F209",
+    "size": 1,
+    "WireConst": "30/40",
+    "Length": "90 Mtr",
+    "DLP": "1889/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Twisted Flexible Copper Wires — 2 Core",
+    "code": "F210",
+    "size": 1.5,
+    "WireConst": "40/40",
+    "Length": "90 Mtr",
+    "DLP": "2369/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Speaker & Twin Parallel Cables (90 Mtrs)",
+    "code": "F211",
+    "size": 0.5,
+    "Clear dlp": "2168/-",
+    "RedBlack dlp": "2350/-",
+    "TwinFlat  dlp": "2847/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Speaker & Twin Parallel Cables (90 Mtrs)",
+    "code": "F212",
+    "size": 0.75,
+    "Clear dlp": "3109/-",
+    "RedBlack dlp": "3343/-",
+    "TwinFlat  dlp": "4608/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Speaker & Twin Parallel Cables (90 Mtrs)",
+    "code": "F213",
+    "size": 1,
+    "Clear dlp": "4032/-",
+    "RedBlack dlp": "4338/-",
+    "TwinFlat  dlp": "5983/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Speaker & Twin Parallel Cables (90 Mtrs)",
+    "code": "F213 TC",
+    "size": 0.5,
+    "Clear dlp": "2350/-",
+    "RedBlack dlp": "2530/-",
+    "TwinFlat  dlp": null
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "CCTV Camera Cables (90 Mtrs – 3+1 / 4+1)",
+    "code": "F214",
+    "WireStructure": "14/0040/024",
+    "3Plus1 dlp": "3018/-",
+    "4Plus1 dlp": "3438/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "CCTV Camera Cables (90 Mtrs – 3+1 / 4+1)",
+    "code": "F215",
+    "WireStructure": "14/0038/026",
+    "3Plus1 dlp": "3605/-",
+    "4Plus1 dlp": "4113/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Welding Cables (Rubber Insulated – Per Mtr)",
+    "code": "F216",
+    "size": 16,
+    "Per Mtr DLP": "405/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Welding Cables (Rubber Insulated – Per Mtr)",
+    "code": "F217",
+    "size": 25,
+    "Per Mtr DLP": "722/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Welding Cables (Rubber Insulated – Per Mtr)",
+    "code": "F218",
+    "size": 35,
+    "Per Mtr DLP": "948/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Welding Cables (Rubber Insulated – Per Mtr)",
+    "code": "F219",
+    "size": 50,
+    "Per Mtr DLP": "1227/-"
+    },
+    {
+    "Brand": "FEVILEX",
+    "Particulars": "Welding Cables (Rubber Insulated – Per Mtr)",
+    "code": "F220",
+    "size": 70,
+    "Per Mtr DLP": "1804/-"
+    }
+    ]
+    
