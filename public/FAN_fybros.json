@@ -1,3 +1,10 @@
+
+
+
+
+{
+    "defaultDiscount": 25,"products":
+
 [
  {
   "CATEGORY": "Super Premium Fans",
@@ -780,4 +787,4 @@
   "MRP": 4545,
   "RETAIL": 3124.6875
  }
-]
+]}

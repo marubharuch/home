@@ -1,4 +1,11 @@
- [
+
+
+
+{
+  "defaultDiscount": 25,"products":
+
+
+[
   {
     "No.": "1",
     "CODE": "W50001",
@@ -606,5 +613,5 @@
     "MASTER": "100",
     "BASIC IVORY/ WHITE/ GREEN dlp": "380.00",
     "BASIC PREMIUM WHITE dlp": "477.00"
-  }]
+  }]}
  

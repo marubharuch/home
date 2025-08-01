@@ -1,5 +1,12 @@
  
- [ {
+
+
+
+{
+  "defaultDiscount": 25,"products":
+
+ [
+   {
     "Code": "S30111",
     "Particulars": "1M SER-3",
     "PKG OUTER": "10",
@@ -870,4 +877,4 @@
     "MASTER": "40",
     "RATE": "333.00"
   }
-]
+]}

@@ -1,6 +1,6 @@
 import localforage from "localforage";
 
-export const jsonFiles =[
+export const jsonFiles = [
   "4x_ACCESSORIES.json",
   "4x_plats.json",
   "diwali.json",
@@ -12,8 +12,7 @@ export const jsonFiles =[
   "woodem_accessories.json",
   "woodem_plats.json",
   "ZINE_ACCESSORIES.json"
-]
- ;
+];
 
 const parseJSONFile = (raw, source) => {
   const items = [];
@@ -80,13 +79,16 @@ export const loadAndCacheAllJson = async ({ forceRefresh = false } = {}) => {
   if (!forceRefresh) {
     const cachedItems = await localforage.getItem("allItems");
     const cachedErrors = await localforage.getItem("loadErrors");
+    const cachedDiscounts = await localforage.getItem("fileDiscounts");
+
     if (cachedItems && cachedItems.length > 0) {
-      return { items: cachedItems, errors: cachedErrors || [] };
+      return { items: cachedItems, errors: cachedErrors || [], discounts: cachedDiscounts || {} };
     }
   }
 
   const allItems = [];
   const errors = [];
+  const fileDiscounts = {};
 
   for (const file of jsonFiles) {
     try {
@@ -98,6 +100,12 @@ export const loadAndCacheAllJson = async ({ forceRefresh = false } = {}) => {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
       const raw = await res.json();
+
+      // ✅ Detect and store defaultDiscount
+      if (raw.defaultDiscount !== undefined) {
+        fileDiscounts[file] = parseFloat(raw.defaultDiscount);
+      }
+
       const parsed = parseJSONFile(raw, file);
       allItems.push(...parsed);
     } catch (err) {
@@ -108,6 +116,7 @@ export const loadAndCacheAllJson = async ({ forceRefresh = false } = {}) => {
 
   await localforage.setItem("allItems", allItems);
   await localforage.setItem("loadErrors", errors);
-  return { items: allItems, errors };
-};
+  await localforage.setItem("fileDiscounts", fileDiscounts);
 
+  return { items: allItems, errors, discounts: fileDiscounts };
+};

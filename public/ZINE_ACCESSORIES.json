@@ -1,6 +1,8 @@
 
 
 
+{
+  "defaultDiscount": 25,"products":
 
  [
     {
@@ -1171,4 +1173,4 @@
       "master": 300,
       "rate_dlp": 226.0
     }
-  ]
+  ]}

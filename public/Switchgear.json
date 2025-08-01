@@ -1,3 +1,9 @@
+
+
+
+{
+  "defaultDiscount": 25,"products":
+
 [
   {"S.NO.": 1, "CODE": "KSG400201", "DESCRIPTION": "Fybros 6A SP Armor MCB C Series", "DLP": 176.50, "category": "ARMOR - MCB AND RCCB"},
   {"S.NO.": 2, "CODE": "KSG400202", "DESCRIPTION": "Fybros 10A SP Armor MCB C Series", "DLP": 176.50, "category": "ARMOR - MCB AND RCCB"},
@@ -132,4 +138,4 @@
   {"S.NO.": 129, "CODE": "KSG2067", "DESCRIPTION": "Fybros 63A/415V FP Nuevo Change Over Switch Off load", "DLP": 8080.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
   {"S.NO.": 130, "CODE": "KSG2068", "DESCRIPTION": "Fybros 100A/415V FP Nuevo Change Over Switch Off load", "DLP": 12815.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"},
   {"S.NO.": 131, "CODE": "KDB3337", "DESCRIPTION": "Fybros 20A SPN Magna DB Plug & Socket Enclosures AC Distribution Bd", "DLP": 850.00, "category": "MAIN SWITCHES AND FUSE UNIT AND FUSE"}
-]
+]}

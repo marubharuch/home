@@ -5,7 +5,7 @@ import SearchBar from "./components/SearchBar";
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState(null);
-  const [itemsCount, setItemsCount] = useState(0); // optional: for UI info
+  const [itemsCount, setItemsCount] = useState(0);
 
   const loadData = async (forceRefresh = false) => {
     setLoading(true);

@@ -1,3 +1,9 @@
+
+
+
+{
+  "defaultDiscount": 25,"products":
+
 [
   { "description": "WATER SENSOR DIYA", "Rate": 50 },
   { "description": "JWEL BLUE", "Rate": 78 },
@@ -68,4 +74,4 @@
   { "description": "INDIAN SERIES BIG LAMP", "Rate": null },
   { "description": "MAN LITE", "Rate": null },
   { "description": "RGB BRICK LIGHT", "Rate": null }
-]
+]}
