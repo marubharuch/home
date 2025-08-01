@@ -1,3 +1,10 @@
+
+
+
+{
+  "defaultDiscount": 25,"products":
+
+
 [
     { "Particulars": "porceline fuse 15 × 250", "Rate": 30 },
     { "Particulars": "porceline fuse 15 × 500", "Rate": 56 },
@@ -98,5 +105,5 @@
     { "Particulars": "PKOK 4+4 5 YARD", "Rate": 250 },
     { "Particulars": "2X5 PAYAL", "Rate": 100 },
     { "Particulars": "2X10 PAYAL", "Rate": 124 }
-  ]
+  ]}
   

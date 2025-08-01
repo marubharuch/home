@@ -1,6 +1,8 @@
 
 
 
+{
+    "defaultDiscount": 25,"products":
 
 [
     {
@@ -866,5 +868,5 @@
     "size": 70,
     "Per Mtr DLP": "1804/-"
     }
-    ]
+    ]}
     

@@ -1,3 +1,8 @@
+
+
+
+{
+  "defaultDiscount": 25,"products":
 [
   {
     "Code": "FX1101WH",
@@ -863,5 +868,5 @@
     "White_dlp": 345.92,
     "Chrome/Black_dlp": null
   }
-]
+]}
 
