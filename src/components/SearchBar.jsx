@@ -12,25 +12,14 @@ export default function SearchBar() {
   const [discountMap, setDiscountMap] = useState({});
   const [fileDiscounts, setFileDiscounts] = useState({});
   const [visibleCount, setVisibleCount] = useState(20);
+  const [cart, setCart] = useState({});
 
   const normalizeKey = (key) => key.replace(/[\s._]/g, "").toLowerCase();
 
   const excludedKeysNormalized = new Set([
-    "searchabletext",
-    "source",
-    "no",
-    "no.",
-    "sno",
-    "slno",
-    "s.no.",
-    "pkgouter",
-    "master",
-    "code",
-    "particulars",
-    "category",
-    "description",
-    "package",
-    "pkg"
+    "searchabletext", "source", "no", "no.", "sno", "slno", "s.no.",
+    "pkgouter", "master", "code", "particulars", "category", "description",
+    "package", "pkg"
   ]);
 
   const priceKeys = ["price", "rate", "basic", "dlp", "mrpp"];
@@ -43,40 +32,30 @@ export default function SearchBar() {
     return new RegExp(term.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&"), "i");
   };
 
-  // Load data and discounts
+  // Load data
   useEffect(() => {
     Promise.all([
       localforage.getItem("allItems"),
       localforage.getItem("fileDiscounts"),
-    ]).then(([data, discounts]) => {
+      localforage.getItem("cartItems"),
+    ]).then(([data, discounts, savedCart]) => {
       if (data) {
         setAllItems(data);
         const uniqueSources = Array.from(new Set(data.map((item) => item.source)));
         setSources(uniqueSources);
       }
-
-      if (discounts) {
-        setFileDiscounts(discounts);
-
-        // Set initial discount
-        if (selectedSource !== "ALL") {
-          setUniversalDiscount(discounts[selectedSource] ?? 30);
-        }
-      }
+      if (discounts) setFileDiscounts(discounts);
+      if (savedCart) setCart(savedCart);
     });
   }, []);
 
-  // Reset visible count when query or file changes
-  useEffect(() => {
-    setVisibleCount(20);
-  }, [query, selectedSource]);
+  useEffect(() => setVisibleCount(20), [query, selectedSource]);
 
-  // Update discount when file changes
   useEffect(() => {
     if (selectedSource !== "ALL") {
       setUniversalDiscount(fileDiscounts[selectedSource] ?? 30);
     } else {
-      setUniversalDiscount(30);
+      setUniversalDiscount(10);
     }
   }, [selectedSource, fileDiscounts]);
 
@@ -87,12 +66,10 @@ export default function SearchBar() {
       setShowMessage(false);
       return allItems.filter((item) => item.source === selectedSource);
     }
-
     if (q.length === 0) {
       setShowMessage(false);
       return [];
     }
-
     if (q.length < 3) {
       setShowMessage(true);
       return [];
@@ -112,8 +89,8 @@ export default function SearchBar() {
       });
   }, [allItems, query, selectedSource]);
 
-  const updateItemDiscount = (id, newDiscount) => {
-    setDiscountMap((prev) => ({ ...prev, [id]: newDiscount }));
+  const updateItemDiscount = (discountKey, newDiscount) => {
+    setDiscountMap((prev) => ({ ...prev, [discountKey]: newDiscount }));
   };
 
   const handleUniversalDiscountChange = (e) => {
@@ -126,24 +103,39 @@ export default function SearchBar() {
         [selectedSource]: val,
       }));
     }
-
     setDiscountMap({});
   };
 
-  const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 20);
+  const handleLoadMore = () => setVisibleCount((prev) => prev + 20);
+
+  const handleQuantityChange = async (discountKey, item, fieldKey, qty) => {
+    const quantity = parseInt(qty, 10) || 0;
+    const discount = discountMap[discountKey] ?? universalDiscount;
+    const price = parseFloat(item[fieldKey]) || 0;
+
+    const updatedCart = {
+      ...cart,
+      [discountKey]: {
+        ...item,
+        discount,
+        fieldKey,
+        quantity,
+        finalPrice: (price * (1 - discount / 100)).toFixed(2),
+      },
+    };
+
+    setCart(updatedCart);
+    await localforage.setItem("cartItems", updatedCart);
   };
 
   const debouncedSetQuery = useMemo(() => debounce(setQuery, 200), []);
 
   return (
     <div className="flex flex-col h-screen max-w-full overflow-x-hidden">
-      {/* Sticky Search Bar */}
       <div className="sticky top-0 bg-white p-4 border-b space-y-2 z-20">
         {showMessage && (
           <div className="text-gray-500">Please enter at least 3 characters to search</div>
         )}
-
         <div className="flex gap-2 w-full">
           <select
             value={selectedSource}
@@ -152,9 +144,7 @@ export default function SearchBar() {
           >
             <option value="ALL">All Files</option>
             {sources.map((src) => (
-              <option key={src} value={src}>
-                {src}
-              </option>
+              <option key={src} value={src}>{src}</option>
             ))}
           </select>
 
@@ -171,84 +161,76 @@ export default function SearchBar() {
             className="border p-2 rounded w-[25%]"
           >
             {discountOptions.map((opt) => (
-              <option key={opt} value={opt}>
-                {opt}%
-              </option>
+              <option key={opt} value={opt}>{opt}%</option>
             ))}
           </select>
         </div>
       </div>
 
-      {/* Results */}
       <div className="flex-1 overflow-auto p-4">
         <div className="grid gap-3">
           {filteredResults.slice(0, visibleCount).map((item, idx) => {
             const id = item.CODE || `${item.source}-${idx}`;
-            const discount = discountMap[id] ?? universalDiscount;
 
             return (
               <div key={id} className="border p-3 rounded bg-white shadow-sm w-full break-words">
-                {/* Top info */}
                 <div className="flex flex-wrap gap-6 text-sm font-medium mb-2">
                   {Object.entries(item)
                     .filter(([key]) =>
                       ["code", "particulars", "description"].includes(normalizeKey(key))
                     )
                     .map(([key, value]) => (
-                      <div key={key}>
-                        <strong>{String(value)}:</strong>
-                      </div>
+                      <div key={key}><strong>{String(value)}:</strong></div>
                     ))}
                 </div>
 
-                {/* Price Rows */}
                 <div className="space-y-1">
                   {Object.entries(item)
                     .filter(([key]) => !excludedKeysNormalized.has(normalizeKey(key)))
                     .map(([key, value]) => {
                       const original = parseFloat(value);
                       const isNumeric = !isNaN(original);
-                      const isPriceField = priceKeys.some((k) =>
-                        normalizeKey(key).includes(k)
-                      );
+                      const isPriceField = priceKeys.some((k) => normalizeKey(key).includes(k));
+
+                      if (!isPriceField) return null;
+
+                      const discountKey = `${id}-${key}`;
+                      const discount = discountMap[discountKey] ?? universalDiscount;
+                      const quantity = cart[discountKey]?.quantity || "";
 
                       return (
-                        <div
-                          key={key}
-                          className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-sm w-full"
-                        >
+                        <div key={key} className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-sm w-full">
                           <div className="font-semibold whitespace-nowrap">
                             {/dlp|rate/i.test(key) && /^[\s]*((dlp|rate)[\s]*)+$/i.test(key)
                               ? key
                               : key.replace(/dlp|rate/gi, "").trim()}
                           </div>
 
-                          {isNumeric ? (
-                            isPriceField ? (
-                              <div className="flex flex-wrap items-center gap-1 text-gray-700">
-                                <span className="whitespace-nowrap">₹{original}</span>
-                                <span>@</span>
-                                <select
-                                  value={discount}
-                                  onChange={(e) => updateItemDiscount(id, parseFloat(e.target.value))}
-                                  className="border border-gray-300 rounded px-1 py-0.5 text-sm"
-                                >
-                                  {discountOptions.map((opt) => (
-                                    <option key={opt} value={opt}>
-                                      -{opt}%
-                                    </option>
-                                  ))}
-                                </select>
-                                <span className="whitespace-nowrap">
-                                  = ₹{(original * (1 - discount / 100)).toFixed(2)}
-                                </span>
-                              </div>
-                            ) : (
-                              <div className="text-gray-700">{original}</div>
-                            )
-                          ) : (
-                            <div className="text-gray-600">{String(value)}</div>
-                          )}
+                          <div className="flex items-center gap-2 text-gray-700">
+                            <span className="whitespace-nowrap">₹{original}</span>
+                            <span>@</span>
+
+                            <select
+                              value={discount}
+                              onChange={(e) => updateItemDiscount(discountKey, parseFloat(e.target.value))}
+                              className="border border-gray-300 rounded px-2 py-1 text-sm"
+                            >
+                              {discountOptions.map((opt) => (
+                                <option key={opt} value={opt}>-{opt}%</option>
+                              ))}
+                            </select>
+
+                            <span>= ₹{(original * (1 - discount / 100)).toFixed(2)}</span>
+
+                            <input
+                              type="number"
+                              min="0"
+                              max="1200"
+                              value={quantity}
+                              onChange={(e) => handleQuantityChange(discountKey, item, key, e.target.value)}
+                              className="ml-2 border border-gray-300 rounded px-2 py-1 text-sm w-16"
+                            />
+                          </div>
                         </div>
                       );
                     })}
@@ -260,7 +242,6 @@ export default function SearchBar() {
           })}
         </div>
 
-        {/* Load More */}
         {filteredResults.length > visibleCount && (
           <div className="text-center mt-4">
             <button
