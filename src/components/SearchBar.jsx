@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useMemo } from "react";
 import localforage from "localforage";
 import { debounce } from "lodash";
+import ItemCard from "./ItemCard";
+import SearchHeader from "./SearchHeader";
 
 export default function SearchBar() {
   const [query, setQuery] = useState("");
@@ -15,24 +17,15 @@ export default function SearchBar() {
   const [cart, setCart] = useState({});
 
   const normalizeKey = (key) => key.replace(/[\s._]/g, "").toLowerCase();
-
   const excludedKeysNormalized = new Set([
     "searchabletext", "source", "no", "no.", "sno", "slno", "s.no.",
     "pkgouter", "master", "code", "particulars", "category", "description",
     "package", "pkg"
   ]);
-
   const priceKeys = ["price", "rate", "basic", "dlp", "mrpp"];
   const discountOptions = Array.from({ length: (70 - 3) * 2 + 1 }, (_, i) => 3 + i * 0.5);
 
-  const createNumberSafeRegex = (term) => {
-    if (/^\d+$/.test(term)) {
-      return new RegExp(`(^|\\D)${term}(\\D|$)`);
-    }
-    return new RegExp(term.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&"), "i");
-  };
-
-  // Load data
+  // ✅ Load data
   useEffect(() => {
     Promise.all([
       localforage.getItem("allItems"),
@@ -83,7 +76,9 @@ export default function SearchBar() {
       .filter((item) => {
         const text = item.searchableText?.toLowerCase() || "";
         return searchTerms.every((term) => {
-          const regex = createNumberSafeRegex(term);
+          const regex = /^\d+$/.test(term)
+            ? new RegExp(`(^|\\D)${term}(\\D|$)`)
+            : new RegExp(term.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&"), "i");
           return regex.test(text);
         });
       });
@@ -132,114 +127,34 @@ export default function SearchBar() {
 
   return (
     <div className="flex flex-col h-screen max-w-full overflow-x-hidden">
-      <div className="sticky top-0 bg-white p-4 border-b space-y-2 z-20">
-        {showMessage && (
-          <div className="text-gray-500">Please enter at least 3 characters to search</div>
-        )}
-        <div className="flex gap-2 w-full">
-          <select
-            value={selectedSource}
-            onChange={(e) => setSelectedSource(e.target.value)}
-            className="border p-2 rounded w-[30%]"
-          >
-            <option value="ALL">All Files</option>
-            {sources.map((src) => (
-              <option key={src} value={src}>{src}</option>
-            ))}
-          </select>
-
-          <input
-            type="text"
-            className="border p-2 rounded w-[45%]"
-            placeholder="Search (min 3 characters)..."
-            onChange={(e) => debouncedSetQuery(e.target.value)}
-          />
-
-          <select
-            value={universalDiscount}
-            onChange={handleUniversalDiscountChange}
-            className="border p-2 rounded w-[25%]"
-          >
-            {discountOptions.map((opt) => (
-              <option key={opt} value={opt}>{opt}%</option>
-            ))}
-          </select>
-        </div>
-      </div>
+      <SearchHeader
+        showMessage={showMessage}
+        selectedSource={selectedSource}
+        sources={sources}
+        universalDiscount={universalDiscount}
+        discountOptions={discountOptions}
+        handleSourceChange={(e) => setSelectedSource(e.target.value)}
+        handleSearchChange={(e) => debouncedSetQuery(e.target.value)}
+        handleUniversalDiscountChange={handleUniversalDiscountChange}
+      />
 
       <div className="flex-1 overflow-auto p-4">
         <div className="grid gap-3">
-          {filteredResults.slice(0, visibleCount).map((item, idx) => {
-            const id = item.CODE || `${item.source}-${idx}`;
-
-            return (
-              <div key={id} className="border p-3 rounded bg-white shadow-sm w-full break-words">
-                <div className="flex flex-wrap gap-6 text-sm font-medium mb-2">
-                  {Object.entries(item)
-                    .filter(([key]) =>
-                      ["code", "particulars", "description"].includes(normalizeKey(key))
-                    )
-                    .map(([key, value]) => (
-                      <div key={key}><strong>{String(value)}:</strong></div>
-                    ))}
-                </div>
-
-                <div className="space-y-1">
-                  {Object.entries(item)
-                    .filter(([key]) => !excludedKeysNormalized.has(normalizeKey(key)))
-                    .map(([key, value]) => {
-                      const original = parseFloat(value);
-                      const isNumeric = !isNaN(original);
-                      const isPriceField = priceKeys.some((k) => normalizeKey(key).includes(k));
-
-                      if (!isPriceField) return null;
-
-                      const discountKey = `${id}-${key}`;
-                      const discount = discountMap[discountKey] ?? universalDiscount;
-                      const quantity = cart[discountKey]?.quantity || "";
-
-                      return (
-                        <div key={key} className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-sm w-full">
-                          <div className="font-semibold whitespace-nowrap">
-                            {/dlp|rate/i.test(key) && /^[\s]*((dlp|rate)[\s]*)+$/i.test(key)
-                              ? key
-                              : key.replace(/dlp|rate/gi, "").trim()}
-                          </div>
-
-                          <div className="flex items-center gap-2 text-gray-700">
-                            <span className="whitespace-nowrap">₹{original}</span>
-                            <span>@</span>
-
-                            <select
-                              value={discount}
-                              onChange={(e) => updateItemDiscount(discountKey, parseFloat(e.target.value))}
-                              className="border border-gray-300 rounded px-2 py-1 text-sm"
-                            >
-                              {discountOptions.map((opt) => (
-                                <option key={opt} value={opt}>-{opt}%</option>
-                              ))}
-                            </select>
-
-                            <span>= ₹{(original * (1 - discount / 100)).toFixed(2)}</span>
-
-                            <input
-                              type="number"
-                              min="0"
-                              max="1200"
-                              value={quantity}
-                              onChange={(e) => handleQuantityChange(discountKey, item, key, e.target.value)}
-                              className="ml-2 border border-gray-300 rounded px-2 py-1 text-sm w-16"
-                            />
-                          </div>
-                        </div>
-                      );
-                    })}
-                </div>
-
-                <div className="text-xs text-gray-400 mt-2">Source: {item.source}</div>
-              </div>
-            );
-          })}
+          {filteredResults.slice(0, visibleCount).map((item, idx) => (
+            <ItemCard
+              key={idx}
+              item={item}
+              idx={idx}
+              normalizeKey={normalizeKey}
+              excludedKeysNormalized={excludedKeysNormalized}
+              priceKeys={priceKeys}
+              discountMap={discountMap}
+              universalDiscount={universalDiscount}
+              updateItemDiscount={updateItemDiscount}
+              handleQuantityChange={handleQuantityChange}
+              cart={cart}
+            />
+          ))}
         </div>
 
         {filteredResults.length > visibleCount && (

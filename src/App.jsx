@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import { loadAndCacheAllJson } from "./utils/jsonLoader";
-import SearchBar from "./components/SearchBar";
-import CartView from "./components/CartView";
+
+// ✅ Lazy load components
+const SearchBar = lazy(() => import("./components/SearchBar"));
+const CartView = lazy(() => import("./components/CartView"));
 
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState(null);
   const [itemsCount, setItemsCount] = useState(0);
-  const [showCart, setShowCart] = useState(false); // ✅ Toggle state
+  const [showCart, setShowCart] = useState(false);
 
   const loadData = async (forceRefresh = false) => {
     setLoading(true);
@@ -33,14 +35,12 @@ export default function App() {
       <div className="flex justify-between items-center p-4">
         <h1 className="text-l font-bold text-center">Products</h1>
         <div className="flex gap-2">
-          {/* ✅ Cart Button moved to top-right */}
           <button
             onClick={() => setShowCart((prev) => !prev)}
             className="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600"
           >
             🛒 Cart
           </button>
-
           <button
             onClick={() => loadData(true)}
             className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
@@ -56,8 +56,10 @@ export default function App() {
         </div>
       )}
 
-      {/* ✅ Toggle between Search and Cart */}
-      {showCart ? <CartView /> : <SearchBar />}
+      {/* ✅ Suspense for lazy components */}
+      <Suspense fallback={<div className="p-4">Loading component...</div>}>
+        {showCart ? <CartView /> : <SearchBar />}
+      </Suspense>
 
       <p className="text-sm text-gray-500 text-right p-2">
         Loaded items: {itemsCount}
