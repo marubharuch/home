@@ -1,4 +1,5 @@
 import localforage from "localforage";
+import Fuse from "fuse.js";
 
 export const jsonFiles = [
   "4x_ACCESSORIES.json",
@@ -17,7 +18,6 @@ export const jsonFiles = [
 const parseJSONFile = (raw, source) => {
   const items = [];
 
-  // WOODEM PLATES structure
   if (raw?.["WOODEM PLATES PRICELIST - 01.04.2025"]) {
     const categories = raw["WOODEM PLATES PRICELIST - 01.04.2025"];
     Object.entries(categories).forEach(([category, entries]) => {
@@ -33,8 +33,6 @@ const parseJSONFile = (raw, source) => {
       }
     });
   }
-
-  // SWITCHGEAR structure
   else if (raw?.SWITCHGEAR_PRICELIST?.products) {
     raw.SWITCHGEAR_PRICELIST.products.forEach(p => {
       p.items?.forEach(item => {
@@ -47,8 +45,6 @@ const parseJSONFile = (raw, source) => {
       });
     });
   }
-
-  // Generic object or array
   else {
     const processItem = (item, category = "") => {
       items.push({
@@ -82,7 +78,11 @@ export const loadAndCacheAllJson = async ({ forceRefresh = false } = {}) => {
     const cachedDiscounts = await localforage.getItem("fileDiscounts");
 
     if (cachedItems && cachedItems.length > 0) {
-      return { items: cachedItems, errors: cachedErrors || [], discounts: cachedDiscounts || {} };
+      return { 
+        items: cachedItems, 
+        errors: cachedErrors || [], 
+        discounts: cachedDiscounts || {} 
+      };
     }
   }
 
@@ -101,7 +101,6 @@ export const loadAndCacheAllJson = async ({ forceRefresh = false } = {}) => {
 
       const raw = await res.json();
 
-      // ✅ Detect and store defaultDiscount
       if (raw.defaultDiscount !== undefined) {
         fileDiscounts[file] = parseFloat(raw.defaultDiscount);
       }
@@ -120,3 +119,4 @@ export const loadAndCacheAllJson = async ({ forceRefresh = false } = {}) => {
 
   return { items: allItems, errors, discounts: fileDiscounts };
 };
+
