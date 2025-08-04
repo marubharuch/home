@@ -3,7 +3,7 @@
 
 
 {
-    "defaultDiscount": 25,"products":
+    "defaultDiscount": 30,"products":
 
 [
  {
@@ -15,8 +15,8 @@
   "SPEED\n(RPM)": "350",
   "AIR DELIVERY\n(cmm)": "230",
   "PKG": "1",
-  "DLP": 7700,
-  "MRP": 14000,
+  "delear": 7700,
+  "rate": 14000,
   "RETAIL": 9625
  },
  {
@@ -28,8 +28,8 @@
   "SPEED\n(RPM)": "240",
   "AIR DELIVERY\n(cmm)": "250",
   "PKG": "1",
-  "DLP": 9200,
-  "MRP": 16730,
+  "delear": 9200,
+  "rate": 16730,
   "RETAIL": 11501.875
  },
  {
@@ -41,8 +41,8 @@
   "SPEED\n(RPM)": "330",
   "AIR DELIVERY\n(cmm)": "220",
   "PKG": "1",
-  "DLP": 9200,
-  "MRP": 16730,
+  "delear": 9200,
+  "rate": 16730,
   "RETAIL": 11501.875
  },
  {
@@ -54,8 +54,8 @@
   "SPEED\n(RPM)": "350",
   "AIR DELIVERY\n(cmm)": "220",
   "PKG": "2",
-  "DLP": 4240,
-  "MRP": 7710,
+  "delear": 4240,
+  "rate": 7710,
   "RETAIL": 5300.625
  },
  {
@@ -67,8 +67,8 @@
   "SPEED\n(RPM)": "350",
   "AIR DELIVERY\n(cmm)": "220",
   "PKG": "2",
-  "DLP": 3820,
-  "MRP": 6945,
+  "delear": 3820,
+  "rate": 6945,
   "RETAIL": 4774.6875
  },
  {
@@ -80,8 +80,8 @@
   "SPEED\n(RPM)": "350",
   "AIR DELIVERY\n(cmm)": "150",
   "PKG": "1",
-  "DLP": 5900,
-  "MRP": 10730,
+  "delear": 5900,
+  "rate": 10730,
   "RETAIL": 7376.875
  },
  {
@@ -93,8 +93,8 @@
   "SPEED\n(RPM)": "850",
   "AIR DELIVERY\n(cmm)": "105",
   "PKG": "4",
-  "DLP": 3360,
-  "MRP": 6110,
+  "delear": 3360,
+  "rate": 6110,
   "RETAIL": 4200.625
  },
  {
@@ -106,8 +106,8 @@
   "SPEED\n(RPM)": "350",
   "AIR DELIVERY\n(cmm)": "225",
   "PKG": "2",
-  "DLP": 2980,
-  "MRP": 5420,
+  "delear": 2980,
+  "rate": 5420,
   "RETAIL": 3726.25
  },
  {
@@ -119,8 +119,8 @@
   "SPEED\n(RPM)": "350",
   "AIR DELIVERY\n(cmm)": "225",
   "PKG": "2",
-  "DLP": 4170,
-  "MRP": 7585,
+  "delear": 4170,
+  "rate": 7585,
   "RETAIL": 5214.6875
  },
  {
@@ -132,8 +132,8 @@
   "SPEED\n(RPM)": "450",
   "AIR DELIVERY\n(cmm)": "140",
   "PKG": "2",
-  "DLP": 2800,
-  "MRP": 5090,
+  "delear": 2800,
+  "rate": 5090,
   "RETAIL": 3499.375
  },
  {
@@ -145,8 +145,8 @@
   "SPEED\n(RPM)": "350",
   "AIR DELIVERY\n(cmm)": "220",
   "PKG": "2",
-  "DLP": 2800,
-  "MRP": 5090,
+  "delear": 2800,
+  "rate": 5090,
   "RETAIL": 3499.375
  },
  {
@@ -158,8 +158,8 @@
   "SPEED\n(RPM)": "850",
   "AIR DELIVERY\n(cmm)": "105",
   "PKG": "4",
-  "DLP": 2180,
-  "MRP": 3965,
+  "delear": 2180,
+  "rate": 3965,
   "RETAIL": 2725.9375
  },
  {
@@ -171,8 +171,8 @@
   "SPEED\n(RPM)": "450",
   "AIR DELIVERY\n(cmm)": "140",
   "PKG": "4",
-  "DLP": 2280,
-  "MRP": 4145,
+  "delear": 2280,
+  "rate": 4145,
   "RETAIL": 2849.6875
  },
  {
@@ -184,8 +184,8 @@
   "SPEED\n(RPM)": "350",
   "AIR DELIVERY\n(cmm)": "220",
   "PKG": "4",
-  "DLP": 2280,
-  "MRP": 4145,
+  "delear": 2280,
+  "rate": 4145,
   "RETAIL": 2849.6875
  },
  {
@@ -197,8 +197,8 @@
   "SPEED\n(RPM)": "340",
   "AIR DELIVERY\n(cmm)": "210",
   "PKG": "4",
-  "DLP": 3300,
-  "MRP": 6000,
+  "delear": 3300,
+  "rate": 6000,
   "RETAIL": 4125
  },
  {
@@ -210,8 +210,8 @@
   "SPEED\n(RPM)": "450",
   "AIR DELIVERY\n(cmm)": "140",
   "PKG": "4",
-  "DLP": 1800,
-  "MRP": 3275,
+  "delear": 1800,
+  "rate": 3275,
   "RETAIL": 2251.5625
  },
  {
@@ -222,8 +222,8 @@
   "SPEED\n(RPM)": "380",
   "AIR DELIVERY\n(cmm)": "210",
   "PKG": "4",
-  "DLP": 1800,
-  "MRP": 3275,
+  "delear": 1800,
+  "rate": 3275,
   "RETAIL": 2251.5625
  },
  {
@@ -235,8 +235,8 @@
   "SPEED\n(RPM)": "850",
   "AIR DELIVERY\n(cmm)": "105",
   "PKG": "4",
-  "DLP": 1500,
-  "MRP": 2720,
+  "delear": 1500,
+  "rate": 2720,
   "RETAIL": 1870
  },
  {
@@ -248,8 +248,8 @@
   "SPEED\n(RPM)": "450",
   "AIR DELIVERY\n(cmm)": "140",
   "PKG": "4",
-  "DLP": 1590,
-  "MRP": 2890,
+  "delear": 1590,
+  "rate": 2890,
   "RETAIL": 1986.875
  },
  {
@@ -261,8 +261,8 @@
   "SPEED\n(RPM)": "390",
   "AIR DELIVERY\n(cmm)": "210",
   "PKG": "4",
-  "DLP": 1590,
-  "MRP": 2890,
+  "delear": 1590,
+  "rate": 2890,
   "RETAIL": 1986.875
  },
  {
@@ -274,8 +274,8 @@
   "SPEED\n(RPM)": "450",
   "AIR DELIVERY\n(cmm)": "140",
   "PKG": "4",
-  "DLP": 1510,
-  "MRP": 2745,
+  "delear": 1510,
+  "rate": 2745,
   "RETAIL": 1887.1875
  },
  {
@@ -285,8 +285,8 @@
   "SWEEP\n(MM)": "1200",
   "POWER\n(Watt)": "52",
   "SPEED\n(RPM)": "400",
-  "DLP": 1510,
-  "MRP": 2745,
+  "delear": 1510,
+  "rate": 2745,
   "RETAIL": 1887.1875
  },
  {
@@ -297,8 +297,8 @@
   "POWER\n(Watt)": "56",
   "SPEED\n(RPM)": "290",
   "AIR DELIVERY\n(cmm)": "16\/20",
-  "DLP": 1810,
-  "MRP": 3290,
+  "delear": 1810,
+  "rate": 3290,
   "RETAIL": 2261.875
  },
  {
@@ -308,8 +308,8 @@
   "SWEEP\n(MM)": "900",
   "POWER\n(Watt)": "45",
   "SPEED\n(RPM)": "450",
-  "DLP": 1420,
-  "MRP": 2575,
+  "delear": 1420,
+  "rate": 2575,
   "RETAIL": 1770.3125
  },
  {
@@ -321,8 +321,8 @@
   "SPEED\n(RPM)": "400",
   "AIR DELIVERY\n(cmm)": "210",
   "PKG": "4",
-  "DLP": 1420,
-  "MRP": 2575,
+  "delear": 1420,
+  "rate": 2575,
   "RETAIL": 1770.3125
  },
  {
@@ -334,8 +334,8 @@
   "SPEED\n(RPM)": "290",
   "AIR DELIVERY\n(cmm)": "245",
   "PKG": "4",
-  "DLP": 1750,
-  "MRP": 3185,
+  "delear": 1750,
+  "rate": 3185,
   "RETAIL": 2189.6875
  },
  {
@@ -347,8 +347,8 @@
   "SPEED\n(RPM)": "450",
   "AIR DELIVERY\n(cmm)": "140",
   "PKG": "4",
-  "DLP": 1420,
-  "MRP": 2575,
+  "delear": 1420,
+  "rate": 2575,
   "RETAIL": 1770.3125
  },
  {
@@ -360,8 +360,8 @@
   "SPEED\n(RPM)": "380",
   "AIR DELIVERY\n(cmm)": "210",
   "PKG": "4",
-  "DLP": 1420,
-  "MRP": 2575,
+  "delear": 1420,
+  "rate": 2575,
   "RETAIL": 1770.3125
  },
  {
@@ -373,8 +373,8 @@
   "SPEED\n(RPM)": "850",
   "AIR DELIVERY\n(cmm)": "105",
   "PKG": "4",
-  "DLP": 1320,
-  "MRP": 2400,
+  "delear": 1320,
+  "rate": 2400,
   "RETAIL": 1650
  },
  {
@@ -386,8 +386,8 @@
   "SPEED\n(RPM)": "450",
   "AIR DELIVERY\n(cmm)": "140",
   "PKG": "4",
-  "DLP": 1420,
-  "MRP": 2575,
+  "delear": 1420,
+  "rate": 2575,
   "RETAIL": 1770.3125
  },
  {
@@ -399,8 +399,8 @@
   "SPEED\n(RPM)": "390",
   "AIR DELIVERY\n(cmm)": "210",
   "PKG": "4",
-  "DLP": 1420,
-  "MRP": 2575,
+  "delear": 1420,
+  "rate": 2575,
   "RETAIL": 1770.3125
  },
  {
@@ -412,13 +412,13 @@
   "SPEED\n(RPM)": "350",
   "AIR DELIVERY\n(cmm)": "215",
   "PKG": "4",
-  "DLP": 2740,
-  "MRP": 4985,
+  "delear": 2740,
+  "rate": 4985,
   "RETAIL": 3427.1875
  },
  {
   "CATEGORY": "TABLE 2",
-  "DLP": 0,
+  "delear": 0,
   "RETAIL": 0
  },
  {
@@ -430,7 +430,7 @@
   "SPEED\n(RPM)": "WIND SPEED\n(MS)",
   "AIR DELIVERY\n(cmm)": "AIR DELIVERY\n(cmm)",
   "PKG": "PKG",
-  "DLP": 0,
+  "delear": 0,
   "RETAIL": 0
  },
  {
@@ -442,11 +442,11 @@
   "SPEED\n(RPM)": "5.8",
   "AIR DELIVERY\n(cmm)": "-",
   "PKG": "1",
-  "DLP": 0,
+  "delear": 0,
   "RETAIL": 0
  },
  {
-  "DLP": 0,
+  "delear": 0,
   "RETAIL": 0
  },
  {
@@ -458,8 +458,8 @@
   "SPEED\n(RPM)": "1800",
   "AIR DELIVERY\n(cmm)": "250",
   "PKG": "B",
-  "DLP": 1130,
-  "MRP": 2055,
+  "delear": 1130,
+  "rate": 2055,
   "RETAIL": 1412.8125
  },
  {
@@ -471,8 +471,8 @@
   "SPEED\n(RPM)": "1800",
   "AIR DELIVERY\n(cmm)": "250",
   "PKG": "B",
-  "DLP": 810,
-  "MRP": 1475,
+  "delear": 810,
+  "rate": 1475,
   "RETAIL": 1014.0625
  },
  {
@@ -484,8 +484,8 @@
   "SPEED\n(RPM)": "2200",
   "AIR DELIVERY\n(cmm)": "90",
   "PKG": "12",
-  "DLP": 690,
-  "MRP": 1255,
+  "delear": 690,
+  "rate": 1255,
   "RETAIL": 862.8125
  },
  {
@@ -497,8 +497,8 @@
   "SPEED\n(RPM)": "1800",
   "AIR DELIVERY\n(cmm)": "250",
   "PKG": "B",
-  "DLP": 720,
-  "MRP": 1310,
+  "delear": 720,
+  "rate": 1310,
   "RETAIL": 900.625
  },
  {
@@ -510,8 +510,8 @@
   "SPEED\n(RPM)": "1350",
   "AIR DELIVERY\n(cmm)": "290",
   "PKG": "E",
-  "DLP": 930,
-  "MRP": 1685,
+  "delear": 930,
+  "rate": 1685,
   "RETAIL": 1158.4375
  },
  {
@@ -523,8 +523,8 @@
   "SPEED\n(RPM)": "1300",
   "AIR DELIVERY\n(cmm)": "550",
   "PKG": "4",
-  "DLP": 980,
-  "MRP": 1785,
+  "delear": 980,
+  "rate": 1785,
   "RETAIL": 1227.1875
  },
  {
@@ -536,8 +536,8 @@
   "SPEED\n(RPM)": "1250",
   "AIR DELIVERY\n(cmm)": "750",
   "PKG": "4",
-  "DLP": 1065,
-  "MRP": 1930,
+  "delear": 1065,
+  "rate": 1930,
   "RETAIL": 1326.875
  },
  {
@@ -549,8 +549,8 @@
   "SPEED\n(RPM)": "1350",
   "AIR DELIVERY\n(cmm)": "450",
   "PKG": "4",
-  "DLP": 1095,
-  "MRP": 1985,
+  "delear": 1095,
+  "rate": 1985,
   "RETAIL": 1364.6875
  },
  {
@@ -562,8 +562,8 @@
   "SPEED\n(RPM)": "2350",
   "AIR DELIVERY\n(cmm)": "350",
   "PKG": "8",
-  "DLP": 1110,
-  "MRP": 2010,
+  "delear": 1110,
+  "rate": 2010,
   "RETAIL": 1381.875
  },
  {
@@ -575,8 +575,8 @@
   "SPEED\n(RPM)": "2500",
   "AIR DELIVERY\n(cmm)": "1050",
   "PKG": "4",
-  "DLP": 1160,
-  "MRP": 2110,
+  "delear": 1160,
+  "rate": 2110,
   "RETAIL": 1450.625
  },
  {
@@ -588,8 +588,8 @@
   "SPEED\n(RPM)": "1350",
   "AIR DELIVERY\n(cmm)": "750",
   "PKG": "4",
-  "DLP": 990,
-  "MRP": 1800,
+  "delear": 990,
+  "rate": 1800,
   "RETAIL": 1237.5
  },
  {
@@ -601,8 +601,8 @@
   "SPEED\n(RPM)": "1350",
   "AIR DELIVERY\n(cmm)": "1850",
   "PKG": "4",
-  "DLP": 1250,
-  "MRP": 2275,
+  "delear": 1250,
+  "rate": 2275,
   "RETAIL": 1564.0625
  },
  {
@@ -614,8 +614,8 @@
   "SPEED\n(RPM)": "1330",
   "AIR DELIVERY\n(cmm)": "TO",
   "PKG": "2",
-  "DLP": 1710,
-  "MRP": 3110,
+  "delear": 1710,
+  "rate": 3110,
   "RETAIL": 2138.125
  },
  {
@@ -627,8 +627,8 @@
   "SPEED\n(RPM)": "2200",
   "AIR DELIVERY\n(cmm)": "90",
   "PKG": "2",
-  "DLP": 2100,
-  "MRP": 3820,
+  "delear": 2100,
+  "rate": 3820,
   "RETAIL": 2626.25
  },
  {
@@ -640,8 +640,8 @@
   "SPEED\n(RPM)": "1330",
   "AIR DELIVERY\n(cmm)": "TO",
   "PKG": "2",
-  "DLP": 2000,
-  "MRP": 3635,
+  "delear": 2000,
+  "rate": 3635,
   "RETAIL": 2499.0625
  },
  {
@@ -653,8 +653,8 @@
   "SPEED\n(RPM)": "2400",
   "AIR DELIVERY\n(cmm)": "70",
   "PKG": "2",
-  "DLP": 1980,
-  "MRP": 3600,
+  "delear": 1980,
+  "rate": 3600,
   "RETAIL": 2475
  },
  {
@@ -666,8 +666,8 @@
   "SPEED\n(RPM)": "2200",
   "AIR DELIVERY\n(cmm)": "90",
   "PKG": "2",
-  "DLP": 2250,
-  "MRP": 4090,
+  "delear": 2250,
+  "rate": 4090,
   "RETAIL": 2811.875
  },
  {
@@ -679,8 +679,8 @@
   "SPEED\n(RPM)": "1350",
   "AIR DELIVERY\n(cmm)": "TIC",
   "PKG": "1",
-  "DLP": 3200,
-  "MRP": 5820,
+  "delear": 3200,
+  "rate": 5820,
   "RETAIL": 4001.25
  },
  {
@@ -692,8 +692,8 @@
   "SPEED\n(RPM)": "1330",
   "AIR DELIVERY\n(cmm)": "70",
   "PKG": "2",
-  "DLP": 2300,
-  "MRP": 4185,
+  "delear": 2300,
+  "rate": 4185,
   "RETAIL": 2877.1875
  },
  {
@@ -705,8 +705,8 @@
   "SPEED\n(RPM)": "2200",
   "AIR DELIVERY\n(cmm)": "IC",
   "PKG": "2",
-  "DLP": 2700,
-  "MRP": 4910,
+  "delear": 2700,
+  "rate": 4910,
   "RETAIL": 3375.625
  },
  {
@@ -718,8 +718,8 @@
   "SPEED\n(RPM)": "2800",
   "AIR DELIVERY\n(cmm)": "125",
   "PKG": "1",
-  "DLP": 2470,
-  "MRP": 4490,
+  "delear": 2470,
+  "rate": 4490,
   "RETAIL": 3086.875
  },
  {
@@ -731,8 +731,8 @@
   "SPEED\n(RPM)": "1350",
   "AIR DELIVERY\n(cmm)": "TO",
   "PKG": "I",
-  "DLP": 3310,
-  "MRP": 6020,
+  "delear": 3310,
+  "rate": 6020,
   "RETAIL": 4138.75
  },
  {
@@ -744,8 +744,8 @@
   "SPEED\n(RPM)": "1350",
   "AIR DELIVERY\n(cmm)": "100",
   "PKG": "I",
-  "DLP": 3200,
-  "MRP": 5820,
+  "delear": 3200,
+  "rate": 5820,
   "RETAIL": 4001.25
  },
  {
@@ -757,8 +757,8 @@
   "SPEED\n(RPM)": "2200",
   "AIR DELIVERY\n(cmm)": "60",
   "PKG": "4",
-  "DLP": 1560,
-  "MRP": 2835,
+  "delear": 1560,
+  "rate": 2835,
   "RETAIL": 1949.0625
  },
  {
@@ -770,8 +770,8 @@
   "SPEED\n(RPM)": "2500",
   "AIR DELIVERY\n(cmm)": "26",
   "PKG": "4",
-  "DLP": 1315,
-  "MRP": 2385,
+  "delear": 1315,
+  "rate": 2385,
   "RETAIL": 1639.6875
  },
  {
@@ -783,8 +783,8 @@
   "SPEED\n(RPM)": "55",
   "AIR DELIVERY\n(cmm)": "-",
   "PKG": "I",
-  "DLP": 2500,
-  "MRP": 4545,
+  "delear": 2500,
+  "rate": 4545,
   "RETAIL": 3124.6875
  }
 ]}
