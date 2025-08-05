@@ -1,15 +1,22 @@
 import React, { useEffect, useState } from "react";
 import localforage from "localforage";
 
-export default function CartView() {
+export default function CartView({ orderKey, onSave, onModify }) {
   const [cartItems, setCartItems] = useState({});
 
   useEffect(() => {
     (async () => {
-      const saved = await localforage.getItem("cartItems");
-      if (saved) setCartItems(saved);
+      if (orderKey && orderKey !== "NEW") {
+        const allOrders = (await localforage.getItem("orders")) || {};
+        if (allOrders[orderKey]) {
+          setCartItems(allOrders[orderKey].cart);
+        }
+      } else {
+        const saved = await localforage.getItem("cartItems");
+        if (saved) setCartItems(saved);
+      }
     })();
-  }, []);
+  }, [orderKey]);
 
   const handleDelete = async (id) => {
     const updated = { ...cartItems };
@@ -71,7 +78,25 @@ export default function CartView() {
           </div>
         </div>
       ))}
-      <div className="text-right font-bold text-lg mt-4">Total: ₹{total.toFixed(2)}</div>
+
+      <div className="flex justify-between mt-4">
+        <button
+          onClick={() => onSave(cartItems)}
+          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+        >
+          💾 Save Order
+        </button>
+        <button
+          onClick={onModify}
+          className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600"
+        >
+          ✏️ Modify Order
+        </button>
+      </div>
+
+      <div className="text-right font-bold text-lg mt-4">
+        Total: ₹{total.toFixed(2)}
+      </div>
     </div>
   );
 }

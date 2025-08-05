@@ -34,7 +34,7 @@ export default function SearchBar() {
     Promise.all([
       localforage.getItem("allItems"),
       localforage.getItem("fileDiscounts"),
-      localforage.getItem("cartItems"),
+    //  localforage.getItem("cartItems"),
     ]).then(([data, discounts, savedCart]) => {
       if (data) {
         setAllItems(data);
