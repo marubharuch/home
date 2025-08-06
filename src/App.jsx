@@ -1,6 +1,7 @@
 import React, { useEffect, useState, lazy, Suspense } from "react";
 import localforage from "localforage";
 import { loadAndCacheAllJson } from "./utils/jsonLoader";
+import Modal from "./components/Modal";
 
 const SearchBar = lazy(() => import("./components/SearchBar"));
 const CartView = lazy(() => import("./components/CartView"));
@@ -14,6 +15,8 @@ export default function App() {
   const [orderList, setOrderList] = useState([]);
   const [showOrderPopup, setShowOrderPopup] = useState(false);
   const [selectedOrderKey, setSelectedOrderKey] = useState(null);
+  const [showMobilePopup, setShowMobilePopup] = useState(false);
+  const [tempMobile, setTempMobile] = useState("");
 
   const loadData = async (forceRefresh = false) => {
     setLoading(true);
@@ -31,7 +34,6 @@ export default function App() {
   useEffect(() => {
     loadData();
 
-    // ✅ Initialize orders object if not present
     (async () => {
       const existing = await localforage.getItem("orders");
       if (!existing) {
@@ -65,11 +67,41 @@ export default function App() {
     setShowOrderPopup(true);
   };
 
+  const handleCartClick = async () => {
+    const num = mobileInput.trim();
+
+    if (!/^\d{10}$/.test(num)) {
+      setShowMobilePopup(true);
+      return;
+    }
+
+    const allOrders = (await localforage.getItem("orders")) || {};
+    const matchedOrders = Object.entries(allOrders)
+      .filter(([key]) => key.startsWith(num))
+      .map(([key, data]) => ({
+        key,
+        total: Object.values(data.cart || {}).reduce(
+          (sum, item) =>
+            sum + (parseFloat(item.finalPrice) || 0) * (item.quantity || 0),
+          0
+        ),
+        createdAt: data.createdAt,
+      }));
+
+    if (matchedOrders.length > 0) {
+      setOrderList(matchedOrders);
+      setShowOrderPopup(true);
+    } else {
+      setSelectedOrderKey("NEW");
+      setShowCart(true);
+    }
+  };
+
   const handleOrderSelect = (orderKey) => {
     setSelectedOrderKey(orderKey);
     setShowOrderPopup(false);
     if (orderKey === "NEW") {
-      setShowCart(false);
+      setShowCart(true);
     } else {
       setShowCart(true);
     }
@@ -139,7 +171,7 @@ export default function App() {
         />
         <div className="flex gap-2">
           <button
-            onClick={() => setShowCart((prev) => !prev)}
+            onClick={handleCartClick}
             className="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600"
           >
             🛒 Cart
@@ -159,37 +191,77 @@ export default function App() {
         </div>
       )}
 
-      {/* Popup for orders */}
+      {/* Order selection popup */}
       {showOrderPopup && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-4 rounded shadow-lg w-80">
-            <h2 className="text-lg font-bold mb-2">Select Order</h2>
-            <ul className="space-y-2">
-              <li
-                className="p-2 border rounded cursor-pointer hover:bg-gray-100"
-                onClick={() => handleOrderSelect("NEW")}
-              >
-                ➕ New Order
-              </li>
-              {orderList.map((o) => (
-                <li
-                  key={o.key}
-                  className="p-2 border rounded cursor-pointer hover:bg-gray-100"
-                  onClick={() => handleOrderSelect(o.key)}
-                >
-                  {o.key} - ₹{o.total.toFixed(2)}
-                  <div className="text-xs text-gray-500">{o.createdAt}</div>
-                </li>
-              ))}
-            </ul>
-            <button
-              className="mt-3 px-4 py-1 bg-red-500 text-white rounded"
-              onClick={() => setShowOrderPopup(false)}
+        <Modal
+          title="Select Order"
+          onClose={() => setShowOrderPopup(false)}
+        >
+          <ul className="space-y-2">
+            <li
+              className="p-2 border rounded cursor-pointer hover:bg-gray-100"
+              onClick={() => handleOrderSelect("NEW")}
             >
-              Close
+              ➕ New Order
+            </li>
+            {orderList.map((o) => (
+              <li
+                key={o.key}
+                className="p-2 border rounded cursor-pointer hover:bg-gray-100"
+                onClick={() => handleOrderSelect(o.key)}
+              >
+                {o.key} - ₹{o.total.toFixed(2)}
+                <div className="text-xs text-gray-500">{o.createdAt}</div>
+              </li>
+            ))}
+          </ul>
+        </Modal>
+      )}
+
+      {/* Mobile number popup */}
+      {showMobilePopup && (
+        <Modal
+          title="Enter Mobile Number"
+          onClose={() => {
+            if (tempMobile.trim()) setMobileInput(tempMobile);
+            setTempMobile("");
+            setShowMobilePopup(false);
+          }}
+        >
+          <input
+            type="text"
+            value={tempMobile}
+            onChange={(e) => setTempMobile(e.target.value)}
+            placeholder="10-digit number"
+            className="border px-2 py-1 rounded w-full mb-3"
+          />
+          <div className="flex justify-end gap-2">
+            <button
+              className="px-4 py-1 bg-gray-400 text-white rounded"
+              onClick={() => {
+                if (tempMobile.trim()) setMobileInput(tempMobile);
+                setTempMobile("");
+                setShowMobilePopup(false);
+              }}
+            >
+              Cancel
+            </button>
+            <button
+              className="px-4 py-1 bg-green-500 text-white rounded"
+              onClick={() => {
+                if (/^\d{10}$/.test(tempMobile)) {
+                  setMobileInput(tempMobile);
+                  setShowMobilePopup(false);
+                  handleCartClick();
+                } else {
+                  alert("Invalid mobile number");
+                }
+              }}
+            >
+              OK
             </button>
           </div>
-        </div>
+        </Modal>
       )}
 
       <Suspense fallback={<div className="p-4">Loading component...</div>}>
