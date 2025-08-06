@@ -106,28 +106,31 @@ export default function SearchBar() {
 
   const handleLoadMore = () => setVisibleCount((prev) => prev + 20);
   const handleQuantityChange = async (discountKey, item, fieldKey, qty) => {
-    const quantity = parseInt(qty, 10) || 0;
+    const rawValue = qty; // store raw string
+    const numericValue = parseInt(rawValue, 10);
+  
     const discount = discountMap[discountKey] ?? universalDiscount;
     const price = parseFloat(item[fieldKey]) || 0;
   
     const existingCart = (await localforage.getItem("cart")) || {};
   
     const updatedCart = {
-      ...existingCart,  // ✅ Merge instead of replacing
+      ...existingCart,
       [discountKey]: {
         ...item,
         discount,
         fieldKey,
-        quantity,
+        quantity: rawValue === "" ? "" : numericValue,
         finalPrice: (price * (1 - discount / 100)).toFixed(2),
       },
     };
   
     setCart(updatedCart);
     await localforage.setItem("cart", updatedCart);
-  
     window.dispatchEvent(new Event("cartUpdated"));
   };
+  
+  
   
   
  

@@ -87,36 +87,37 @@ export default function App() {
   };
 
   const handleSaveOrder = async (cartItems) => {
-    const mobile = /^\d{10}$/.test(mobileInput) ? mobileInput : "unknown";
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = String(now.getMonth() + 1).padStart(2, "0");
-
+    const mobile = cartItems._mobile || (mobileInput && /^\d{10}$/.test(mobileInput) ? mobileInput : "unknown");
+  
     const allOrders = (await localforage.getItem("orders")) || {};
-    const userOrders = Object.keys(allOrders).filter((k) =>
-      k.startsWith(`${mobile}/${year}/${month}`)
+  
+    // ✅ Count existing orders for this mobile
+    const userOrders = Object.keys(allOrders).filter((k) => k.startsWith(mobile));
+    const serial = userOrders.length + 1;
+  
+    const orderKey = mobile !== "unknown" ? `${mobile}/${serial}` : `ORD-${Date.now()}`;
+  
+    // ✅ Remove meta fields before saving
+    const cleanCart = Object.fromEntries(
+      Object.entries(cartItems).filter(([k]) => k !== "_orderInfo" && k !== "_mobile")
     );
-    const lastSerial =
-      userOrders.map((k) => parseInt(k.split("/").pop(), 10)).sort((a, b) => b - a)[0] || 0;
-    const nextSerial = lastSerial + 1;
-    const orderKey = `${mobile}/${year}/${month}/${nextSerial}`;
-
+  
     await localforage.setItem("orders", {
       ...allOrders,
       [orderKey]: {
-        cart: cartItems,
+        cart: cleanCart,
         mobile,
-        createdAt: now.toLocaleString(),
-        serial: nextSerial,
+        createdAt: new Date().toLocaleString(),
+        serial,
       },
     });
-
-    const total = Object.values(cartItems).reduce(
+  
+    const total = Object.values(cleanCart).reduce(
       (sum, item) =>
         sum + (parseFloat(item.finalPrice) || 0) * (item.quantity || 0),
       0
     );
-
+  
     window.open(
       `https://wa.me/91${mobile}?text=${encodeURIComponent(
         `Your order ${orderKey} has been saved. Total: ₹${total}`
@@ -124,7 +125,12 @@ export default function App() {
       "_blank"
     );
     alert("Order saved successfully!");
+  
+    // ✅ Clear cart after saving
+    await localforage.setItem("cart", {});
+    window.dispatchEvent(new Event("cartUpdated"));
   };
+  
 
   const loadData = async (forceRefresh = false) => {
     setLoading(true);
