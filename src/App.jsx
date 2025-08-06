@@ -18,67 +18,38 @@ export default function App() {
   const [showMobilePopup, setShowMobilePopup] = useState(false);
   const [tempMobile, setTempMobile] = useState("");
   const [cartCount, setCartCount] = useState(0);
+  const [editMode, setEditMode] = useState(false);
 
-  // ✅ Event-based cart count update
+  // ✅ Update cart count
   useEffect(() => {
     const updateCartCount = async () => {
       const cart = (await localforage.getItem("cart")) || {};
       const count = Object.values(cart).reduce((sum, item) => sum + (item.quantity || 0), 0);
       setCartCount(count);
     };
-  
-    // Listen for cart update events
     window.addEventListener("cartUpdated", updateCartCount);
-  
-    // Initial fetch
     updateCartCount();
-  
     return () => window.removeEventListener("cartUpdated", updateCartCount);
   }, []);
-  
 
-  // ✅ Temporary order
-  const saveTemporaryOrder = async () => {
-    const timestamp = new Date().toISOString();
-    const tempKey = `TEMP/${timestamp}`;
-    const existingOrders = (await localforage.getItem("orders")) || {};
-    const currentCart = (await localforage.getItem("cart")) || {};
-    existingOrders[tempKey] = {
-      cart: currentCart,
-      createdAt: timestamp,
-      isTemporary: true,
-    };
-    await localforage.setItem("orders", existingOrders);
-    setSelectedOrderKey(tempKey);
-    setShowCart(true);
+  // ✅ Clear cart for new order
+  const handleAddOrder = async () => {
+    await localforage.setItem("cart", {});
+    window.dispatchEvent(new Event("cartUpdated"));
+    setShowCart(false);
+    setSelectedOrderKey(null);
+    alert("🆕 Started a new order. Cart is cleared.");
   };
 
-  const loadData = async (forceRefresh = false) => {
-    setLoading(true);
-    const { items, errors } = await loadAndCacheAllJson({ forceRefresh });
-    setItemsCount(items.length);
-    if (errors.length > 0) {
-      setLoadError(`${errors.length} file(s) failed to load`);
-      console.error("Failed files:", errors);
-    } else {
-      setLoadError(null);
-    }
-    setLoading(false);
+  // ✅ Start edit flow
+  const handleEditOrder = () => {
+    setEditMode(true);
+    setShowMobilePopup(true);
   };
 
-  useEffect(() => {
-    loadData();
-    (async () => {
-      const existing = await localforage.getItem("orders");
-      if (!existing) {
-        await localforage.setItem("orders", {});
-        console.log("Initialized empty orders object");
-      }
-    })();
-  }, []);
-
+  // ✅ Show previous orders for entered mobile
   const handleMobileEnter = async (mobileVal) => {
-    const num = (mobileVal || mobileInput).trim();
+    const num = (mobileVal || tempMobile).trim();
     let allOrders = await localforage.getItem("orders");
     if (!allOrders || typeof allOrders !== "object") {
       allOrders = {};
@@ -97,65 +68,36 @@ export default function App() {
         createdAt: data.createdAt,
       }));
 
-    if (matchedOrders.length > 0) {
-      setOrderList(matchedOrders);
-      setShowOrderPopup(true);
-    } else {
-      setShowOrderPopup(false);
-    }
+    setOrderList(matchedOrders);
+    setShowOrderPopup(true);
   };
 
-  const handleCartClick = async () => {
-    const num = mobileInput.trim();
-
-    if (!/^\d{10}$/.test(num)) {
-      setShowMobilePopup(true);
-      return;
-    }
-
+  // ✅ Select an order to edit
+  const handleOrderSelect = async (orderKey) => {
     const allOrders = (await localforage.getItem("orders")) || {};
-    const matchedOrders = Object.entries(allOrders)
-      .filter(([key]) => key.startsWith(num))
-      .map(([key, data]) => ({
-        key,
-        total: Object.values(data.cart || {}).reduce(
-          (sum, item) =>
-            sum + (parseFloat(item.finalPrice) || 0) * (item.quantity || 0),
-          0
-        ),
-        createdAt: data.createdAt,
-      }));
-
-    if (matchedOrders.length > 0) {
-      setOrderList(matchedOrders);
-      setShowOrderPopup(true);
-    } else {
-      setSelectedOrderKey("NEW");
-      setShowCart(true);
+    const selectedOrder = allOrders[orderKey];
+    if (selectedOrder) {
+      await localforage.setItem("cart", selectedOrder.cart);
+      window.dispatchEvent(new Event("cartUpdated"));
     }
-  };
-
-  const handleOrderSelect = (orderKey) => {
     setSelectedOrderKey(orderKey);
     setShowOrderPopup(false);
-    setShowCart(true);
+    setShowCart(false); // stay on itemlist
+    alert(`✏️ Editing order: ${orderKey}`);
   };
 
   const handleSaveOrder = async (cartItems) => {
     const mobile = /^\d{10}$/.test(mobileInput) ? mobileInput : "unknown";
-
     const now = new Date();
     const year = now.getFullYear();
     const month = String(now.getMonth() + 1).padStart(2, "0");
 
     const allOrders = (await localforage.getItem("orders")) || {};
-
     const userOrders = Object.keys(allOrders).filter((k) =>
       k.startsWith(`${mobile}/${year}/${month}`)
     );
     const lastSerial =
       userOrders.map((k) => parseInt(k.split("/").pop(), 10)).sort((a, b) => b - a)[0] || 0;
-
     const nextSerial = lastSerial + 1;
     const orderKey = `${mobile}/${year}/${month}/${nextSerial}`;
 
@@ -184,30 +126,52 @@ export default function App() {
     alert("Order saved successfully!");
   };
 
+  const loadData = async (forceRefresh = false) => {
+    setLoading(true);
+    const { items, errors } = await loadAndCacheAllJson({ forceRefresh });
+    setItemsCount(items.length);
+    if (errors.length > 0) {
+      setLoadError(`${errors.length} file(s) failed to load`);
+      console.error("Failed files:", errors);
+    } else {
+      setLoadError(null);
+    }
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    loadData();
+    (async () => {
+      const existing = await localforage.getItem("orders");
+      if (!existing) {
+        await localforage.setItem("orders", {});
+      }
+    })();
+  }, []);
+
   if (loading) return <div className="p-4">⏳ Loading data...</div>;
 
   return (
     <div className="max-w-3xl mx-auto">
       <div className="flex justify-between items-center p-4">
-        <input
-          type="text"
-          value={mobileInput}
-          onChange={(e) => {
-            const val = e.target.value;
-            setMobileInput(val);
-            if (/^\d{10}$/.test(val)) {
-              handleMobileEnter(val);
-            } else if (showOrderPopup) {
-              setShowOrderPopup(false);
-            }
-          }}
-          placeholder="Enter Mobile or New Order"
-          className="border px-2 py-1 rounded w-48"
-        />
         <div className="flex gap-2">
           <button
-            onClick={handleCartClick}
-            className="relative px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700"
+            onClick={handleAddOrder}
+            className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700"
+          >
+            ➕ Add Order
+          </button>
+          <button
+            onClick={handleEditOrder}
+            className="px-3 py-1 bg-yellow-600 text-white rounded hover:bg-yellow-700"
+          >
+            ✏️ Edit Order
+          </button>
+        </div>
+        <div className="flex gap-2 relative">
+          <button
+            onClick={() => setShowCart(true)}
+            className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 relative"
           >
             🛒 Cart
             {cartCount > 0 && (
@@ -233,70 +197,30 @@ export default function App() {
 
       {/* Order popup */}
       {showOrderPopup && (
-        <Modal
-          title="Select Order"
-          onClose={() => setShowOrderPopup(false)}
-        >
-          <div className="space-y-3">
-            <button
-              className="w-full flex items-center justify-center p-3 bg-green-100 border border-green-400 rounded hover:bg-green-200 font-semibold"
-              onClick={() => handleOrderSelect("NEW")}
-            >
-              ➕ Start New Order
-            </button>
-
-            <div className="space-y-2">
-              {orderList.length === 0 ? (
-                <p className="text-center text-gray-500">No previous orders found</p>
-              ) : (
-                orderList.map((o, index) => (
-                  <div
-                    key={o.key}
-                    className={`flex justify-between items-center p-3 border rounded cursor-pointer hover:bg-gray-100 ${
-                      index === 0 ? "bg-yellow-50 border-yellow-400" : ""
-                    }`}
-                  >
-                    <div
-                      className="flex-1"
-                      onClick={() => handleOrderSelect(o.key)}
-                    >
-                      <div className="flex justify-between">
-                        <span className="font-medium">{o.key}</span>
-                        <span className="text-green-700 font-semibold">
-                          ₹{o.total.toFixed(2)}
-                        </span>
-                      </div>
-                      <div className="text-xs text-gray-500 mt-1">
-                        📅 {o.createdAt}
-                      </div>
-                    </div>
-
-                    <button
-                      className="ml-3 px-2 py-1 bg-red-600 text-white rounded hover:bg-red-700"
-                      onClick={async (e) => {
-                        e.stopPropagation();
-                        if (window.confirm("Delete this order?")) {
-                          const allOrders = (await localforage.getItem("orders")) || {};
-                          delete allOrders[o.key];
-                          await localforage.setItem("orders", allOrders);
-                          setOrderList((prev) => prev.filter((ord) => ord.key !== o.key));
-                        }
-                      }}
-                    >
-                      🗑️
-                    </button>
-                  </div>
-                ))
-              )}
-            </div>
+        <Modal title="Select Order" onClose={() => setShowOrderPopup(false)}>
+          <div className="space-y-2">
+            {orderList.length === 0 ? (
+              <p className="text-center text-gray-500">No orders found</p>
+            ) : (
+              orderList.map((o) => (
+                <div
+                  key={o.key}
+                  className="flex justify-between p-3 border rounded cursor-pointer hover:bg-gray-100"
+                  onClick={() => handleOrderSelect(o.key)}
+                >
+                  <span>{o.key}</span>
+                  <span className="text-green-700">₹{o.total.toFixed(2)}</span>
+                </div>
+              ))
+            )}
           </div>
         </Modal>
       )}
 
-      {/* Mobile popup */}
+      {/* Mobile popup for edit */}
       {showMobilePopup && (
         <Modal
-          title="Enter Mobile Number"
+          title="Enter Mobile"
           onClose={() => {
             setTempMobile("");
             setShowMobilePopup(false);
@@ -309,25 +233,14 @@ export default function App() {
             placeholder="10-digit number"
             className="border px-2 py-1 rounded w-full mb-3"
           />
-          <div className="flex justify-between gap-2">
-            <button
-              onClick={async () => {
-                setTempMobile("");
-                setShowMobilePopup(false);
-                await saveTemporaryOrder();
-              }}
-              className="px-4 py-1 bg-gray-500 hover:bg-gray-600 text-white rounded"
-            >
-              Skip
-            </button>
+          <div className="flex justify-end">
             <button
               disabled={!/^\d{10}$/.test(tempMobile)}
-              className="px-4 py-1 bg-green-600 hover:bg-green-700 text-white rounded disabled:opacity-80 disabled:cursor-not-allowed"
+              className="px-4 py-1 bg-green-600 hover:bg-green-700 text-white rounded disabled:opacity-80"
               onClick={() => {
+                handleMobileEnter(tempMobile);
                 setMobileInput(tempMobile);
-                setTempMobile("");
                 setShowMobilePopup(false);
-                handleCartClick();
               }}
             >
               OK
@@ -336,7 +249,7 @@ export default function App() {
         </Modal>
       )}
 
-      <Suspense fallback={<div className="p-4">Loading component...</div>}>
+      <Suspense fallback={<div className="p-4">Loading...</div>}>
         {showCart ? (
           <CartView
             orderKey={selectedOrderKey}
@@ -348,9 +261,7 @@ export default function App() {
         )}
       </Suspense>
 
-      <p className="text-sm text-gray-500 text-right p-2">
-        Loaded items: {itemsCount}
-      </p>
+      <p className="text-sm text-gray-500 text-right p-2">Loaded items: {itemsCount}</p>
     </div>
   );
 }
