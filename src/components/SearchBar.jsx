@@ -105,26 +105,36 @@ export default function SearchBar() {
   };
 
   const handleLoadMore = () => setVisibleCount((prev) => prev + 20);
-
   const handleQuantityChange = async (discountKey, item, fieldKey, qty) => {
     const quantity = parseInt(qty, 10) || 0;
     const discount = discountMap[discountKey] ?? universalDiscount;
     const price = parseFloat(item[fieldKey]) || 0;
-
+  
+    const cartEntry = {
+      ...item,
+      discount,
+      fieldKey,
+      quantity,
+      finalPrice: (price * (1 - discount / 100)).toFixed(2),
+    };
+  
+    // ✅ Add only if these keys exist
+    ["CODE", "code", "particulars", "description", "name"].forEach((key) => {
+      if (item[key] !== undefined && item[key] !== null) {
+        cartEntry[key] = item[key];
+      }
+    });
+  
     const updatedCart = {
       ...cart,
-      [discountKey]: {
-        ...item,
-        discount,
-        fieldKey,
-        quantity,
-        finalPrice: (price * (1 - discount / 100)).toFixed(2),
-      },
+      [discountKey]: cartEntry,
     };
-
+  
     setCart(updatedCart);
-    await localforage.setItem("cartItems", updatedCart);
+    await localforage.setItem("cart", updatedCart);
   };
+  
+ 
 
   const debouncedSetQuery = useMemo(() => debounce(setQuery, 200), []);
 

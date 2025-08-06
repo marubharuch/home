@@ -11,12 +11,28 @@ export default function App() {
   const [loadError, setLoadError] = useState(null);
   const [itemsCount, setItemsCount] = useState(0);
   const [showCart, setShowCart] = useState(false);
-  const [mobileInput, setMobileInput] = useState("New Order");
+  const [mobileInput, setMobileInput] = useState("");
   const [orderList, setOrderList] = useState([]);
   const [showOrderPopup, setShowOrderPopup] = useState(false);
   const [selectedOrderKey, setSelectedOrderKey] = useState(null);
   const [showMobilePopup, setShowMobilePopup] = useState(false);
   const [tempMobile, setTempMobile] = useState("");
+
+  // ✅ Save temporary order if no mobile entered
+  const saveTemporaryOrder = async () => {
+    const timestamp = new Date().toISOString();
+    const tempKey = `TEMP/${timestamp}`;
+    const existingOrders = (await localforage.getItem("orders")) || {};
+    const currentCart = (await localforage.getItem("cart")) || {}; // ✅ include selected items
+    existingOrders[tempKey] = {
+      cart: currentCart,
+      createdAt: timestamp,
+      isTemporary: true,
+    };
+    await localforage.setItem("orders", existingOrders);
+    setSelectedOrderKey(tempKey);
+    setShowCart(true);
+  };
 
   const loadData = async (forceRefresh = false) => {
     setLoading(true);
@@ -33,7 +49,6 @@ export default function App() {
 
   useEffect(() => {
     loadData();
-
     (async () => {
       const existing = await localforage.getItem("orders");
       if (!existing) {
@@ -63,8 +78,12 @@ export default function App() {
         createdAt: data.createdAt,
       }));
 
-    setOrderList(matchedOrders);
-    setShowOrderPopup(true);
+    if (matchedOrders.length > 0) {
+      setOrderList(matchedOrders);
+      setShowOrderPopup(true);
+    } else {
+      setShowOrderPopup(false);
+    }
   };
 
   const handleCartClick = async () => {
@@ -100,28 +119,25 @@ export default function App() {
   const handleOrderSelect = (orderKey) => {
     setSelectedOrderKey(orderKey);
     setShowOrderPopup(false);
-    if (orderKey === "NEW") {
-      setShowCart(true);
-    } else {
-      setShowCart(true);
-    }
+    setShowCart(true);
   };
 
   const handleSaveOrder = async (cartItems) => {
-    const mobile = /^\d{10}$/.test(mobileInput)
-      ? mobileInput
-      : "unknown";
+    const mobile = /^\d{10}$/.test(mobileInput) ? mobileInput : "unknown";
 
     const now = new Date();
     const year = now.getFullYear();
     const month = String(now.getMonth() + 1).padStart(2, "0");
 
     const allOrders = (await localforage.getItem("orders")) || {};
+
     const userOrders = Object.keys(allOrders).filter((k) =>
       k.startsWith(`${mobile}/${year}/${month}`)
     );
-    const nextSerial = userOrders.length + 1;
+    const lastSerial =
+      userOrders.map((k) => parseInt(k.split("/").pop(), 10)).sort((a, b) => b - a)[0] || 0;
 
+    const nextSerial = lastSerial + 1;
     const orderKey = `${mobile}/${year}/${month}/${nextSerial}`;
 
     await localforage.setItem("orders", {
@@ -172,13 +188,13 @@ export default function App() {
         <div className="flex gap-2">
           <button
             onClick={handleCartClick}
-            className="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600"
+            className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700"
           >
             🛒 Cart
           </button>
           <button
             onClick={() => loadData(true)}
-            className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
+            className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700"
           >
             🔄 Refresh
           </button>
@@ -197,33 +213,67 @@ export default function App() {
           title="Select Order"
           onClose={() => setShowOrderPopup(false)}
         >
-          <ul className="space-y-2">
-            <li
-              className="p-2 border rounded cursor-pointer hover:bg-gray-100"
+          <div className="space-y-3">
+            <button
+              className="w-full flex items-center justify-center p-3 bg-green-100 border border-green-400 rounded hover:bg-green-200 font-semibold"
               onClick={() => handleOrderSelect("NEW")}
             >
-              ➕ New Order
-            </li>
-            {orderList.map((o) => (
-              <li
-                key={o.key}
-                className="p-2 border rounded cursor-pointer hover:bg-gray-100"
-                onClick={() => handleOrderSelect(o.key)}
-              >
-                {o.key} - ₹{o.total.toFixed(2)}
-                <div className="text-xs text-gray-500">{o.createdAt}</div>
-              </li>
-            ))}
-          </ul>
+              ➕ Start New Order
+            </button>
+
+            <div className="space-y-2">
+              {orderList.length === 0 ? (
+                <p className="text-center text-gray-500">No previous orders found</p>
+              ) : (
+                orderList.map((o, index) => (
+                  <div
+                    key={o.key}
+                    className={`flex justify-between items-center p-3 border rounded cursor-pointer hover:bg-gray-100 ${
+                      index === 0 ? "bg-yellow-50 border-yellow-400" : ""
+                    }`}
+                  >
+                    <div
+                      className="flex-1"
+                      onClick={() => handleOrderSelect(o.key)}
+                    >
+                      <div className="flex justify-between">
+                        <span className="font-medium">{o.key}</span>
+                        <span className="text-green-700 font-semibold">
+                          ₹{o.total.toFixed(2)}
+                        </span>
+                      </div>
+                      <div className="text-xs text-gray-500 mt-1">
+                        📅 {o.createdAt}
+                      </div>
+                    </div>
+
+                    <button
+                      className="ml-3 px-2 py-1 bg-red-600 text-white rounded hover:bg-red-700"
+                      onClick={async (e) => {
+                        e.stopPropagation();
+                        if (window.confirm("Delete this order?")) {
+                          const allOrders = (await localforage.getItem("orders")) || {};
+                          delete allOrders[o.key];
+                          await localforage.setItem("orders", allOrders);
+                          setOrderList((prev) => prev.filter((ord) => ord.key !== o.key));
+                        }
+                      }}
+                    >
+                      🗑️
+                    </button>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
         </Modal>
       )}
 
-      {/* Mobile number popup */}
+      {/* Mobile number popup with Skip */}
       {showMobilePopup && (
         <Modal
           title="Enter Mobile Number"
           onClose={() => {
-            if (tempMobile.trim()) setMobileInput(tempMobile);
             setTempMobile("");
             setShowMobilePopup(false);
           }}
@@ -235,27 +285,25 @@ export default function App() {
             placeholder="10-digit number"
             className="border px-2 py-1 rounded w-full mb-3"
           />
-          <div className="flex justify-end gap-2">
+          <div className="flex justify-between gap-2">
             <button
-              className="px-4 py-1 bg-gray-400 text-white rounded"
-              onClick={() => {
-                if (tempMobile.trim()) setMobileInput(tempMobile);
+              onClick={async () => {
                 setTempMobile("");
                 setShowMobilePopup(false);
+                await saveTemporaryOrder();
               }}
+              className="px-4 py-1 bg-gray-500 hover:bg-gray-600 text-white rounded"
             >
-              Cancel
+              Skip
             </button>
             <button
-              className="px-4 py-1 bg-green-500 text-white rounded"
+              disabled={!/^\d{10}$/.test(tempMobile)}
+              className="px-4 py-1 bg-green-600 hover:bg-green-700 text-white rounded disabled:opacity-80 disabled:cursor-not-allowed"
               onClick={() => {
-                if (/^\d{10}$/.test(tempMobile)) {
-                  setMobileInput(tempMobile);
-                  setShowMobilePopup(false);
-                  handleCartClick();
-                } else {
-                  alert("Invalid mobile number");
-                }
+                setMobileInput(tempMobile);
+                setTempMobile("");
+                setShowMobilePopup(false);
+                handleCartClick();
               }}
             >
               OK
