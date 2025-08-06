@@ -1,129 +1,107 @@
-import React, { useEffect, useState } from "react";
-import { loadOrder, deleteOrder } from "../utils/orderUtils";
+import React, { useState, useEffect } from "react";
+import localforage from "localforage";
 
 export default function CartView({ orderKey, onSave, onModify }) {
   const [cart, setCart] = useState({});
-  const [orderInfo, setOrderInfo] = useState({});
+  const [totalAmount, setTotalAmount] = useState(0);
 
+  // ✅ Load cart on mount
   useEffect(() => {
-    const fetchOrder = async () => {
-      if (orderKey && orderKey !== "NEW") {
-        const order = await loadOrder(orderKey);
-        if (order) {
-          setCart(order.cart || {});
-          setOrderInfo({
-            phone: order.mobile,
-            serial: order.serial || orderKey.split("/").pop(),
-            createdAt: order.createdAt || order.updatedAt,
-          });
-        }
-      }
+    const fetchCart = async () => {
+      const savedCart = (await localforage.getItem("cart")) || {};
+      setCart(savedCart);
+
+      const total = Object.values(savedCart).reduce(
+        (sum, item) => sum + (parseFloat(item.finalPrice) || 0) * (item.quantity || 0),
+        0
+      );
+      setTotalAmount(total);
     };
-    fetchOrder();
-  }, [orderKey]);
+    fetchCart();
+  }, []);
 
-  const handleQtyChange = (itemKey, qty) => {
-    setCart((prev) => ({
-      ...prev,
-      [itemKey]: { ...prev[itemKey], quantity: parseFloat(qty) || 0 },
-    }));
+  // ✅ Clear entire cart
+  const handleClearCart = async () => {
+    if (!window.confirm("Clear all items from the cart?")) return;
+  
+    await localforage.setItem("cart", {});
+    setCart({});
+    setTotalAmount(0);
+  
+    // ✅ Fire event to update badge
+    window.dispatchEvent(new Event("cartUpdated"));
   };
-
-  const handleDeleteItem = (itemKey) => {
-    setCart((prev) => {
-      const updated = { ...prev };
-      delete updated[itemKey];
-      return updated;
-    });
-  };
-
-  const handleDeleteOrder = async () => {
-    if (window.confirm("Delete entire order?")) {
-      await deleteOrder(orderKey);
-      onModify(); // go back
-    }
-  };
-
-  const total = Object.values(cart).reduce(
-    (sum, item) =>
-      sum + (parseFloat(item.finalPrice) || 0) * (item.quantity || 0),
-    0
-  );
-
+  
   return (
-    <div className="p-4 bg-white shadow rounded">
-      {orderKey?.startsWith("TEMP/") && (
-        <div className="mb-3 text-sm text-yellow-700">
-          <p>⚠️ This is a temporary order. Enter mobile to finalize.</p>
-        </div>
-      )}
-
-      {orderKey !== "NEW" && !orderKey?.startsWith("TEMP/") && (
-        <div className="mb-3 text-sm text-gray-600">
-          <p>📞 Phone: {orderInfo.phone}</p>
-          <p>🆔 Order No: {orderInfo.serial}</p>
-          <p>📅 Date: {orderInfo.createdAt}</p>
-        </div>
-      )}
-
-      <div className="space-y-2">
-      {Object.entries(cart).map(([key, item]) => (
-  <div key={key} className="flex flex-col border-b py-2">
-  <div className="flex justify-between items-center">
-    <div>
-      {/* ✅ Case-insensitive check */}
-      {Object.entries(item).map(([k, v]) => {
-        const lowerKey = k.toLowerCase();
-        if (["code", "particulars", "description", "name"].includes(lowerKey)) {
-          return (
-            <span key={k} className="mr-2 font-semibold">
-              {lowerKey === "code" ? `[${v}]` : v}
-            </span>
-          );
-        }
-        return null;
-      })}
-    </div>
-
-    <div className="text-right">
-      Qty: {item.quantity} × ₹{item.finalPrice} ={" "}
-      <span className="font-bold">
-        ₹{(item.quantity * parseFloat(item.finalPrice)).toFixed(2)}
-      </span>
-    </div>
-  </div>
-</div>
-
-))}
-
-
+    <div className="p-4">
+      {/* Header with Clear button */}
+      <div className="flex justify-between items-center mb-3">
+        <h2 className="text-lg font-semibold">🛒 Cart</h2>
+        <button
+          onClick={handleClearCart}
+          className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600"
+        >
+          Clear Cart
+        </button>
       </div>
 
-      <div className="mt-4 flex justify-between items-center">
-        <p className="text-lg font-semibold">Total: ₹{total.toFixed(2)}</p>
-        <div className="flex gap-2">
+      {/* Cart items */}
+      {Object.keys(cart).length === 0 ? (
+        <p className="text-gray-500">Cart is empty</p>
+      ) : (
+        Object.entries(cart).map(([key, item]) => (
+          <div key={key} className="border-b py-2">
+            {/* ✅ Show item details */}
+            <div className="mb-1">
+              {Object.entries(item).map(([k, v]) => {
+                const lowerKey = k.toLowerCase();
+                if (["code", "particulars", "description", "name"].includes(lowerKey)) {
+                  return (
+                    <span key={k} className="mr-2 font-semibold">
+                      {lowerKey === "code" ? `[${v}]` : v}
+                    </span>
+                  );
+                }
+                return null;
+              })}
+            </div>
+            <div className="text-right">
+              Qty: {item.quantity} × ₹{item.finalPrice} ={" "}
+              <span className="font-bold">
+                ₹{(item.quantity * parseFloat(item.finalPrice)).toFixed(2)}
+              </span>
+            </div>
+          </div>
+        ))
+      )}
+
+      {/* ✅ Grand Total */}
+      {Object.keys(cart).length > 0 && (
+        <div className="flex justify-between items-center mt-4 p-2 border-t">
+          <span className="text-lg font-semibold">Total:</span>
+          <span className="text-lg font-bold text-green-700">
+            ₹{totalAmount.toFixed(2)}
+          </span>
+        </div>
+      )}
+
+      {/* Modify / Save buttons */}
+      {Object.keys(cart).length > 0 && (
+        <div className="flex justify-between mt-4">
+          <button
+            onClick={() => onModify()}
+            className="px-3 py-1 bg-gray-500 text-white rounded hover:bg-gray-600"
+          >
+            Modify
+          </button>
           <button
             onClick={() => onSave(cart)}
-            className="bg-green-600 text-white px-3 py-1 rounded"
+            className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700"
           >
-            💾 Save
-          </button>
-          {orderKey !== "NEW" && !orderKey?.startsWith("TEMP/") && (
-            <button
-              onClick={handleDeleteOrder}
-              className="bg-red-600 text-white px-3 py-1 rounded"
-            >
-              Delete Order
-            </button>
-          )}
-          <button
-            onClick={onModify}
-            className="bg-gray-400 text-white px-3 py-1 rounded"
-          >
-            Back
+            Save Order
           </button>
         </div>
-      </div>
+      )}
     </div>
   );
 }

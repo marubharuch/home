@@ -17,13 +17,32 @@ export default function App() {
   const [selectedOrderKey, setSelectedOrderKey] = useState(null);
   const [showMobilePopup, setShowMobilePopup] = useState(false);
   const [tempMobile, setTempMobile] = useState("");
+  const [cartCount, setCartCount] = useState(0);
 
-  // ✅ Save temporary order if no mobile entered
+  // ✅ Event-based cart count update
+  useEffect(() => {
+    const updateCartCount = async () => {
+      const cart = (await localforage.getItem("cart")) || {};
+      const count = Object.values(cart).reduce((sum, item) => sum + (item.quantity || 0), 0);
+      setCartCount(count);
+    };
+  
+    // Listen for cart update events
+    window.addEventListener("cartUpdated", updateCartCount);
+  
+    // Initial fetch
+    updateCartCount();
+  
+    return () => window.removeEventListener("cartUpdated", updateCartCount);
+  }, []);
+  
+
+  // ✅ Temporary order
   const saveTemporaryOrder = async () => {
     const timestamp = new Date().toISOString();
     const tempKey = `TEMP/${timestamp}`;
     const existingOrders = (await localforage.getItem("orders")) || {};
-    const currentCart = (await localforage.getItem("cart")) || {}; // ✅ include selected items
+    const currentCart = (await localforage.getItem("cart")) || {};
     existingOrders[tempKey] = {
       cart: currentCart,
       createdAt: timestamp,
@@ -188,9 +207,14 @@ export default function App() {
         <div className="flex gap-2">
           <button
             onClick={handleCartClick}
-            className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700"
+            className="relative px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700"
           >
             🛒 Cart
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">
+                {cartCount}
+              </span>
+            )}
           </button>
           <button
             onClick={() => loadData(true)}
@@ -207,7 +231,7 @@ export default function App() {
         </div>
       )}
 
-      {/* Order selection popup */}
+      {/* Order popup */}
       {showOrderPopup && (
         <Modal
           title="Select Order"
@@ -269,7 +293,7 @@ export default function App() {
         </Modal>
       )}
 
-      {/* Mobile number popup with Skip */}
+      {/* Mobile popup */}
       {showMobilePopup && (
         <Modal
           title="Enter Mobile Number"

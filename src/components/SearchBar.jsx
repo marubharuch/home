@@ -110,29 +110,25 @@ export default function SearchBar() {
     const discount = discountMap[discountKey] ?? universalDiscount;
     const price = parseFloat(item[fieldKey]) || 0;
   
-    const cartEntry = {
-      ...item,
-      discount,
-      fieldKey,
-      quantity,
-      finalPrice: (price * (1 - discount / 100)).toFixed(2),
-    };
-  
-    // ✅ Add only if these keys exist
-    ["CODE", "code", "particulars", "description", "name"].forEach((key) => {
-      if (item[key] !== undefined && item[key] !== null) {
-        cartEntry[key] = item[key];
-      }
-    });
+    const existingCart = (await localforage.getItem("cart")) || {};
   
     const updatedCart = {
-      ...cart,
-      [discountKey]: cartEntry,
+      ...existingCart,  // ✅ Merge instead of replacing
+      [discountKey]: {
+        ...item,
+        discount,
+        fieldKey,
+        quantity,
+        finalPrice: (price * (1 - discount / 100)).toFixed(2),
+      },
     };
   
     setCart(updatedCart);
     await localforage.setItem("cart", updatedCart);
+  
+    window.dispatchEvent(new Event("cartUpdated"));
   };
+  
   
  
 
