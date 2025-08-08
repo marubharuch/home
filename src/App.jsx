@@ -20,11 +20,13 @@ export default function App() {
   const [cartCount, setCartCount] = useState(0);
   const [editMode, setEditMode] = useState(false);
 
-  // ✅ Update cart count
   useEffect(() => {
     const updateCartCount = async () => {
       const cart = (await localforage.getItem("cart")) || {};
-      const count = Object.values(cart).reduce((sum, item) => sum + (item.quantity || 0), 0);
+      const count = Object.values(cart).reduce(
+        (sum, item) => sum + (item.quantity || 0),
+        0
+      );
       setCartCount(count);
     };
     window.addEventListener("cartUpdated", updateCartCount);
@@ -32,22 +34,20 @@ export default function App() {
     return () => window.removeEventListener("cartUpdated", updateCartCount);
   }, []);
 
-  // ✅ Clear cart for new order
   const handleAddOrder = async () => {
     await localforage.setItem("cart", {});
     window.dispatchEvent(new Event("cartUpdated"));
     setShowCart(false);
     setSelectedOrderKey(null);
+    setMobileInput(""); // reset
     alert("🆕 Started a new order. Cart is cleared.");
   };
 
-  // ✅ Start edit flow
   const handleEditOrder = () => {
     setEditMode(true);
     setShowMobilePopup(true);
   };
 
-  // ✅ Show previous orders for entered mobile
   const handleMobileEnter = async (mobileVal) => {
     const num = (mobileVal || tempMobile).trim();
     let allOrders = await localforage.getItem("orders");
@@ -72,7 +72,6 @@ export default function App() {
     setShowOrderPopup(true);
   };
 
-  // ✅ Select an order to edit
   const handleOrderSelect = async (orderKey) => {
     const allOrders = (await localforage.getItem("orders")) || {};
     const selectedOrder = allOrders[orderKey];
@@ -82,26 +81,34 @@ export default function App() {
     }
     setSelectedOrderKey(orderKey);
     setShowOrderPopup(false);
-    setShowCart(false); // stay on itemlist
+    setShowCart(false);
     alert(`✏️ Editing order: ${orderKey}`);
   };
 
   const handleSaveOrder = async (cartItems) => {
-    const mobile = cartItems._mobile || (mobileInput && /^\d{10}$/.test(mobileInput) ? mobileInput : "unknown");
-  
+    const mobile =
+      cartItems._mobile ||
+      (mobileInput && /^\d{10}$/.test(mobileInput) ? mobileInput : "unknown");
+
     const allOrders = (await localforage.getItem("orders")) || {};
-  
-    // ✅ Count existing orders for this mobile
-    const userOrders = Object.keys(allOrders).filter((k) => k.startsWith(mobile));
-    const serial = userOrders.length + 1;
-  
-    const orderKey = mobile !== "unknown" ? `${mobile}/${serial}` : `ORD-${Date.now()}`;
-  
-    // ✅ Remove meta fields before saving
-    const cleanCart = Object.fromEntries(
-      Object.entries(cartItems).filter(([k]) => k !== "_orderInfo" && k !== "_mobile")
+
+    // Count previous orders for this mobile
+    const userOrders = Object.keys(allOrders).filter((k) =>
+      k.startsWith(mobile)
     );
-  
+    const serial = userOrders.length + 1;
+
+    // Generate final order key
+    const orderKey =
+      mobile !== "unknown" ? `${mobile}/${serial}` : `ORD-${Date.now()}`;
+
+    // Clean cart before saving
+    const cleanCart = Object.fromEntries(
+      Object.entries(cartItems).filter(
+        ([k]) => k !== "_orderInfo" && k !== "_mobile"
+      )
+    );
+
     await localforage.setItem("orders", {
       ...allOrders,
       [orderKey]: {
@@ -111,13 +118,13 @@ export default function App() {
         serial,
       },
     });
-  
+
     const total = Object.values(cleanCart).reduce(
       (sum, item) =>
         sum + (parseFloat(item.finalPrice) || 0) * (item.quantity || 0),
       0
     );
-  
+
     window.open(
       `https://wa.me/91${mobile}?text=${encodeURIComponent(
         `Your order ${orderKey} has been saved. Total: ₹${total}`
@@ -125,12 +132,11 @@ export default function App() {
       "_blank"
     );
     alert("Order saved successfully!");
-  
-    // ✅ Clear cart after saving
+
+    // ✅ Clear cart
     await localforage.setItem("cart", {});
     window.dispatchEvent(new Event("cartUpdated"));
   };
-  
 
   const loadData = async (forceRefresh = false) => {
     setLoading(true);
@@ -176,7 +182,13 @@ export default function App() {
         </div>
         <div className="flex gap-2 relative">
           <button
-            onClick={() => setShowCart(true)}
+            onClick={() => {
+              if (!mobileInput) {
+                setShowMobilePopup(true); // Ask mobile on first Cart open
+              } else {
+                setShowCart(true);
+              }
+            }}
             className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 relative"
           >
             🛒 Cart
@@ -201,7 +213,6 @@ export default function App() {
         </div>
       )}
 
-      {/* Order popup */}
       {showOrderPopup && (
         <Modal title="Select Order" onClose={() => setShowOrderPopup(false)}>
           <div className="space-y-2">
@@ -223,7 +234,6 @@ export default function App() {
         </Modal>
       )}
 
-      {/* Mobile popup for edit */}
       {showMobilePopup && (
         <Modal
           title="Enter Mobile"
@@ -244,9 +254,9 @@ export default function App() {
               disabled={!/^\d{10}$/.test(tempMobile)}
               className="px-4 py-1 bg-green-600 hover:bg-green-700 text-white rounded disabled:opacity-80"
               onClick={() => {
-                handleMobileEnter(tempMobile);
                 setMobileInput(tempMobile);
                 setShowMobilePopup(false);
+                setShowCart(true);
               }}
             >
               OK
@@ -267,7 +277,9 @@ export default function App() {
         )}
       </Suspense>
 
-      <p className="text-sm text-gray-500 text-right p-2">Loaded items: {itemsCount}</p>
+      <p className="text-sm text-gray-500 text-right p-2">
+        Loaded items: {itemsCount}
+      </p>
     </div>
   );
 }

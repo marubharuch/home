@@ -10,49 +10,47 @@ export default function CartView({ orderKey, onSave, onModify }) {
   useEffect(() => {
     const fetchCart = async () => {
       const savedCart = (await localforage.getItem("cart")) || {};
-
-      // Get or set mobile in cart
-      let mobile = savedCart._mobile;
-      if (!mobile && orderKey && /^\d{10}/.test(orderKey)) {
-        mobile = orderKey.split("/")[0];
-        savedCart._mobile = mobile;
-        await localforage.setItem("cart", savedCart);
-      }
-
-      // ✅ If order info already exists
-      if (savedCart._orderInfo) {
-        setOrderInfo(savedCart._orderInfo);
-      } else {
-        // Generate serial number based on existing orders
-        const allOrders = (await localforage.getItem("orders")) || {};
-        const userOrders = Object.keys(allOrders).filter((k) =>
-          k.startsWith(mobile)
-        );
-        const serial = userOrders.length + 1;
-
-        const info = {
-          orderNo: mobile ? `${mobile}/${serial}` : `ORD-${Date.now()}`,
+  
+      let info = savedCart._orderInfo;
+  
+      if (!info) {
+        const mobile = /^\d{10}$/.test(orderKey) ? orderKey : null;
+        let serial = 1;
+  
+        if (mobile) {
+          const allOrders = (await localforage.getItem("orders")) || {};
+          const mobileOrders = Object.keys(allOrders).filter(k => k.startsWith(mobile));
+          const lastSerial = mobileOrders
+            .map(k => parseInt(k.split("/")[1] || "0"))
+            .sort((a, b) => b - a)[0] || 0;
+          serial = lastSerial + 1;
+        }
+  
+        info = {
+          orderNo: mobile ? `${mobile}/${serial}` : `TEMP/${Date.now()}`,
           createdAt: new Date().toLocaleString(),
         };
-
+  
         savedCart._orderInfo = info;
         await localforage.setItem("cart", savedCart);
-        setOrderInfo(info);
       }
-
-      setCart(savedCart);
-
+  
+      setOrderInfo(info);
+  
       const total = Object.entries(savedCart)
-        .filter(([k]) => k !== "_orderInfo" && k !== "_mobile")
+        .filter(([k]) => k !== "_orderInfo")
         .reduce(
           (sum, [, item]) =>
             sum + (parseFloat(item.finalPrice) || 0) * (item.quantity || 0),
           0
         );
       setTotalAmount(total);
+      setCart(savedCart);
     };
+  
     fetchCart();
   }, [orderKey]);
+  
 
   // ✅ Clear entire cart
   const handleClearCart = async () => {
