@@ -12,7 +12,7 @@ export default function App() {
   const [itemsCount, setItemsCount] = useState(0);
   const [showCart, setShowCart] = useState(false);
   const [mobileInput, setMobileInput] = useState("");
-  const [orderList, setOrderList] = useState([]);
+  const [orderList, setOrderList] = useState([]); // must be an array for .map/.filter
   const [showOrderPopup, setShowOrderPopup] = useState(false);
   const [selectedOrderKey, setSelectedOrderKey] = useState(null);
   const [showMobilePopup, setShowMobilePopup] = useState(false);
@@ -43,11 +43,50 @@ export default function App() {
     alert("🆕 Started a new order. Cart is cleared.");
   };
 
+  // === NEW: show last 5 orders immediately (no mobile popup) ===
   const handleEditOrder = () => {
     setEditMode(true);
-    setShowMobilePopup(true);
+
+    (async () => {
+      let allOrders = await localforage.getItem("orders");
+      if (!allOrders || typeof allOrders !== "object") {
+        allOrders = {};
+        await localforage.setItem("orders", {});
+      }
+
+      // Convert orders object to array of { key, total, createdAt }
+      const matchedOrders = Object.entries(allOrders).map(([key, data]) => {
+        const cartObj = data?.cart || {};
+        const total = Object.values(cartObj).reduce(
+          (sum, item) =>
+            sum + ((parseFloat(item.finalPrice) || 0) * (item.quantity || 0)),
+          0 // initial value to avoid "sum is not a function"
+        );
+        return {
+          key,
+          total,
+          createdAt: data?.createdAt || data?.createdAtString || "",
+        };
+      });
+
+      // helper to parse date robustly (fallback to 0 if invalid)
+      const parseTS = (d) => {
+        const t = Date.parse(d);
+        return isNaN(t) ? 0 : t;
+      };
+
+      // Sort newest first
+      matchedOrders.sort((a, b) => parseTS(b.createdAt) - parseTS(a.createdAt));
+
+      // Keep only last 5 (most recent)
+      const lastFive = matchedOrders.slice(0, 5);
+
+      setOrderList(lastFive);
+      setShowOrderPopup(true);
+    })();
   };
 
+  // If you still want a mobile-based search, keep this (unchanged from your earlier logic).
   const handleMobileEnter = async (mobileVal) => {
     const num = (mobileVal || tempMobile).trim();
     let allOrders = await localforage.getItem("orders");
@@ -56,33 +95,46 @@ export default function App() {
       await localforage.setItem("orders", {});
     }
 
-    const matchedOrders = Object.entries(allOrders)
-      .filter(([key]) => key.startsWith(num))
+    let matchedOrders = Object.entries(allOrders)
+      .filter(([key]) => {
+        if (!num) return true; // If no number entered, return all orders
+        return key.startsWith(num);
+      })
       .map(([key, data]) => ({
         key,
         total: Object.values(data.cart || {}).reduce(
           (sum, item) =>
-            sum + (parseFloat(item.finalPrice) || 0) * (item.quantity || 0),
+            sum + ((parseFloat(item.finalPrice) || 0) * (item.quantity || 0)),
           0
         ),
-        createdAt: data.createdAt,
+        createdAt: data.createdAt || "",
       }));
+
+    // Sort by date desc (latest first)
+    const parseTS = (d) => {
+      const t = Date.parse(d);
+      return isNaN(t) ? 0 : t;
+    };
+    matchedOrders.sort((a, b) => parseTS(b.createdAt) - parseTS(a.createdAt));
 
     setOrderList(matchedOrders);
     setShowOrderPopup(true);
   };
 
+  // === NEW: when an order is selected, load its cart and show CartView ===
   const handleOrderSelect = async (orderKey) => {
     const allOrders = (await localforage.getItem("orders")) || {};
     const selectedOrder = allOrders[orderKey];
-    if (selectedOrder) {
+    if (selectedOrder && selectedOrder.cart) {
       await localforage.setItem("cart", selectedOrder.cart);
       window.dispatchEvent(new Event("cartUpdated"));
+      setSelectedOrderKey(orderKey);
+      // Show cart view so user can edit
+      setShowOrderPopup(false);
+      setShowCart(true);
+    } else {
+      alert("Selected order not found or has empty cart.");
     }
-    setSelectedOrderKey(orderKey);
-    setShowOrderPopup(false);
-    setShowCart(false);
-    alert(`✏️ Editing order: ${orderKey}`);
   };
 
   const handleSaveOrder = async (cartItems) => {
@@ -121,7 +173,7 @@ export default function App() {
 
     const total = Object.values(cleanCart).reduce(
       (sum, item) =>
-        sum + (parseFloat(item.finalPrice) || 0) * (item.quantity || 0),
+        sum + ((parseFloat(item.finalPrice) || 0) * (item.quantity || 0)),
       0
     );
 
@@ -133,7 +185,7 @@ export default function App() {
     );
     alert("Order saved successfully!");
 
-    // ✅ Clear cart
+    // Clear cart after save
     await localforage.setItem("cart", {});
     window.dispatchEvent(new Event("cartUpdated"));
   };
