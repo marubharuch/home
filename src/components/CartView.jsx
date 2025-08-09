@@ -1,152 +1,156 @@
-import React, { useState, useEffect } from "react";
+// src/components/CartView.jsx
+import { useEffect, useState } from "react";
+
 import localforage from "localforage";
+import {
+  calculateTotal,
+  saveOrder,
+  clearCart,
+  generateOrderKey
+} from "../utils/orderUtils";
 
-export default function CartView({ orderKey, onSave, onModify }) {
+export default function CartView({ orderKey, selectedOrder }) {
   const [cart, setCart] = useState({});
-  const [totalAmount, setTotalAmount] = useState(0);
-  const [orderInfo, setOrderInfo] = useState({ orderNo: "", createdAt: "" });
+  const [total, setTotal] = useState(0);
+  const [mobile, setMobile] = useState("");
 
-  // ✅ Load cart and generate order number
   useEffect(() => {
-    const fetchCart = async () => {
-      const savedCart = (await localforage.getItem("cart")) || {};
-  
-      let info = savedCart._orderInfo;
-  
-      if (!info) {
-        const mobile = /^\d{10}$/.test(orderKey) ? orderKey : null;
-        let serial = 1;
-  
-        if (mobile) {
-          const allOrders = (await localforage.getItem("orders")) || {};
-          const mobileOrders = Object.keys(allOrders).filter(k => k.startsWith(mobile));
-          const lastSerial = mobileOrders
-            .map(k => parseInt(k.split("/")[1] || "0"))
-            .sort((a, b) => b - a)[0] || 0;
-          serial = lastSerial + 1;
+    const loadCart = async () => {
+      if (orderKey && selectedOrder) {
+        // Load from selected order prop (editing an existing order)
+        setCart(selectedOrder.cart || {});
+        setTotal(calculateTotal(selectedOrder.cart || {}));
+        setMobile(selectedOrder.mobile || "");
+      } else {
+        // Load from localforage (new order or no order selected)
+        const storedCart = (await localforage.getItem("cart")) || {};
+        setCart(storedCart);
+        setTotal(calculateTotal(storedCart));
+        if (storedCart._orderInfo?.mobile) {
+          setMobile(storedCart._orderInfo.mobile);
         }
-  
-        info = {
-          orderNo: mobile ? `${mobile}/${serial}` : `TEMP/${Date.now()}`,
-          createdAt: new Date().toLocaleString(),
-        };
-  
-        savedCart._orderInfo = info;
-        await localforage.setItem("cart", savedCart);
       }
-  
-      setOrderInfo(info);
-  
-      const total = Object.entries(savedCart)
-        .filter(([k]) => k !== "_orderInfo")
-        .reduce(
-          (sum, [, item]) =>
-            sum + (parseFloat(item.finalPrice) || 0) * (item.quantity || 0),
-          0
-        );
-      setTotalAmount(total);
-      setCart(savedCart);
     };
-  
-    fetchCart();
-  }, [orderKey]);
-  
+    loadCart();
+  }, [orderKey, selectedOrder]);
 
-  // ✅ Clear entire cart
-  const handleClearCart = async () => {
-    if (!window.confirm("Clear all items from the cart?")) return;
-
-    await localforage.setItem("cart", {});
-    setCart({});
-    setTotalAmount(0);
-    setOrderInfo({ orderNo: "", createdAt: "" });
-
-    // ✅ Fire event to update badge
+  const handleQuantityChange = async (id, qty) => {
+    const updatedCart = {
+      ...cart,
+      [id]: { ...cart[id], quantity: qty }
+    };
+    setCart(updatedCart);
+    setTotal(calculateTotal(updatedCart));
+    await localforage.setItem("cart", updatedCart);
     window.dispatchEvent(new Event("cartUpdated"));
+    console.log(`Quantity changed for item ${id}: ${qty}`);
+  };
+
+  const handleSaveOrder = async () => {
+    if (!mobile) {
+      alert("Please enter mobile number before saving");
+      return;
+    }
+
+    let key = orderKey;
+    if (!key) {
+      try {
+        key = await generateOrderKey(mobile);
+      } catch (err) {
+        alert("Invalid mobile number for order key generation");
+        return;
+      }
+    }
+
+    const now = new Date();
+    const orderData = {
+      cart,
+      mobile,
+      createdAt: now.toISOString(),
+    };
+
+    await saveOrder(key, orderData);
+    console.log("Order saved:", key, orderData);
+    alert(`✅ Order saved successfully (${key})`);
+    await clearCart();
+    setCart({});
+    setTotal(0);
+  };
+
+  const handleSendWhatsApp = () => {
+    if (!mobile) {
+      alert("Please enter mobile number before sending");
+      return;
+    }
+    const message = Object.values(cart)
+      .filter(item => item && item.name)
+      .map(item => `${item.name} - ₹${item.finalPrice} × ${item.quantity}`)
+      .join("\n");
+    const waLink = `https://wa.me/91${mobile}?text=${encodeURIComponent(message)}`;
+    console.log("Opening WhatsApp:", waLink);
+    window.open(waLink, "_blank");
   };
 
   return (
-    <div className="p-4">
-      {/* ✅ Order Info */}
-      {orderInfo.orderNo && (
-        <div className="mb-3 p-3 bg-gray-100 border rounded">
-          <p className="text-sm font-semibold">🧾 Order No: {orderInfo.orderNo}</p>
-          <p className="text-xs text-gray-600">📅 {orderInfo.createdAt}</p>
-        </div>
-      )}
+    <div className="p-4 space-y-4">
+      <h2 className="text-lg font-bold">🛒 Your Cart</h2>
 
-      {/* Header with Clear button */}
-      <div className="flex justify-between items-center mb-3">
-        <h2 className="text-lg font-semibold">🛒 Cart</h2>
-        <button
-          onClick={handleClearCart}
-          className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600"
-        >
-          Clear Cart
-        </button>
+      <div>
+        <label className="block mb-1">Mobile Number:</label>
+        <input
+          type="text"
+          value={mobile}
+          onChange={(e) => {
+            const val = e.target.value.replace(/\D/g, "");
+            if (val.length <= 10) setMobile(val);
+          }}
+          placeholder="10-digit number"
+          className="border px-2 py-1 rounded w-full"
+        />
       </div>
 
-      {/* Cart items */}
-      {Object.keys(cart)
-        .filter((k) => k !== "_orderInfo" && k !== "_mobile").length === 0 ? (
-        <p className="text-gray-500">Cart is empty</p>
-      ) : (
-        Object.entries(cart)
-          .filter(([k]) => k !== "_orderInfo" && k !== "_mobile")
-          .map(([key, item]) => (
-            <div key={key} className="border-b py-2">
-              <div className="mb-1">
-                {Object.entries(item).map(([k, v]) => {
-                  const lowerKey = k.toLowerCase();
-                  if (["code", "particulars", "description", "name"].includes(lowerKey)) {
-                    return (
-                      <span key={k} className="mr-2 font-semibold">
-                        {lowerKey === "code" ? `[${v}]` : v}
-                      </span>
-                    );
-                  }
-                  return null;
-                })}
-              </div>
-              <div className="text-right">
-                Qty: {item.quantity} × ₹{item.finalPrice} ={" "}
-                <span className="font-bold">
-                  ₹{(item.quantity * parseFloat(item.finalPrice)).toFixed(2)}
-                </span>
-              </div>
-            </div>
-          ))
-      )}
+      <div className="space-y-2">
+      {Object.entries(cart)
+  .filter(([key]) => key !== "_orderInfo" && key !== "_mobile")
+  .map(([id, item]) => (
+    <div key={id} className="border-b py-2">
+      {/* Display all item properties */}
+      <div className="text-sm space-y-1">
+        {Object.entries(item).map(([key, value]) => (
+          <div key={key} className="flex gap-1">
+            <span className="font-semibold">{key}:</span>
+            <span>{value?.toString()}</span>
+          </div>
+        ))}
+      </div>
 
-      {/* ✅ Grand Total */}
-      {Object.keys(cart)
-        .filter((k) => k !== "_orderInfo" && k !== "_mobile").length > 0 && (
-        <div className="flex justify-between items-center mt-4 p-2 border-t">
-          <span className="text-lg font-semibold">Total:</span>
-          <span className="text-lg font-bold text-green-700">
-            ₹{totalAmount.toFixed(2)}
-          </span>
-        </div>
-      )}
+      <div className="text-right mt-1">
+        Qty: {item.quantity} × ₹{item.finalPrice} ={" "}
+        <span className="font-bold">
+          ₹{(item.quantity * parseFloat(item.finalPrice)).toFixed(2)}
+        </span>
+      </div>
+    </div>
+  ))}
 
-      {/* Modify / Save buttons */}
-      {Object.keys(cart)
-        .filter((k) => k !== "_orderInfo" && k !== "_mobile").length > 0 && (
-        <div className="flex justify-between mt-4">
-          <button
-            onClick={onModify}
-            className="px-3 py-1 bg-gray-500 text-white rounded hover:bg-gray-600"
-          >
-            Modify
-          </button>
-          <button
-            onClick={() => onSave(cart)}
-            className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700"
-          >
-            Save Order
-          </button>
-        </div>
-      )}
+      </div>
+
+      <div className="font-bold">Total: ₹{total.toFixed(2)}</div>
+
+      <div className="flex gap-2">
+        <button
+          onClick={handleSaveOrder}
+          className="px-4 py-2 bg-blue-600 text-white rounded"
+        >
+          💾 Save Order
+        </button>
+        <button
+          onClick={handleSendWhatsApp}
+          className="px-4 py-2 bg-green-600 text-white rounded"
+        >
+          📲 Send via WhatsApp
+        </button>
+      </div>
     </div>
   );
 }
