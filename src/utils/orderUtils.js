@@ -37,11 +37,42 @@ export function calculateTotal(cart) {
     0
   );
 }
-
 export async function saveOrder(orderKey, orderData) {
   const allOrders = await getAllOrders();
-  await localforage.setItem("orders", { ...allOrders, [orderKey]: orderData });
+  const now = new Date();
+  let finalKey = orderKey;
+
+  // --- New Order ---
+  if (!finalKey) {
+    finalKey = await generateOrderKey(orderData.mobile);
+  } else {
+    // --- Editing Order ---
+    const existing = allOrders[finalKey];
+
+    if (existing) {
+      // Mobile changed during edit
+      if (orderData.mobile && existing.mobile !== orderData.mobile) {
+        const suffix = finalKey.slice(10); // Keep YYMM + serial same
+        finalKey = orderData.mobile + suffix;
+
+        // Remove old entry to avoid duplicates
+        delete allOrders[orderKey];
+      }
+      // Preserve original createdAt
+      orderData.createdAt = existing.createdAt || orderData.createdAt;
+    }
+  }
+
+  // Set timestamps
+  orderData.createdAt = orderData.createdAt || now.toISOString();
+  orderData.updatedAt = now.toISOString();
+
+  // Save order
+  await localforage.setItem("orders", { ...allOrders, [finalKey]: orderData });
+
+  return finalKey; // return so UI can update if needed
 }
+
 
 export async function generateOrderKey(mobile) {
   if (!mobile || mobile.length !== 10) {
@@ -51,16 +82,22 @@ export async function generateOrderKey(mobile) {
   const yy = now.getFullYear().toString().slice(-2);
   const mm = (now.getMonth() + 1).toString().padStart(2, "0");
 
+  // Prefix sirf mobile+date ke liye
   const prefix = `${mobile}${yy}${mm}`;
 
   const allOrders = (await localforage.getItem("orders")) || {};
+
+  // Month prefix (mobile nahi, sirf date) for global serial search
+  const monthPrefix = `${yy}${mm}`;
   const serials = Object.keys(allOrders)
-    .filter(key => key.startsWith(prefix))
-    .map(key => parseInt(key.slice(prefix.length), 10) || 0);
+    .filter(key => key.includes(monthPrefix)) // month match
+    .map(key => parseInt(key.slice(-3), 10) || 0); // last 3 digits
 
   const maxSerial = serials.length ? Math.max(...serials) : 0;
   const newSerial = maxSerial + 1;
-  const serialStr = newSerial.toString().padStart(3, "0"); // e.g. 001
+  const serialStr = newSerial.toString().padStart(3, "0");
 
   return prefix + serialStr;
 }
+
+

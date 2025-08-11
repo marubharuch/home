@@ -45,14 +45,42 @@ export default function CartView({ orderKey, selectedOrder }) {
     window.dispatchEvent(new Event("cartUpdated"));
     console.log(`Quantity changed for item ${id}: ${qty}`);
   };
-
   const handleSaveOrder = async () => {
     if (!mobile) {
       alert("Please enter mobile number before saving");
       return;
     }
-
+  
+    const allOrders = await getAllOrders();
     let key = orderKey;
+  
+    // EDIT MODE
+    if (key) {
+      if (mobile !== selectedOrder.mobile) {
+        const yyMM = key.slice(10, 14); // extract YYMM from old key
+        let newKey = mobile + yyMM + key.slice(-3); // same serial
+  
+        if (allOrders[newKey]) {
+          if (window.confirm(`Order ${newKey} already exists. Save as NEW order?`)) {
+            // generate fresh serial for this month
+            const monthSerials = Object.keys(allOrders)
+              .filter(k => k.slice(10, 14) === yyMM)
+              .map(k => parseInt(k.slice(-3), 10) || 0);
+  
+            const maxSerial = monthSerials.length ? Math.max(...monthSerials) : 0;
+            const newSerial = (maxSerial + 1).toString().padStart(3, "0");
+  
+            newKey = mobile + yyMM + newSerial;
+          } else {
+            alert("Save cancelled.");
+            return;
+          }
+        }
+        key = newKey;
+      }
+    }
+  
+    // NEW ORDER MODE
     if (!key) {
       try {
         key = await generateOrderKey(mobile);
@@ -61,14 +89,14 @@ export default function CartView({ orderKey, selectedOrder }) {
         return;
       }
     }
-
+  
     const now = new Date();
     const orderData = {
       cart,
       mobile,
-      createdAt: now.toISOString(),
+      createdAt: key && orderKey ? selectedOrder.createdAt : now.toISOString(),
     };
-
+  
     await saveOrder(key, orderData);
     console.log("Order saved:", key, orderData);
     alert(`✅ Order saved successfully (${key})`);
@@ -76,6 +104,7 @@ export default function CartView({ orderKey, selectedOrder }) {
     setCart({});
     setTotal(0);
   };
+  
 
   const handleSendWhatsApp = () => {
     if (!mobile) {
@@ -94,6 +123,13 @@ export default function CartView({ orderKey, selectedOrder }) {
   return (
     <div className="p-4 space-y-4">
       <h2 className="text-lg font-bold">🛒 Your Cart</h2>
+
+      {/* Show Order Number if editing */}
+    {orderKey && (
+      <div className="bg-yellow-100 text-yellow-800 p-2 rounded">
+        <strong>Order No:</strong> {orderKey}
+      </div>
+    )}
 
       <div>
         <label className="block mb-1">Mobile Number:</label>
@@ -116,13 +152,20 @@ export default function CartView({ orderKey, selectedOrder }) {
     <div key={id} className="border-b py-2">
       {/* Display all item properties */}
       <div className="text-sm space-y-1">
-        {Object.entries(item).map(([key, value]) => (
-          <div key={key} className="flex gap-1">
-            <span className="font-semibold">{key}:</span>
-            <span>{value?.toString()}</span>
-          </div>
-        ))}
-      </div>
+  {["code", "perticulers","description", "name","dlp", "rate"].map((field) => {
+    const entry = Object.entries(item).find(
+      ([key]) => key.toLowerCase() === field
+    );
+    if (!entry) return null; // Skip if not found
+    const [key, value] = entry;
+    return (
+      <>
+        
+        <span>{value?.toString()}&nbsp;</span>
+      </>
+    );
+  })}
+</div>
 
       <div className="text-right mt-1">
         Qty: {item.quantity} × ₹{item.finalPrice} ={" "}
