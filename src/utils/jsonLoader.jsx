@@ -14,7 +14,26 @@ export const jsonFiles = [
   "ZINE_ACCESSORIES.json"
 ];
 
-const parseJSONFile = (raw, source) => {
+// fetchJsonFile
+export const fetchJsonFile = async (file) => {
+  try {
+    const url = file.startsWith("http")
+      ? file
+      : `${import.meta.env.BASE_URL}${file}?v=${Date.now()}`;
+
+    const res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    const raw = await res.json();
+    return { rawData: raw, error: null };
+  } catch (error) {
+    console.error(`❌ Error loading ${file}`, error);
+    return { rawData: null, error };
+  }
+};
+
+// parseJsonData
+export const parseJsonData = (raw, source) => {
   console.log(`📄 Parsing file: ${source}`);
   const items = [];
 
@@ -32,7 +51,6 @@ const parseJSONFile = (raw, source) => {
         });
       }
     });
-
   } else if (raw?.SWITCHGEAR_PRICELIST?.products) {
     raw.SWITCHGEAR_PRICELIST.products.forEach(p => {
       p.items?.forEach(item => {
@@ -44,7 +62,6 @@ const parseJSONFile = (raw, source) => {
         });
       });
     });
-
   } else {
     const processItem = (item, category = "") => {
       items.push({
@@ -67,64 +84,29 @@ const parseJSONFile = (raw, source) => {
       });
     }
   }
+
   return items;
 };
 
-export const loadAndCacheAllJson = async ({ forceRefresh = false } = {}) => {
-  console.log("🚀 loadAndCacheAllJson started", { forceRefresh });
+// loadAndCacheAllJson
+export const loadAndCacheAllJson = async ({ forceRefresh = false }) => {
+  let allItems = [];
+  let fileStructures = {};
 
-  const allItems = [];
-  const errors = [];
-  const fileDiscounts = {};
-
-  // ✅ If no force refresh, try to load from cache
-  if (!forceRefresh) {
-    const cachedAll = await localforage.getItem("allItems");
-    const cachedDiscounts = await localforage.getItem("fileDiscounts");
-    if (cachedAll && cachedAll.length > 0) {
-      console.log("✅ Using cached data");
-      return { items: cachedAll, errors: [], discounts: cachedDiscounts || {} };
-    }
-  }
-
-  console.log("♻ Fetching JSON files from server...");
   for (const file of jsonFiles) {
-    try {
-      const url = file.startsWith("http")
-        ? file
-        : `${import.meta.env.BASE_URL}${file}?v=${Date.now()}`;
+    let cached = !forceRefresh ? await localforage.getItem(file) : null;
 
-      const res = await fetch(url, { cache: "no-store" });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-
-      const raw = await res.json();
-      if (raw.defaultDiscount !== undefined) {
-        fileDiscounts[file] = parseFloat(raw.defaultDiscount);
-      }
-
-      const parsed = parseJSONFile(raw, file);
-      allItems.push(...parsed);
-
-    } catch (err) {
-      console.error(`❌ Error loading ${file}`, err);
-      errors.push({ file, error: err.message });
-
-      // Fallback: try cached version for this file
-      const cachedAll = await localforage.getItem("allItems");
-      if (cachedAll && cachedAll.length > 0) {
-        const fileItems = cachedAll.filter(item => item.source === file);
-        if (fileItems.length > 0) {
-          allItems.push(...fileItems);
-        }
-      }
+    if (!cached) {
+      const { rawData, error } = await fetchJsonFile(file);
+      if (error) continue;
+      await localforage.setItem(file, rawData);
+      cached = rawData;
     }
+
+    fileStructures[file] = cached;
+    const parsed = parseJsonData(cached, file);
+    allItems = allItems.concat(parsed);
   }
 
-  // ✅ Update cache in background (non-blocking for UI update)
-  localforage.setItem("allItems", allItems);
-  localforage.setItem("loadErrors", errors);
-  localforage.setItem("fileDiscounts", fileDiscounts);
-
-  console.log("✅ Fetched & returned fresh data to UI");
-  return { items: allItems, errors, discounts: fileDiscounts };
+  return { items: allItems, fileStructures };
 };

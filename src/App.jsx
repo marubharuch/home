@@ -12,6 +12,7 @@ import {
 
 import OrderPopup from "./components/OrderPopup";
 import MobilePopup from "./components/MobilePopup";
+import FileStructureModal from "./components/FileStructureModal";
 
 const SearchBar = lazy(() => import("./components/SearchBar"));
 const CartView = lazy(() => import("./components/CartView"));
@@ -29,20 +30,25 @@ export default function App() {
   const [selectedOrderData, setSelectedOrderData] = useState(null);
   const [items, setItems] = useState([]);
 
+  // For file structure modal
+  const [fileStructures, setFileStructures] = useState({});
+  const [currentFileIndex, setCurrentFileIndex] = useState(0);
+  const fileNames = Object.keys(fileStructures);
+
   const loadData = async (forceRefresh = false) => {
     console.log("loadData called, refresh:", forceRefresh);
-    const { items } = await loadAndCacheAllJson({ forceRefresh });
+    const { items, fileStructures } = await loadAndCacheAllJson({ forceRefresh });
     setItems(items);
     setItemsCount(items.length);
+    setFileStructures(fileStructures);
     setLoading(false);
   };
-//===========
+
   const updateCartCount = async () => {
     setCartCount(await getCartCount());
   };
 
   useEffect(() => {
-    // ✅ First run: load from cache if available
     loadData(false);
     updateCartCount();
     window.addEventListener("cartUpdated", updateCartCount);
@@ -86,7 +92,36 @@ export default function App() {
     setShowCart(true);
   };
 
+  const handleFileConfirm = () => {
+    if (currentFileIndex < fileNames.length - 1) {
+      setCurrentFileIndex(currentFileIndex + 1);
+    } else {
+      setFileStructures({});
+    }
+  };
+
+  const handleFileSkip = () => {
+    if (currentFileIndex < fileNames.length - 1) {
+      setCurrentFileIndex(currentFileIndex + 1);
+    } else {
+      setFileStructures({});
+    }
+  };
+  
   if (loading) return <div className="p-4">⏳ Loading...</div>;
+
+  // Show modal if there are still files to review
+  if (fileNames.length > 0 && currentFileIndex < fileNames.length) {
+    const fileName = fileNames[currentFileIndex];
+    return (
+      <FileStructureModal
+        fileName={fileName}
+        fileStructure={fileStructures[fileName]}
+        onConfirm={handleFileConfirm}
+        onSkip={handleFileSkip}
+      />
+    );
+  }
 
   return (
     <div className="max-w-3xl mx-auto">
@@ -131,7 +166,7 @@ export default function App() {
             selectedOrder={selectedOrderData}
           />
         ) : (
-          <SearchBar items={items} /> 
+          <SearchBar items={items} />
         )}
       </Suspense>
 
