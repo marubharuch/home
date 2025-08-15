@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useMemo } from "react";
-import localforage from "localforage";
 import Fuse from "fuse.js";
 import { debounce } from "lodash";
 import ItemCard from "./ItemCard";
 import SearchHeader from "./SearchHeader";
 
-export default function SearchBar() {
+export default function SearchBar({ items = [] }) {
   const [query, setQuery] = useState("");
-  const [allItems, setAllItems] = useState([]);
+  const [allItems, setAllItems] = useState(items);
   const [fuse, setFuse] = useState(null);
   const [showMessage, setShowMessage] = useState(false);
   const [selectedSource, setSelectedSource] = useState("ALL");
@@ -19,6 +18,7 @@ export default function SearchBar() {
   const [cart, setCart] = useState({});
   const [loadingIndex, setLoadingIndex] = useState(true);
 
+  // Normalize keys used for filtering/exclusions
   const normalizeKey = (key) => key.replace(/[\s._]/g, "").toLowerCase();
   const excludedKeysNormalized = new Set([
     "searchabletext", "source", "no", "no.", "sno", "slno", "s.no.",
@@ -28,28 +28,19 @@ export default function SearchBar() {
   const priceKeys = ["price", "rate", "basic", "dlp", "mrpp"];
   const discountOptions = Array.from({ length: (70 - 3) * 2 + 1 }, (_, i) => 3 + i * 0.5);
 
-  // ✅ Load cached data and build Fuse instance
+  // Update allItems, sources and fuse index when received new items prop
   useEffect(() => {
     setLoadingIndex(true);
-    Promise.all([
-      localforage.getItem("allItems"),
-      localforage.getItem("fileDiscounts"),
-    //  localforage.getItem("cartItems"),
-    ]).then(([data, discounts, savedCart]) => {
-      if (data) {
-        setAllItems(data);
-        setSources([...new Set(data.map((item) => item.source))]);
-        setFuse(new Fuse(data, { keys: ["searchableText"], threshold: 0.3 }));
-      }
-      if (discounts) setFileDiscounts(discounts);
-      if (savedCart) setCart(savedCart);
+    setAllItems(items);
+    setSources(items ? [...new Set(items.map((item) => item.source))] : []);
+    setFuse(items ? new Fuse(items, { keys: ["searchableText"], threshold: 0.3 }) : null);
+    setLoadingIndex(false);
+  }, [items]);
 
-      setLoadingIndex(false);
-    });
-  }, []);
-
+  // Reset visible count on query or source change
   useEffect(() => setVisibleCount(20), [query, selectedSource]);
 
+  // Update universal discount when selected source or discounts change
   useEffect(() => {
     if (selectedSource !== "ALL") {
       setUniversalDiscount(fileDiscounts[selectedSource] ?? 30);
@@ -58,7 +49,7 @@ export default function SearchBar() {
     }
   }, [selectedSource, fileDiscounts]);
 
-  // ✅ Optimized search using Fuse
+  // Filtered search results using Fuse and filters
   const filteredResults = useMemo(() => {
     const q = query.toLowerCase().trim();
 
@@ -105,15 +96,18 @@ export default function SearchBar() {
   };
 
   const handleLoadMore = () => setVisibleCount((prev) => prev + 20);
+
+  // Handle quantity change and update cart in localforage and state
   const handleQuantityChange = async (discountKey, item, fieldKey, qty) => {
-    const rawValue = qty; // store raw string
+    const rawValue = qty;
     const numericValue = parseInt(rawValue, 10);
-  
+
     const discount = discountMap[discountKey] ?? universalDiscount;
     const price = parseFloat(item[fieldKey]) || 0;
-  
+
+    // Get existing cart from localforage
     const existingCart = (await localforage.getItem("cart")) || {};
-  
+
     const updatedCart = {
       ...existingCart,
       [discountKey]: {
@@ -124,16 +118,11 @@ export default function SearchBar() {
         finalPrice: (price * (1 - discount / 100)).toFixed(2),
       },
     };
-  
+
     setCart(updatedCart);
     await localforage.setItem("cart", updatedCart);
     window.dispatchEvent(new Event("cartUpdated"));
   };
-  
-  
-  
-  
- 
 
   const debouncedSetQuery = useMemo(() => debounce(setQuery, 200), []);
 
