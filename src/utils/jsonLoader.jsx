@@ -95,15 +95,21 @@ export const loadAndCacheAllJson = async ({ forceRefresh = false }) => {
 
   for (const file of jsonFiles) {
     let cached = !forceRefresh ? await localforage.getItem(file) : null;
+    let fromCache = !!cached;
 
     if (!cached) {
       const { rawData, error } = await fetchJsonFile(file);
       if (error) continue;
       await localforage.setItem(file, rawData);
       cached = rawData;
+      fromCache = false; // freshly fetched
     }
 
-    fileStructures[file] = cached;
+    // Only add to fileStructures if freshly fetched OR refresh mode
+    if (forceRefresh || !fromCache) {
+      fileStructures[file] = cached;
+    }
+
     const parsed = parseJsonData(cached, file);
     allItems = allItems.concat(parsed);
   }
